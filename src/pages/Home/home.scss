@@ -1,0 +1,17 @@
+@import "../../assets/scss/base";
+@import "./about.scss";
+@import "./misiune.scss";
+@import "./cards.scss";
+@import "./cancer.scss";
+@import "./cifre.scss";
+@import "./simplecontact.scss";
+
+
+.landing {
+  width: 100lvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+

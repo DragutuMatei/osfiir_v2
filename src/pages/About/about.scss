@@ -23,56 +23,6 @@
   }
 }
 
-.projects {
-  width: 100lvw;
-  min-height: calc(100lvh - 80px);
-  display: flex;
-
-  .project {
-    width: 25%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: $white;
-    padding: 20px;
-    font-family: $karla;
-    text-align: center;
-    gap: 20px;
-    transition: all 0.75s ease-out;
-    h2,
-    p,
-    button {
-      opacity: 0;
-    }
-    &:hover {
-      width: 800px;
-      h2,
-      p,
-      button {
-        opacity: 1;
-      }
-    }
-
-    h2 {
-      transition: all 0.75s ease-out;
-      font-size: 25px;
-    }
-    p {
-      font-size: 15px;
-      width: 100%;
-      max-width: 300px;
-      transition: all 0.75s ease-out;
-      height: max-content;
-      padding: 0 10px;
-      text-overflow: "";
-      font-weight: 600;
-    }
-  }
-}
 
 .altcancer {
   position: relative;

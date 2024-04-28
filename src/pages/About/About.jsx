@@ -20,7 +20,20 @@ function About() {
       swiperRef.current.swiper.slideTo(index);
     }
   };
+  const [top, setScrollTop] = useState(0);
 
+  useEffect(() => {
+    AOS.init();
+    const handleScroll = (event) => {
+      setScrollTop(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -29,74 +42,8 @@ function About() {
       <section className="landing">
         <div className="banner">
           <h1>Despre noi</h1>
-        </div>
-        <AboutSection />
-        <div className="projects">
-          <div
-            className="project"
-            style={{
-              backgroundImage:
-                "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_steel.jpg)",
-            }}
-          >
-            <h2>Titlu de proiect</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-              enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
-              necessitatibus recusandae earum cupiditate sint qui, adipisci
-              asperiores voluptate fugiat!
-            </p>
-            <Button text={"Proiect"} />
-          </div>
-          <div
-            className="project"
-            style={{
-              backgroundImage:
-                "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_projects.jpg)",
-            }}
-          >
-            <h2>Titlu de proiect</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-              enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
-              necessitatibus recusandae earum cupiditate sint qui, adipisci
-              asperiores voluptate fugiat!
-            </p>
-            <Button text={"Proiect"} />
-          </div>
-          <div
-            className="project"
-            style={{
-              backgroundImage:
-                "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_steel.jpg)",
-            }}
-          >
-            <h2>Titlu de proiect</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-              enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
-              necessitatibus recusandae earum cupiditate sint qui, adipisci
-              asperiores voluptate fugiat!
-            </p>
-            <Button text={"Proiect"} />
-          </div>
-          <div
-            className="project"
-            style={{
-              backgroundImage:
-                "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_projects.jpg)",
-            }}
-          >
-            <h2>Titlu de proiect</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-              enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
-              necessitatibus recusandae earum cupiditate sint qui, adipisci
-              asperiores voluptate fugiat!
-            </p>
-            <Button text={"Proiect"} />
-          </div>
-        </div>
+        </div>{" "}
+        <AboutSection top={top} />
         <div className="altcancer">
           <Swiper
             ref={swiperRef}
@@ -355,7 +302,6 @@ function About() {
             </SwiperSlide>
           </Swiper>
         </div>
-
         <SimpleContact />
       </section>
     </>

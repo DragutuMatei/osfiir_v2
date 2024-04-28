@@ -1,10 +1,83 @@
 @import "../../assets/scss/base";
-@import "./AboutSection.scss";
+
 @import "./misiune.scss";
 @import "./cards.scss";
 @import "./cancer.scss";
 @import "./cifre.scss";
 @import "./simplecontact.scss";
+.about {
+  width: 100lvw;
+  height: auto;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: flex-start;
+  position: relative;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  display: grid;
+  img {
+    width: 65lvw;
+    // height: 470px;
+    object-fit: contain;
+    grid-column: span 2 / span 2 !important;
+    z-index: 2;
+    position: relative;
+  }
+  .cine {
+    width: 100%;
+    max-width: 355px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    p {
+      text-indent: 20px;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    a {
+      margin: 20px 0;
+      color: $green;
+    }
+
+    h1 {
+      position: absolute;
+      top: 30px;
+      font-size: 120px;
+      font-family: $karla;
+      color: rgba($black, 0.2);
+      font-weight: 800;
+      right: -50px;
+    }
+  }
+}
+
+@media screen and (max-width: 963px) {
+  .about {
+    display: flex;
+    img {
+      display: none;
+    }
+    .cine {
+      max-width: 100lvw;
+      padding: 30px;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
 
 .landing {
   width: 100lvw;
@@ -14,6 +87,56 @@
   align-items: flex-start;
 }
 
+.projects {
+  width: 100lvw;
+  min-height: calc(100lvh - 80px);
+  display: flex;
+
+  .project {
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $white;
+    padding: 20px;
+    font-family: $karla;
+    text-align: center;
+    gap: 20px;
+    transition: all 0.75s ease-out;
+    h2,
+    p,
+    button {
+      opacity: 0;
+    }
+    &:hover {
+      width: 800px;
+      h2,
+      p,
+      button {
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      transition: all 0.75s ease-out;
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+      width: 100%;
+      max-width: 300px;
+      transition: all 0.75s ease-out;
+      height: max-content;
+      padding: 0 10px;
+      text-overflow: "";
+      font-weight: 600;
+    }
+  }
+}
 .poate {
   transition: undefined 0s ease 0s;
   pointer-events: auto;
@@ -132,4 +255,3 @@
     }
   }
 }
-

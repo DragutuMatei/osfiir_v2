@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import Cancer from "./Cancer";
 import Cifre from "./Cifre";
 import SimpleContact from "./SimpleContact";
+import Button from "../../utils/Button";
 
 function Home() {
   const [top, setScrollTop] = useState(0);
@@ -83,11 +84,75 @@ function Home() {
     <>
       <Slider />
       <AboutSection top={top} />
+      <div className="projects">
+        <div
+          className="project"
+          style={{
+            backgroundImage:
+              "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_steel.jpg)",
+          }}
+        >
+          <h2>Titlu de proiect</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
+            necessitatibus recusandae earum cupiditate sint qui, adipisci
+            asperiores voluptate fugiat!
+          </p>
+          <Button text={"Proiect"} />
+        </div>
+        <div
+          className="project"
+          style={{
+            backgroundImage:
+              "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_projects.jpg)",
+          }}
+        >
+          <h2>Titlu de proiect</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
+            necessitatibus recusandae earum cupiditate sint qui, adipisci
+            asperiores voluptate fugiat!
+          </p>
+          <Button text={"Proiect"} />
+        </div>
+        <div
+          className="project"
+          style={{
+            backgroundImage:
+              "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_steel.jpg)",
+          }}
+        >
+          <h2>Titlu de proiect</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
+            necessitatibus recusandae earum cupiditate sint qui, adipisci
+            asperiores voluptate fugiat!
+          </p>
+          <Button text={"Proiect"} />
+        </div>
+        <div
+          className="project"
+          style={{
+            backgroundImage:
+              "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_projects.jpg)",
+          }}
+        >
+          <h2>Titlu de proiect</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
+            necessitatibus recusandae earum cupiditate sint qui, adipisci
+            asperiores voluptate fugiat!
+          </p>
+          <Button text={"Proiect"} />
+        </div>
+      </div>
       <Misiune top={top} />
       <Cards />
       <Cancer top={top} />
-      <br />
-      <br />
       <div className="scrollcnt">
         <div className="loc_de_premii">
           <h1>Board</h1>
@@ -113,8 +178,6 @@ function Home() {
           </div>
         </ScrollContainer>
       </div>
-      <br />
-      <br />
       <Cifre />
       <SimpleContact />
       <br />

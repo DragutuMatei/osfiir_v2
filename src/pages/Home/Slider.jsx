@@ -307,91 +307,91 @@ function Slider() {
             <circle
               id="circle14"
               className="circle14 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="20"
             />
             <circle
               id="circle15"
               className="circle15 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="100"
             />
             <circle
               id="circle16"
               className="circle16 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="180"
             />
             <circle
               id="circle17"
               className="circle17 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="260"
             />
             <circle
               id="circle18"
               className="circle18 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="340"
             />
             <circle
               id="circle19"
               className="circle19 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="420"
             />
             <circle
               id="circle20"
               className="circle20 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="500"
             />
             <circle
               id="circle21"
               className="circle21 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="580"
             />
             <circle
               id="circle22"
               className="circle22 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="660"
             />
             <circle
               id="circle23"
               className="circle23 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="740"
             />
             <circle
               id="circle24"
               className="circle24 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="820"
             />
             <circle
               id="circle25"
               className="circle25 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="900"
             />
             <circle
               id="circle26"
               className="circle26 steap"
-              cx={width - 60}
+              cx={width - 60 + "px"}
               cy="49%"
               r="980"
             />

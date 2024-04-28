@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: $montserat;
+  &::first-letter{
+    text-transform: uppercase;
+  }
 }
 html,
 body {

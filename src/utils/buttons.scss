@@ -1,0 +1,19 @@
+@import "../assets/scss/base";
+
+.mainButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $royal;
+  color: $white;
+  font-size: 20px;
+  font-family: $karla;
+  font-weight: 600;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+    cursor: pointer;
+
+}
+

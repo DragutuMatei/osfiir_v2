@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function About({ top }) {
+function AboutSection({ top }) {
   return (
     <div className="about">
       <img
@@ -23,4 +23,4 @@ function About({ top }) {
   );
 }
 
-export default About;
+export default AboutSection;

@@ -89,10 +89,14 @@
 
 .projects {
   width: 100vw;
-  height: calc(100lvh - 80px);
+  // height: calc(100lvh - 80px);
+  height: 500px;
   display: flex;
+  overflow: hidden;
 
   .project {
+    overflow: hidden;
+    height: 500px;
     width: 25%;
     background-position: center;
     background-size: cover;
@@ -107,14 +111,18 @@
     text-align: center;
     gap: 20px;
     transition: all 0.75s ease-out;
-    h2,
     p,
     button {
+      display: flex;
       opacity: 0;
+    }
+    p{
+      // width: 430px !important;
+      // height: 200px;
+      font-size: 14px;
     }
     &:hover {
       width: 800px;
-      h2,
       p,
       button {
         opacity: 1;

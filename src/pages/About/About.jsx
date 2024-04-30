@@ -53,7 +53,7 @@ function About() {
               Explicabo repellat nesciunt quia laboriosam enim eaque inventore
               sed, eveniet totam ratione!
             </p>{" "}
-            <Link to="/">Afla mai multe</Link>
+            <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
           </div>
           <div className="anunt">
             <h2>Titlu de anunt</h2>
@@ -62,7 +62,7 @@ function About() {
               Explicabo repellat nesciunt quia laboriosam enim eaque inventore
               sed, eveniet totam ratione!
             </p>{" "}
-            <Link to="/">Afla mai multe</Link>
+            <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
           </div>
           <div className="anunt">
             <h2>Titlu de anunt</h2>
@@ -71,7 +71,7 @@ function About() {
               Explicabo repellat nesciunt quia laboriosam enim eaque inventore
               sed, eveniet totam ratione!
             </p>{" "}
-            <Link to="/">Afla mai multe</Link>
+            <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
           </div>
           <div className="anunt">
             <h2>Titlu de anunt</h2>
@@ -80,7 +80,7 @@ function About() {
               Explicabo repellat nesciunt quia laboriosam enim eaque inventore
               sed, eveniet totam ratione!
             </p>{" "}
-            <Link to="/">Afla mai multe</Link>
+            <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
           </div>
         </div>
       </div>

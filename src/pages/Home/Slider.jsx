@@ -64,14 +64,14 @@ function Slider() {
     if (sliding) {
       sliding = false;
       if (svg) {
-        for (let j = 1; j <= 13; j++) {
+        for (let j = 1; j <= 28; j++) {
           var c = document.getElementById(transitionPrefix + j);
           c.classList.remove("steap");
           c.setAttribute("class", transitionPrefix + j + " streak");
           console.log("streak");
         }
       } else {
-        for (let j = 14; j <= 26; j++) {
+        for (let j = 28; j <= 56; j++) {
           var c = document.getElementById(transitionPrefix + j);
           c.classList.remove("steap");
           c.setAttribute("class", transitionPrefix + j + " streak");
@@ -96,21 +96,21 @@ function Slider() {
 
       setTimeout(() => {
         if (svg) {
-          for (let j = 1; j <= 13; j++) {
+          for (let j = 1; j <= 28; j++) {
             var c = document.getElementById(transitionPrefix + j);
             c.classList.remove("streak");
             c.setAttribute("class", transitionPrefix + j + " steap");
           }
         } else {
           console.log("am ajuns aicea");
-          for (let j = 14; j <= 26; j++) {
+          for (let j = 28; j <= 56; j++) {
             var c = document.getElementById(transitionPrefix + j);
             c.classList.remove("streak");
             c.setAttribute("class", transitionPrefix + j + " steap");
           }
           sliding = true;
         }
-      }, 850);
+      }, 1350);
       setTimeout(() => {
         click = true;
       }, 1700);
@@ -265,7 +265,6 @@ function Slider() {
               cy="49%"
               r="660"
             />
-
             <circle
               id="circle10"
               className="circle10 steap"
@@ -273,7 +272,6 @@ function Slider() {
               cy="49%"
               r="740"
             />
-
             <circle
               id="circle11"
               className="circle11 steap"
@@ -281,7 +279,6 @@ function Slider() {
               cy="49%"
               r="820"
             />
-
             <circle
               id="circle12"
               className="circle12 steap"
@@ -289,7 +286,6 @@ function Slider() {
               cy="49%"
               r="900"
             />
-
             <circle
               id="circle13"
               className="circle13 steap"
@@ -297,6 +293,112 @@ function Slider() {
               cy="49%"
               r="980"
             />
+            {/* ////////////////////////////// */}
+            <circle
+              id="circle14"
+              className="circle14 steap"
+              cx="34px"
+              cy="49%"
+              r="1060"
+            />{" "}
+            <circle
+              id="circle15"
+              className="circle15 steap"
+              cx="34px"
+              cy="49%"
+              r="1140"
+            />{" "}
+            <circle
+              id="circle16"
+              className="circle16 steap"
+              cx="34px"
+              cy="49%"
+              r="1220"
+            />{" "}
+            <circle
+              id="circle17"
+              className="circle17 steap"
+              cx="34px"
+              cy="49%"
+              r="1300"
+            />{" "}
+            <circle
+              id="circle18"
+              className="circle18 steap"
+              cx="34px"
+              cy="49%"
+              r="1380"
+            />{" "}
+            <circle
+              id="circle19"
+              className="circle19 steap"
+              cx="34px"
+              cy="49%"
+              r="1460"
+            />{" "}
+            <circle
+              id="circle20"
+              className="circle20 steap"
+              cx="34px"
+              cy="49%"
+              r="1540"
+            />{" "}
+            <circle
+              id="circle21"
+              className="circle21 steap"
+              cx="34px"
+              cy="49%"
+              r="1620"
+            />{" "}
+            <circle
+              id="circle22"
+              className="circle22 steap"
+              cx="34px"
+              cy="49%"
+              r="1700"
+            />{" "}
+            <circle
+              id="circle23"
+              className="circle23 steap"
+              cx="34px"
+              cy="49%"
+              r="1780"
+            />{" "}
+            <circle
+              id="circle24"
+              className="circle24 steap"
+              cx="34px"
+              cy="49%"
+              r="1860"
+            />{" "}
+            <circle
+              id="circle25"
+              className="circle25 steap"
+              cx="34px"
+              cy="49%"
+              r="1940"
+            />{" "}
+            <circle
+              id="circle26"
+              className="circle26 steap"
+              cx="34px"
+              cy="49%"
+              r="2020"
+            />{" "}
+            <circle
+              id="circle27"
+              className="circle27 steap"
+              cx="34px"
+              cy="49%"
+              r="2100"
+            />{" "}
+            <circle
+              id="circle28"
+              className="circle28 steap"
+              cx="34px"
+              cy="49%"
+              r="2180"
+            />{" "}
           </svg>
           <svg
             id="svg1"
@@ -305,96 +407,201 @@ function Slider() {
             xlink="http://www.w3.org/1999/xlink"
           >
             <circle
-              id="circle14"
-              className="circle14 steap"
+              id="circle29"
+              className="circle29 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="20"
             />
             <circle
-              id="circle15"
-              className="circle15 steap"
+              id="circle30"
+              className="circle30 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="100"
             />
             <circle
-              id="circle16"
-              className="circle16 steap"
+              id="circle31"
+              className="circle31 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="180"
             />
             <circle
-              id="circle17"
-              className="circle17 steap"
+              id="circle32"
+              className="circle32 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="260"
             />
             <circle
-              id="circle18"
-              className="circle18 steap"
+              id="circle33"
+              className="circle33 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="340"
             />
             <circle
-              id="circle19"
-              className="circle19 steap"
+              id="circle34"
+              className="circle34 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="420"
             />
             <circle
-              id="circle20"
-              className="circle20 steap"
+              id="circle35"
+              className="circle35 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="500"
             />
             <circle
-              id="circle21"
-              className="circle21 steap"
+              id="circle36"
+              className="circle36 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="580"
             />
             <circle
-              id="circle22"
-              className="circle22 steap"
+              id="circle37"
+              className="circle37 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="660"
             />
             <circle
-              id="circle23"
-              className="circle23 steap"
+              id="circle38"
+              className="circle38 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="740"
             />
             <circle
-              id="circle24"
-              className="circle24 steap"
+              id="circle39"
+              className="circle39 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="820"
             />
             <circle
-              id="circle25"
-              className="circle25 steap"
+              id="circle40"
+              className="circle40 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="900"
             />
             <circle
-              id="circle26"
-              className="circle26 steap"
+              id="circle41"
+              className="circle41 steap"
               cx={width - 60 + "px"}
               cy="49%"
               r="980"
             />
+            <circle
+              id="circle42"
+              className="circle42 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1060"
+            />{" "}
+            <circle
+              id="circle43"
+              className="circle43 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1140"
+            />{" "}
+            <circle
+              id="circle44"
+              className="circle44 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1220"
+            />{" "}
+            <circle
+              id="circle45"
+              className="circle45 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1300"
+            />{" "}
+            <circle
+              id="circle46"
+              className="circle46 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1380"
+            />{" "}
+            <circle
+              id="circle47"
+              className="circle47 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1460"
+            />{" "}
+            <circle
+              id="circle48"
+              className="circle48 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1540"
+            />{" "}
+            <circle
+              id="circle49"
+              className="circle49 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1620"
+            />{" "}
+            <circle
+              id="circle50"
+              className="circle50 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1700"
+            />{" "}
+            <circle
+              id="circle51"
+              className="circle51 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1780"
+            />{" "}
+            <circle
+              id="circle52"
+              className="circle52 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1860"
+            />{" "}
+            <circle
+              id="circle53"
+              className="circle53 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="1940"
+            />{" "}
+            <circle
+              id="circle54"
+              className="circle54 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="2020"
+            />{" "}
+            <circle
+              id="circle55"
+              className="circle55 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="2100"
+            />{" "}
+            <circle
+              id="circle56"
+              className="circle56 steap"
+              cx={width - 60 + "px"}
+              cy="49%"
+              r="2180"
+            />{" "}
           </svg>
           <div id="slide1" className="slide1 up1">
             MOUNTAIN

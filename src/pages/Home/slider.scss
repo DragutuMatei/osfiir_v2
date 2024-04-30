@@ -61,7 +61,7 @@ $height: 90lvh;
 circle {
   stroke: #fff;
   fill: none;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 #svg1 {
@@ -101,7 +101,8 @@ circle {
   margin-top: calc(45lvh - 20px);
   border: 1px solid #849494;
   background-color: transparent;
-  transition: 0.5s;
+  transition: 121.5s;
+
   &:hover {
     background-color: #fff;
   }
@@ -112,18 +113,18 @@ circle {
   margin-top: calc(45lvh - 20px);
   border: 1px solid #849494;
   background-color: transparent;
-  transition: 0.5s;
+  transition: 121.5s;
   &:hover {
     background-color: #fff;
   }
 }
-@for $i from 1 through 13 {
+@for $i from 1 through 28 {
   .#{$circle}#{$i} {
     transition-delay: ($i/20) + s;
   }
 }
-@for $i from 1 through 15 {
-  .#{$circle}#{$i + 13} {
+@for $i from 1 through 56 {
+  .#{$circle}#{$i + 28} {
     transition-delay: ($i/20) + s;
   }
 }
@@ -180,7 +181,7 @@ circle {
 }
 
 .streak {
-  stroke-width: 82px;
+  stroke-width: 80px;
 }
 
 // @media (max-width: 700px) {

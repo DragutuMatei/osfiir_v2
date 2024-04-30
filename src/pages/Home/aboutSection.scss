@@ -7,7 +7,8 @@
   position: relative;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   display: grid;
-  img {
+  img,
+  iframe {
     width: 65lvw;
     // height: 470px;
     object-fit: contain;

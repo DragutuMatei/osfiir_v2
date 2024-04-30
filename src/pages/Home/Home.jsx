@@ -95,9 +95,7 @@ function Home() {
           <h2>Titlu de proiect</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
-            necessitatibus recusandae earum cupiditate sint qui, adipisci
-            asperiores voluptate fugiat!
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos. 
           </p>
           <Button text={"Proiect"} />
         </div>
@@ -111,9 +109,7 @@ function Home() {
           <h2>Titlu de proiect</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
-            necessitatibus recusandae earum cupiditate sint qui, adipisci
-            asperiores voluptate fugiat!
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos.
           </p>
           <Button text={"Proiect"} />
         </div>
@@ -127,9 +123,7 @@ function Home() {
           <h2>Titlu de proiect</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
-            necessitatibus recusandae earum cupiditate sint qui, adipisci
-            asperiores voluptate fugiat!
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos. 
           </p>
           <Button text={"Proiect"} />
         </div>
@@ -143,9 +137,7 @@ function Home() {
           <h2>Titlu de proiect</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
-            necessitatibus recusandae earum cupiditate sint qui, adipisci
-            asperiores voluptate fugiat!
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos.
           </p>
           <Button text={"Proiect"} />
         </div>

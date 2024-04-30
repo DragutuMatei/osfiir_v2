@@ -1,12 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsRobot } from "react-icons/bs";
 import Button from "../../utils/Button";
 import ScrollContainer from "react-indiana-drag-scroll";
 import "./facultate.scss";
 import { Link } from "react-router-dom";
 import SimpleContact from "../Home/SimpleContact";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Faculate() {
+  const [top, setScrollTop] = useState(0);
+
+  useEffect(() => {
+    Aos.init();
+    const handleScroll = (event) => {
+      setScrollTop(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [board, setBoard] = useState([
     {
       image:
@@ -181,6 +198,27 @@ function Faculate() {
               })}
           </div>
         </ScrollContainer>
+      </div>
+      <div className="about">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.6227426840974!2d26.046770775937777!3d44.4409002710756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201c047f8d021%3A0x41c874ce747cee15!2sFaculty%20of%20Industrial%20Engineering%20and%20Robotics!5e0!3m2!1sen!2sro!4v1714445192641!5m2!1sen!2sro"
+          style={{ border: 0, width: "65vw", height: "470px" }}
+          allowfullscreen=""
+          id="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        />
+        <div className="cine">
+          <h1 style={{ right: top / 30 - 50 + "px" }}>DESPRE</h1>
+          <h2>Cine suntem</h2>
+          <p>
+            Cu [NN] proiecte realizate în cei peste 14 ani de activitate, suntem
+            o companie capabilă să ofere soluții complete, coerent integrate (în
+            domenii precum proiectele de construcție, prelucrarea serializată în
+            metal și construcția de structuri sau clădiri metalice).
+          </p>
+          <Link to="/">Afla mai multe</Link>
+        </div>
       </div>
       <SimpleContact />
     </>

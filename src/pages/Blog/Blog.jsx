@@ -3,6 +3,16 @@ import "./blog.scss";
 import BlogPost from "./BlogPost";
 
 function Blog() {
+  const filter = (index) => {
+    const sectiuni = document.querySelectorAll(".sectiune");
+    sectiuni.forEach((sec, i) => {
+      if (sec.classList.contains("active")) {
+        sec.classList.remove("active");
+      }
+      if (i == index) sec.classList.add("active");
+    });
+  };
+
   return (
     <>
       <div className="banner">
@@ -11,12 +21,24 @@ function Blog() {
       <div className="sections">
         <h2>Discover our projects</h2>
         <div className="sectiuni">
-          <div className="sectiune">ALL</div>
-          <div className="sectiune">PTC</div>
-          <div className="sectiune">FIIR</div>
-          <div className="sectiune">ERICSSON</div>
-          <div className="sectiune">DUMNEZEU</div>
-          <div className="sectiune">MAICA SFANTA</div>
+          <div className="sectiune active" onClick={() => filter(0)}>
+            ALL
+          </div>
+          <div className="sectiune" onClick={() => filter(1)}>
+            PTC
+          </div>
+          <div className="sectiune" onClick={() => filter(2)}>
+            FIIR
+          </div>
+          <div className="sectiune" onClick={() => filter(3)}>
+            ERICSSON
+          </div>
+          <div className="sectiune" onClick={() => filter(4)}>
+            DUMNEZEU
+          </div>
+          <div className="sectiune" onClick={() => filter(5)}>
+            MAICA SFANTA
+          </div>
         </div>
       </div>
       <div className="blog">

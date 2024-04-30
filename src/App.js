@@ -7,6 +7,13 @@ import Login from "./pages/Targ/Login";
 import Home from "./pages/Home/Home";
 import Test from "./pages/Test";
 import About from "./pages/About/About";
+import { useEffect } from "react";
+import ScrollToTop from "./utils/ScrollToTop";
+import Blog from "./pages/Blog/Blog";
+import Faculate from "./pages/Facultate/Faculate";
+import FAQ from "./pages/FAQ/FAQ";
+import Contact from "./pages/Contact/Contact";
+import SimplePostPage from "./pages/Blog/SimplePostPage";
 
 function App() {
   return (
@@ -16,10 +23,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/a" element={<Test />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/targ/admin" element={<Admin />} />
-        <Route path="/targ/login" element={<Login />} />
-        <Route path="/targ/profile/:email" element={<Profile />} /> */}
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/simple/:slug" element={<SimplePostPage />} />
+        <Route path="/about_faculate" element={<Faculate />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ScrollToTop />
     </Router>
   );
 }

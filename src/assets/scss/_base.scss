@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: $montserat;
-  &::first-letter{
+  &::first-letter {
     text-transform: uppercase;
   }
 }
@@ -23,7 +23,7 @@ span {
 }
 
 .fiir {
-  width: 100lvw;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;

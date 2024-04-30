@@ -1,7 +1,7 @@
 .cancer {
   background: url("https://dev.quantum-group.ro/ro/steel.6dcec7f8df2b7ce9.png");
   background-size: cover;
-  width: 100lvw;
+  width: 100vw;
   height: 600px;
   display: flex;
   justify-content: flex-start;
@@ -10,7 +10,7 @@
 
   &::after {
     content: "";
-    width: 100lvw;
+    width: 100vw;
     height: 100%;
     position: absolute;
     top: 0;
@@ -92,7 +92,7 @@
 
   .dreapta {
     color: $white;
-    width: calc(100lvw - 840px);
+    width: calc(100vw - 840px);
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -104,7 +104,7 @@
     }
     p {
       font-size: 1.1rem;
-      // width: 100lvw;
+      // width: 100vw;
       max-width: 600px;
       font-family: $karla;
       font-weight: 300;
@@ -211,7 +211,7 @@
     padding: 10px;
     justify-content: flex-start;
     .dreapta {
-      width: calc(100lvw - 600px);
+      width: calc(100vw - 600px);
       padding: 0;
     }
 

@@ -3,7 +3,7 @@
 nav {
   user-select: none;
   z-index: 9999;
-  width: 100lvw;
+  width: 100vw;
   height: 80px;
   background: transparent;
   display: flex;
@@ -76,7 +76,7 @@ nav {
         overflow: visible;
         height: auto;
         left: -40px;
-        width: 100lvw;
+        width: 100vw;
         padding: 10px 40px;
         background: $black;
       }

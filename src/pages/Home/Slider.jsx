@@ -176,7 +176,7 @@ function Slider() {
             name="button"
           >
             <svg
-              // style={{position:"absolute", zIndex:1, width:'100lvw', height:'90lvh'}}
+              // style={{position:"absolute", zIndex:1, width:'100vw', height:'90lvh'}}
               version="1.1"
               id="Capa_2"
               xmlns="http://www.w3.org/2000/svg"

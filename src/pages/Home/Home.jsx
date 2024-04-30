@@ -162,7 +162,6 @@ function Home() {
 
         <ScrollContainer className="scc">
           <div className="poate">
-            <div className="space"></div>
             {board &&
               board.map((lider) => {
                 return (
@@ -205,19 +204,3 @@ function Home() {
 }
 
 export default Home;
-
-// fastlane
-// data 10 martie
-
-// tokenomics: o sa mi dea sebi
-// pag 4: pastrez grafice
-// pag5 -> : las la fel
-// pag 7 8 9 scot
-/**
-
-Servus. Astia suntem MCs de la regio la Iasi. voiam sa stiu cine e alumni si cine e inca in echipa ca sa stiu cum ne organiam
-lore
-(Pre sale,30),(Stategic,3.5),(KoL,2),(Public round,5),(Team,10),(Adv,2),(Marketing,12),(Liq,15.5),(Ecosistem,20)
-,3.5,2,5,10,2,12,15.5,20 
- * 
- */

@@ -10,11 +10,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Mousewheel, EffectFade, Pagination } from "swiper/modules";
 import SimpleContact from "../Home/SimpleContact";
+import { Link } from "react-router-dom";
 
 function About() {
   const [index, setIndex] = useState(0);
   const swiperRef = useRef(null);
-
   const goToSlide = (index) => {
     if (swiperRef.current) {
       swiperRef.current.swiper.slideTo(index);
@@ -34,16 +34,122 @@ function About() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
   return (
     <>
       <section className="landing">
         <div className="banner">
           <h1>Despre noi</h1>
         </div>{" "}
-        <AboutSection top={top} />
+        <AboutSection top={top} />{" "}
+        <div className="anunturi">
+        <div className="img"></div>
+        <h2>anunturi</h2>
+        <div className="al">
+          <div className="anunt">
+            <h2>Titlu de anunt</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Explicabo repellat nesciunt quia laboriosam enim eaque inventore
+              sed, eveniet totam ratione!
+            </p>{" "}
+            <Link to="/">Afla mai multe</Link>
+          </div>
+          <div className="anunt">
+            <h2>Titlu de anunt</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Explicabo repellat nesciunt quia laboriosam enim eaque inventore
+              sed, eveniet totam ratione!
+            </p>{" "}
+            <Link to="/">Afla mai multe</Link>
+          </div>
+          <div className="anunt">
+            <h2>Titlu de anunt</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Explicabo repellat nesciunt quia laboriosam enim eaque inventore
+              sed, eveniet totam ratione!
+            </p>{" "}
+            <Link to="/">Afla mai multe</Link>
+          </div>
+          <div className="anunt">
+            <h2>Titlu de anunt</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Explicabo repellat nesciunt quia laboriosam enim eaque inventore
+              sed, eveniet totam ratione!
+            </p>{" "}
+            <Link to="/">Afla mai multe</Link>
+          </div>
+        </div>
+      </div>
+        {/* <div className="projects">
+          <div
+            className="project"
+            style={{
+              backgroundImage:
+                "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_steel.jpg)",
+            }}
+          >
+            <h2>Titlu de proiect</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+              enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
+              necessitatibus recusandae earum cupiditate sint qui, adipisci
+              asperiores voluptate fugiat!
+            </p>
+            <Button text={"Proiect"} />
+          </div>
+          <div
+            className="project"
+            style={{
+              backgroundImage:
+                "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_projects.jpg)",
+            }}
+          >
+            <h2>Titlu de proiect</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+              enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
+              necessitatibus recusandae earum cupiditate sint qui, adipisci
+              asperiores voluptate fugiat!
+            </p>
+            <Button text={"Proiect"} />
+          </div>
+          <div
+            className="project"
+            style={{
+              backgroundImage:
+                "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_steel.jpg)",
+            }}
+          >
+            <h2>Titlu de proiect</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+              enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
+              necessitatibus recusandae earum cupiditate sint qui, adipisci
+              asperiores voluptate fugiat!
+            </p>
+            <Button text={"Proiect"} />
+          </div>
+          <div
+            className="project"
+            style={{
+              backgroundImage:
+                "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_projects.jpg)",
+            }}
+          >
+            <h2>Titlu de proiect</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+              enim ea in nulla aut nemo, saepe cupiditate sequi eos. Repellendus
+              necessitatibus recusandae earum cupiditate sint qui, adipisci
+              asperiores voluptate fugiat!
+            </p>
+            <Button text={"Proiect"} />
+          </div>
+        </div> */}
         <div className="altcancer">
           <Swiper
             ref={swiperRef}
@@ -301,6 +407,92 @@ function About() {
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+        <div className="struc">
+          <h1 style={{ left: top / 4 - 80 + "px" }}>STRUCTURA</h1>
+          <div className="text">
+            <h2>Structura asociatiei</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              commodi quisquam blanditiis quas? Impedit praesentium temporibus
+              alias sit commodi magnam debitis, itaque ipsam ad doloribus? Nulla
+              rerum molestiae in perspiciatis.
+            </p>
+          </div>
+        </div>
+        <div className="structura">
+          <div className="row">
+            <div className="t">
+              <h1>1</h1>
+              <h2>Voluntar</h2>
+              <p>
+                Ut eu lacinia nibh onec in feugiat quam, non eleifend nunc auris
+                a dapibus nunc. Aliquam id arcu quam uisque pellentesque velit
+                vel imperdiet.
+              </p>
+            </div>
+            <img
+              src="https://dev.quantum-group.ro/fi/assets/images/quantum-method/1.png"
+              alt=""
+            />
+          </div>
+          <div className="row">
+            <img
+              src="https://dev.quantum-group.ro/fi/assets/images/quantum-method/1.png"
+              alt=""
+            />
+            <div className="t">
+              <h1>2</h1>
+              <h2>Membru</h2>
+              <p>
+                Ut eu lacinia nibh onec in feugiat quam, non eleifend nunc auris
+                a dapibus nunc. Aliquam id arcu quam uisque pellentesque velit
+                vel imperdiet.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="t">
+              <h1>3</h1>
+              <h2>Board</h2>
+              <p>
+                Ut eu lacinia nibh onec in feugiat quam, non eleifend nunc auris
+                a dapibus nunc. Aliquam id arcu quam uisque pellentesque velit
+                vel imperdiet.
+              </p>
+            </div>
+            <img
+              src="https://dev.quantum-group.ro/fi/assets/images/quantum-method/1.png"
+              alt=""
+            />
+          </div>
+          <div className="row">
+            <img
+              src="https://dev.quantum-group.ro/fi/assets/images/quantum-method/1.png"
+              alt=""
+            />
+            <div className="t">
+              <h1>4</h1>
+              <h2>Alumni</h2>
+              <p>
+                Ut eu lacinia nibh onec in feugiat quam, non eleifend nunc auris
+                a dapibus nunc. Aliquam id arcu quam uisque pellentesque velit
+                vel imperdiet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="struc las">
+          <h1 style={{ right: top / 18 - 80 + "px" }}>STRUCTURA</h1>
+          <div className="text">
+            <h2>Structura asociatiei</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              commodi quisquam blanditiis quas? Impedit praesentium temporibus
+              alias sit commodi magnam debitis, itaque ipsam ad doloribus? Nulla
+              rerum molestiae in perspiciatis.
+            </p>
+          </div>
         </div>
         <SimpleContact />
       </section>

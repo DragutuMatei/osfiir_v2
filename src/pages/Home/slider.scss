@@ -98,10 +98,12 @@ circle {
 
 .right {
   margin-left: calc(100vw - 60px);
+  margin-right: calc(20px + (1vw * 5)); /* Set right margin with padding */
   margin-top: calc(45lvh - 20px);
   border: 1px solid #849494;
   background-color: transparent;
-  transition: 121.5s;
+  transition: 0.5s; /* Faster transition by default */
+  transition: 0.5s; //STERG TRANZITIA CA SA POT SA O PUN IN MEDIA QUERRIE
 
   &:hover {
     background-color: #fff;
@@ -109,11 +111,11 @@ circle {
 }
 
 .left {
-  margin-left: 20px;
+  margin-left: calc(20px); /* Set left margin with padding */
   margin-top: calc(45lvh - 20px);
   border: 1px solid #849494;
   background-color: transparent;
-  transition: 121.5s;
+  transition: 0.5s; //IDEM
   &:hover {
     background-color: #fff;
   }
@@ -184,8 +186,27 @@ circle {
   stroke-width: 80px;
 }
 
-// @media (max-width: 700px) {
-//   .parent {
-//     margin-left: 1%;
+@media screen and (max-width: 320px) {
+  .left {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .left {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .left {
+    display: none;
+  }
+}
+// @media only screen and (max-width: 1440px) {
+//   .right {
+//     margin-left: calc(100vw - 40px);
+//     transition: 0.5s;
+//   }
+//   .left {
+//     margin-left: 20px;
 //   }
 // }

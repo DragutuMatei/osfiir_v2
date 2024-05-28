@@ -3,7 +3,7 @@ import useWindowSize from "../../utils/useWindowSize";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoSchoolOutline } from "react-icons/io5";
 
-function Cancer({ top }) {
+function  Cancer({ top }) {
     const { width } = useWindowSize();
 
     const txts = [

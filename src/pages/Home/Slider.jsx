@@ -14,7 +14,7 @@ function Slider() {
 
   function leftSlide() {
     if (click) {
-      if (curpage == 1) curpage = 5;
+      if (curpage === 1) curpage = 5;
       console.log("woek");
       sliding = true;
       curpage--;
@@ -125,9 +125,9 @@ function Slider() {
   //   };
 
   document.onkeydown = (e) => {
-    if (e.keyCode == 37) {
+    if (e.keyCode === 37) {
       leftSlide();
-    } else if (e.keyCode == 39) {
+    } else if (e.keyCode === 39) {
       rightSlide();
     }
   };

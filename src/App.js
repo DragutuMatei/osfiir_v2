@@ -14,7 +14,7 @@ import Faculate from "./pages/Facultate/Faculate";
 import FAQ from "./pages/FAQ/FAQ";
 import Contact from "./pages/Contact/Contact";
 import SimplePostPage from "./pages/Blog/SimplePostPage";
-
+import Footerbug from "./components/FooterBughy"
 function App() {
   return (
     <Router>

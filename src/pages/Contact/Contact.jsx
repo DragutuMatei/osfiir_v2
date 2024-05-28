@@ -8,8 +8,8 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [mesaj, setMesaj] = useState("");
 
-    const send = async () => {
-      console.log(name)
+  const send = async () => {
+    console.log(name);
   };
 
   return (
@@ -59,7 +59,9 @@ function Contact() {
               />
             </div>
           </div>
-          <Button click={send} text={"Send"} />
+          <div className="button_container">
+            <Button click={send} text={"Send"} />
+          </div>
         </div>
       </div>
     </>

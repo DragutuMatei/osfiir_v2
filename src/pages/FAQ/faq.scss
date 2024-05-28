@@ -27,3 +27,17 @@
 .aia {
   margin-top: 30px;
 }
+.faq {
+  //neschimbat
+  @media only screen and (max-width: 768px) {
+    .intrb {
+      padding: 10px; 
+      margin-bottom: 20px; 
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .faq {
+      background-position: center; 
+    }
+  }
+}

@@ -30,7 +30,7 @@
     font-family: $karla;
     color: rgba($white, 0.2);
     font-weight: 800;
-    left: -50px;
+    left: -10px;
   }
   .text {
     z-index: 1;
@@ -50,3 +50,20 @@
     }
   }
 }
+// @media (max-width: 768px) {
+//   .misiune h1 {
+//     left: -20px; /* Adjust this value for smaller screens */
+//   }
+// }
+
+// @media (max-width: 1024px) {
+//   .misiune h1 {
+//     left: -30px; /* Adjust this value for medium-sized screens */
+//   }
+// }
+
+// @media (max-width: 1440px) {
+//   .misiune h1 {
+//     left: -50px; /* Adjust this value for larger screens */
+//   }
+// }

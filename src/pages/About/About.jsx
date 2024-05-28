@@ -43,47 +43,47 @@ function About() {
         </div>{" "}
         <AboutSection top={top} />{" "}
         <div className="anunturi">
-        <div className="img"></div>
-        <h2>anunturi</h2>
-        <div className="al">
-          <div className="anunt">
-            <h2>Titlu de anunt</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo repellat nesciunt quia laboriosam enim eaque inventore
-              sed, eveniet totam ratione!
-            </p>{" "}
-            <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
-          </div>
-          <div className="anunt">
-            <h2>Titlu de anunt</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo repellat nesciunt quia laboriosam enim eaque inventore
-              sed, eveniet totam ratione!
-            </p>{" "}
-            <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
-          </div>
-          <div className="anunt">
-            <h2>Titlu de anunt</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo repellat nesciunt quia laboriosam enim eaque inventore
-              sed, eveniet totam ratione!
-            </p>{" "}
-            <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
-          </div>
-          <div className="anunt">
-            <h2>Titlu de anunt</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo repellat nesciunt quia laboriosam enim eaque inventore
-              sed, eveniet totam ratione!
-            </p>{" "}
-            <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
+          <div className="img"></div>
+          <h2>anunturi</h2>
+          <div className="al">
+            <div className="anunt">
+              <h2>Titlu de anunt</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo repellat nesciunt quia laboriosam enim eaque inventore
+                sed, eveniet totam ratione!
+              </p>{" "}
+              <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
+            </div>
+            <div className="anunt">
+              <h2>Titlu de anunt</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo repellat nesciunt quia laboriosam enim eaque inventore
+                sed, eveniet totam ratione!
+              </p>{" "}
+              <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
+            </div>
+            <div className="anunt">
+              <h2>Titlu de anunt</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo repellat nesciunt quia laboriosam enim eaque inventore
+                sed, eveniet totam ratione!
+              </p>{" "}
+              <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
+            </div>
+            <div className="anunt">
+              <h2>Titlu de anunt</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo repellat nesciunt quia laboriosam enim eaque inventore
+                sed, eveniet totam ratione!
+              </p>{" "}
+              <Link to="/anunt/cel-mai-blana-anunt">Afla mai multe</Link>
+            </div>
           </div>
         </div>
-      </div>
         {/* <div className="projects">
           <div
             className="project"

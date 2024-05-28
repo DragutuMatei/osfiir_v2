@@ -12,7 +12,8 @@ import Cancer from "./Cancer";
 import Cifre from "./Cifre";
 import SimpleContact from "./SimpleContact";
 import Button from "../../utils/Button";
-
+import Footer from "../../components/Footer";
+import Footerbug from "../../components/FooterBughy";
 function Home() {
   const [top, setScrollTop] = useState(0);
 
@@ -95,7 +96,7 @@ function Home() {
           <h2>Titlu de proiect</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos. 
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos.
           </p>
           <Button text={"Proiect"} />
         </div>
@@ -123,7 +124,7 @@ function Home() {
           <h2>Titlu de proiect</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos. 
+            enim ea in nulla aut nemo, saepe cupiditate sequi eos.
           </p>
           <Button text={"Proiect"} />
         </div>
@@ -171,26 +172,7 @@ function Home() {
       </div>
       <Cifre />
       <SimpleContact />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Footerbug />
     </>
   );
 }

@@ -14,6 +14,7 @@ import SimpleContact from "./SimpleContact";
 import Button from "../../utils/Button";
 import Footer from "../../components/Footer";
 import Footerbug from "../../components/FooterBughy";
+import ScrollToTopButton from "../../components/Scrolltotop";
 function Home() {
   const [top, setScrollTop] = useState(0);
 
@@ -173,6 +174,7 @@ function Home() {
       <Cifre />
       <SimpleContact />
       <Footerbug />
+      <ScrollToTopButton/>
     </>
   );
 }

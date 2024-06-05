@@ -1,6 +1,7 @@
 import React from "react";
 import "./blog.scss";
 import BlogPost from "./BlogPost";
+import Footerbug from "../../components/FooterBughy";
 
 function Blog() {
   const filter = (index) => {
@@ -85,7 +86,9 @@ function Blog() {
           by={"FIIR"}
         />
       </div>
+      <Footerbug />
     </>
+    
   );
 }
 

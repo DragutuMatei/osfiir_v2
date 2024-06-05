@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./contact.scss";
 import Button from "../../utils/Button";
+import Footerbug from "../../components/FooterBughy";
 
 function Contact() {
   const [name, setName] = useState("");

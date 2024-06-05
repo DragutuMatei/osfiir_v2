@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import { Mousewheel, EffectFade, Pagination } from "swiper/modules";
 import SimpleContact from "../Home/SimpleContact";
 import { Link } from "react-router-dom";
+import Footerbug from "../../components/FooterBughy";
 
 function About() {
   const [index, setIndex] = useState(0);
@@ -495,6 +496,7 @@ function About() {
           </div>
         </div>
         <SimpleContact />
+        <Footerbug/>
       </section>
     </>
   );

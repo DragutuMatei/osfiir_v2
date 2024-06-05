@@ -35,6 +35,7 @@
       margin-top: -25px;
     }
   }
+
   a {
     display: flex;
     justify-content: center;
@@ -45,13 +46,30 @@
     border-radius: 5px;
   }
 }
+
 @media screen and (max-width: 700px) {
-  .contact .text {
+  .simplecontact .text {
     .ful {
       margin-top: -11px;
     }
     .d {
       margin-top: -14px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .simplecontact .text {
+    font-size: 90%; // Reduce font size by 10%
+    margin-right: 5px; // Adjust margin to move text more to the right
+
+    .op, .ful {
+      font-size: 44px; // Reduce font size by 10%
+    }
+
+    .d {
+      font-size: 44px; // Reduce font size by 10%
+      margin-top: -22.5px; // Adjust margin to maintain spacing
     }
   }
 }

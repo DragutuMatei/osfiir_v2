@@ -1,4 +1,3 @@
-
 @import "../../assets/scss/base";
 @import "./misiune.scss";
 @import "./cards.scss";
@@ -14,7 +13,7 @@
   display: grid;
 
   img {
-    width: 65lvw;
+    width: 65vw;
     object-fit: contain;
     grid-column: span 2 / span 2 !important;
     z-index: 2;
@@ -150,6 +149,7 @@
   }
 }
 
+/* Disable hover effect on tablet and phone screens */
 @media screen and (max-width: 768px) {
   .projects {
     flex-wrap: wrap;
@@ -171,12 +171,13 @@
       padding: 15px;
       box-shadow: 20px 20px 20px 0px rgba($black, 0.2);
       border-bottom: none;
-      transition: 0.2s ease-in-out;
+      transition: none;
       background-position: center;
       background-size: cover;
 
       &:hover {
-        transform: translateY(-15px) !important;
+        width: 50%;
+        transform: none;
       }
 
       svg {
@@ -196,12 +197,26 @@
         font-size: 1rem;
         font-weight: 400;
         font-family: $karla;
+        opacity: 1;
       }
 
       button {
         display: flex;
         opacity: 1;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .projects {
+    flex-direction: column;
+    height: auto;
+
+    .project {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
     }
   }
 }
@@ -332,5 +347,3 @@
     }
   }
 }
-
-//cacamaca matei//

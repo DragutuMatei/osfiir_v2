@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./faq.scss";
 import SimpleContact from "../Home/SimpleContact";
 import Aos from "aos";
+import Footerbug from "../../components/FooterBughy";
 
 function FAQ() {
     useEffect(() => {
@@ -114,6 +115,7 @@ function FAQ() {
         </p>
       </div>
       <SimpleContact />
+      <Footerbug />
     </div>
   );
 }

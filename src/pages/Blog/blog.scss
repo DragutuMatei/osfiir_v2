@@ -38,7 +38,15 @@
       }
     }
   }
+
+  // Add media query for smaller screens
+  @media (max-width: 768px) {
+    .sectiuni {
+      justify-content: flex-start; // Align items to the start
+    }
+  }
 }
+
 .blog {
   display: flex;
   justify-content: space-evenly;

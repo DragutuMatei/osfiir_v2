@@ -2,7 +2,7 @@ import React from "react";
 import "./blog.scss";
 import BlogPost from "./BlogPost";
 import Footerbug from "../../components/FooterBughy";
-
+import ScrollToTopButton from "../../components/Scrolltotop";
 function Blog() {
   const filter = (index) => {
     const sectiuni = document.querySelectorAll(".sectiune");
@@ -87,6 +87,7 @@ function Blog() {
         />
       </div>
       <Footerbug />
+      <ScrollToTopButton/>
     </>
     
   );

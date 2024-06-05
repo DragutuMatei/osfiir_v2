@@ -3,7 +3,7 @@ import "./faq.scss";
 import SimpleContact from "../Home/SimpleContact";
 import Aos from "aos";
 import Footerbug from "../../components/FooterBughy";
-
+import ScrollToTopButton from "../../components/Scrolltotop";
 function FAQ() {
     useEffect(() => {
         Aos.init()
@@ -116,6 +116,7 @@ function FAQ() {
       </div>
       <SimpleContact />
       <Footerbug />
+      <ScrollToTopButton/>
     </div>
   );
 }

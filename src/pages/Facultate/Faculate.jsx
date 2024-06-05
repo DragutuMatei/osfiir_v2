@@ -8,6 +8,7 @@ import SimpleContact from "../Home/SimpleContact";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footerbug from "../../components/FooterBughy";
+import ScrollToTopButton from "../../components/Scrolltotop";
 
 function Faculate() {
   const [top, setScrollTop] = useState(0);
@@ -210,7 +211,7 @@ function Faculate() {
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
-
+      <ScrollToTopButton />
       <SimpleContact />
       <Footerbug />
     </>

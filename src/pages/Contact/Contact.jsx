@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./contact.scss";
 import Button from "../../utils/Button";
 import Footerbug from "../../components/FooterBughy";
-
+import ScrollToTopButton from "../../components/Scrolltotop";
 function Contact() {
   const [name, setName] = useState("");
   const [numar, setNumar] = useState("");
@@ -64,6 +64,7 @@ function Contact() {
             <Button click={send} text={"Send"} />
           </div>
         </div>
+        <ScrollToTopButton/>
       </div>
     </>
   );

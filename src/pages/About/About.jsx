@@ -12,7 +12,7 @@ import { Mousewheel, EffectFade, Pagination } from "swiper/modules";
 import SimpleContact from "../Home/SimpleContact";
 import { Link } from "react-router-dom";
 import Footerbug from "../../components/FooterBughy";
-
+import ScrollToTopButton from "../../components/Scrolltotop";
 function About() {
   const [index, setIndex] = useState(0);
   const swiperRef = useRef(null);
@@ -497,6 +497,7 @@ function About() {
         </div>
         <SimpleContact />
         <Footerbug/>
+        <ScrollToTopButton/>
       </section>
     </>
   );

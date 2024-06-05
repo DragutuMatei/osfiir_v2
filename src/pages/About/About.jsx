@@ -605,246 +605,255 @@ function About() {
             </div>
           </div>
         </div>
-        {windowWidth >= 425 ? (
-          <div className="altcancer">
-            <Swiper
-              ref={swiperRef}
-              direction={"vertical"}
-              slidesPerView={1}
-              onSlideChange={(swiperCore) => {
-                const { activeIndex, snapIndex, previousIndex, realIndex } = swiperCore;
-                setIndex(activeIndex);
-                console.log({
-                  activeIndex,
-                  snapIndex,
-                  previousIndex,
-                  realIndex,
-                });
-              }}
-              effect={"fade"}
-              speed={1500}
-              mousewheel={{
-                forceToAxis: true,
-                sensitivity: 1,
-                releaseOnEdges: true,
-              }}
-              pagination={{
-                clickable: true,
-                renderBullet: (index, className) => {
-                  return '<span class="' + className + '"></span>';
-                },
-              }}
-              modules={[Pagination, Mousewheel, EffectFade]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <div className="sl">
-                  <div className="departamente">
-                    <h1>Departamente</h1>
-                    <div className="alld">
-                      <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
-                      <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
+        <div className="altcancer">
+          <Swiper
+            ref={swiperRef}
+            direction={"vertical"}
+            slidesPerView={1}
+            onSlideChange={(swiperCore) => {
+              const { activeIndex, snapIndex, previousIndex, realIndex } =
+                swiperCore;
+              setIndex(activeIndex);
+              console.log({
+                activeIndex,
+                snapIndex,
+                previousIndex,
+                realIndex,
+              });
+            }}
+            effect={"fade"}
+            speed={1500}
+            mousewheel={{
+              forceToAxis: true,
+              sensitivity: 1,
+              releaseOnEdges: true,
+            }}
+            pagination={{
+              clickable: true,
+              renderBullet: (index, className) => {
+                return '<span class="' + className + '"></span>';
+              },
+            }}
+            modules={[Pagination, Mousewheel, EffectFade]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="sl">
+                <div className="departamente">
+                  <h1>Departamente</h1>
+                  <div className="alld">
+                    <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
+                    <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
 
-                      <h2 onClick={() => goToSlide(2)}>Vocational</h2>
+                    <h2 onClick={() => goToSlide(2)}>Vocational</h2>
 
-                      <h2 onClick={() => goToSlide(3)}>Logistic</h2>
+                    <h2 onClick={() => goToSlide(3)}>Logistic</h2>
 
-                      <h2 onClick={() => goToSlide(4)}>Financial Reporting (FR)</h2>
-                    </div>
-                  </div>
-                  <div className="texts">
-                    <h3>Departament 1</h3>
-                    <div className="tess">
-                      <p>
-                        111111111111 Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Obcaecati in provident reiciendis, ab
-                        pariatur libero hic praesentium quibusdam velit?
-                      </p>
-                      <div></div>
-                      <div></div>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati in provident reiciendis, ab pariatur libero hic
-                        praesentium quibusdam velit?
-                      </p>
-                    </div>
+                    <h2 onClick={() => goToSlide(4)}>
+                      Financial Reporting (FR)
+                    </h2>
                   </div>
                 </div>
-                <div className="imgs">
-                  <img src="https://picsum.photos/id/1/200/300" alt="" />
-                  <img src="https://picsum.photos/id/1/200/300" alt="" />
-                  <img src="https://picsum.photos/id/1/200/300" alt="" />
-                  <img src="https://picsum.photos/id/1/200/300" alt="" />
-                  <img src="https://picsum.photos/id/1/200/300" alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="sl">
-                  <div className="departamente">
-                    <h1>Departamente</h1>
-                    <div className="alld">
-                      <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
-                      <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
-
-                      <h2 onClick={() => goToSlide(2)}>Vocational</h2>
-
-                      <h2 onClick={() => goToSlide(3)}>Logistic</h2>
-
-                      <h2 onClick={() => goToSlide(4)}>Financial Reporting (FR)</h2>
-                    </div>
-                  </div>
-                  <div className="texts">
-                    <h3>Departament 2</h3>
-                    <div className="tess">
-                      <p>
-                        222222222222 Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Obcaecati in provident reiciendis, ab
-                        pariatur libero hic praesentium quibusdam velit?
-                      </p>
-                      <div></div>
-                      <div></div>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati in provident reiciendis, ab pariatur libero hic
-                        praesentium quibusdam velit?
-                      </p>
-                    </div>
+                <div className="texts">
+                  <h3>Departament 1</h3>
+                  <div className="tess">
+                    <p>
+                      111111111111 Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Obcaecati in provident reiciendis, ab
+                      pariatur libero hic praesentium quibusdam velit?
+                    </p>
+                    <div></div>
+                    <div></div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Obcaecati in provident reiciendis, ab pariatur libero hic
+                      praesentium quibusdam velit?
+                    </p>
                   </div>
                 </div>
-                <div className="imgs">
-                  <img src="https://picsum.photos/id/2/200/300" alt="" />
-                  <img src="https://picsum.photos/id/2/200/300" alt="" />
-                  <img src="https://picsum.photos/id/2/200/300" alt="" />
-                  <img src="https://picsum.photos/id/2/200/300" alt="" />
-                  <img src="https://picsum.photos/id/2/200/300" alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="sl">
-                  <div className="departamente">
-                    <h1>Departamente</h1>
-                    <div className="alld">
-                      <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
-                      <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
+              </div>
+              <div className="imgs">
+                <img src="https://picsum.photos/id/1/200/300" alt="" />
+                <img src="https://picsum.photos/id/1/200/300" alt="" />
+                <img src="https://picsum.photos/id/1/200/300" alt="" />
+                <img src="https://picsum.photos/id/1/200/300" alt="" />
+                <img src="https://picsum.photos/id/1/200/300" alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="sl">
+                <div className="departamente">
+                  <h1>Departamente</h1>
+                  <div className="alld">
+                    <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
+                    <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
 
-                      <h2 onClick={() => goToSlide(2)}>Vocational</h2>
+                    <h2 onClick={() => goToSlide(2)}>Vocational</h2>
 
-                      <h2 onClick={() => goToSlide(3)}>Logistic</h2>
+                    <h2 onClick={() => goToSlide(3)}>Logistic</h2>
 
-                      <h2 onClick={() => goToSlide(4)}>Financial Reporting (FR)</h2>
-                    </div>
-                  </div>
-                  <div className="texts">
-                    <h3>Departament 3</h3>
-                    <div className="tess">
-                      <p>
-                        333333333333 Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Obcaecati in provident reiciendis, ab
-                        pariatur libero hic praesentium quibusdam velit?
-                      </p>
-                      <div></div>
-                      <div></div>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati in provident reiciendis, ab pariatur libero hic
-                        praesentium quibusdam velit?
-                      </p>
-                    </div>
+                    <h2 onClick={() => goToSlide(4)}>
+                      Financial Reporting (FR)
+                    </h2>
                   </div>
                 </div>
-                <div className="imgs">
-                  <img src="https://picsum.photos/id/3/200/300" alt="" />
-                  <img src="https://picsum.photos/id/3/200/300" alt="" />
-                  <img src="https://picsum.photos/id/3/200/300" alt="" />
-                  <img src="https://picsum.photos/id/3/200/300" alt="" />
-                  <img src="https://picsum.photos/id/3/200/300" alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="sl">
-                  <div className="departamente">
-                    <h1>Departamente</h1>
-                    <div className="alld">
-                      <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
-                      <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
-
-                      <h2 onClick={() => goToSlide(2)}>Vocational</h2>
-
-                      <h2 onClick={() => goToSlide(3)}>Logistic</h2>
-
-                      <h2 onClick={() => goToSlide(4)}>Financial Reporting (FR)</h2>
-                    </div>
-                  </div>
-                  <div className="texts">
-                    <h3>Departament 4</h3>
-                    <div className="tess">
-                      <p>
-                        444444444444 Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Obcaecati in provident reiciendis, ab
-                        pariatur libero hic praesentium quibusdam velit?
-                      </p>
-                      <div></div>
-                      <div></div>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati in provident reiciendis, ab pariatur libero hic
-                        praesentium quibusdam velit?
-                      </p>
-                    </div>
+                <div className="texts">
+                  <h3>Departament 2</h3>
+                  <div className="tess">
+                    <p>
+                      222222222222 Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Obcaecati in provident reiciendis, ab
+                      pariatur libero hic praesentium quibusdam velit?
+                    </p>
+                    <div></div>
+                    <div></div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Obcaecati in provident reiciendis, ab pariatur libero hic
+                      praesentium quibusdam velit?
+                    </p>
                   </div>
                 </div>
-                <div className="imgs">
-                  <img src="https://picsum.photos/id/4/200/300" alt="" />
-                  <img src="https://picsum.photos/id/4/200/300" alt="" />
-                  <img src="https://picsum.photos/id/4/200/300" alt="" />
-                  <img src="https://picsum.photos/id/4/200/300" alt="" />
-                  <img src="https://picsum.photos/id/4/200/300" alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="sl">
-                  <div className="departamente">
-                    <h1>Departamente</h1>
-                    <div className="alld">
-                      <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
-                      <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
+              </div>
+              <div className="imgs">
+                <img src="https://picsum.photos/id/2/200/300" alt="" />
+                <img src="https://picsum.photos/id/2/200/300" alt="" />
+                <img src="https://picsum.photos/id/2/200/300" alt="" />
+                <img src="https://picsum.photos/id/2/200/300" alt="" />
+                <img src="https://picsum.photos/id/2/200/300" alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="sl">
+                <div className="departamente">
+                  <h1>Departamente</h1>
+                  <div className="alld">
+                    <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
+                    <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
 
-                      <h2 onClick={() => goToSlide(2)}>Vocational</h2>
+                    <h2 onClick={() => goToSlide(2)}>Vocational</h2>
 
-                      <h2 onClick={() => goToSlide(3)}>Logistic</h2>
+                    <h2 onClick={() => goToSlide(3)}>Logistic</h2>
 
-                      <h2 onClick={() => goToSlide(4)}>Financial Reporting (FR)</h2>
-                    </div>
-                  </div>
-                  <div className="texts">
-                    <h3>Departament 5</h3>
-                    <div className="tess">
-                      <p>
-                        555555555555 Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Obcaecati in provident reiciendis, ab
-                        pariatur libero hic praesentium quibusdam velit?
-                      </p>
-                      <div></div>
-                      <div></div>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati in provident reiciendis, ab pariatur libero hic
-                        praesentium quibusdam velit?
-                      </p>
-                    </div>
+                    <h2 onClick={() => goToSlide(4)}>
+                      Financial Reporting (FR)
+                    </h2>
                   </div>
                 </div>
-                <div className="imgs">
-                  <img src="https://picsum.photos/id/5/200/300" alt="" />
-                  <img src="https://picsum.photos/id/5/200/300" alt="" />
-                  <img src="https://picsum.photos/id/5/200/300" alt="" />
-                  <img src="https://picsum.photos/id/5/200/300" alt="" />
-                  <img src="https://picsum.photos/id/5/200/300" alt="" />
+                <div className="texts">
+                  <h3>Departament 3</h3>
+                  <div className="tess">
+                    <p>
+                      333333333333 Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Obcaecati in provident reiciendis, ab
+                      pariatur libero hic praesentium quibusdam velit?
+                    </p>
+                    <div></div>
+                    <div></div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Obcaecati in provident reiciendis, ab pariatur libero hic
+                      praesentium quibusdam velit?
+                    </p>
+                  </div>
                 </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        ) : null}
+              </div>
+              <div className="imgs">
+                <img src="https://picsum.photos/id/3/200/300" alt="" />
+                <img src="https://picsum.photos/id/3/200/300" alt="" />
+                <img src="https://picsum.photos/id/3/200/300" alt="" />
+                <img src="https://picsum.photos/id/3/200/300" alt="" />
+                <img src="https://picsum.photos/id/3/200/300" alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="sl">
+                <div className="departamente">
+                  <h1>Departamente</h1>
+                  <div className="alld">
+                    <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
+                    <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
+
+                    <h2 onClick={() => goToSlide(2)}>Vocational</h2>
+
+                    <h2 onClick={() => goToSlide(3)}>Logistic</h2>
+
+                    <h2 onClick={() => goToSlide(4)}>
+                      Financial Reporting (FR)
+                    </h2>
+                  </div>
+                </div>
+                <div className="texts">
+                  <h3>Departament 4</h3>
+                  <div className="tess">
+                    <p>
+                      444444444444 Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Obcaecati in provident reiciendis, ab
+                      pariatur libero hic praesentium quibusdam velit?
+                    </p>
+                    <div></div>
+                    <div></div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Obcaecati in provident reiciendis, ab pariatur libero hic
+                      praesentium quibusdam velit?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="imgs">
+                <img src="https://picsum.photos/id/4/200/300" alt="" />
+                <img src="https://picsum.photos/id/4/200/300" alt="" />
+                <img src="https://picsum.photos/id/4/200/300" alt="" />
+                <img src="https://picsum.photos/id/4/200/300" alt="" />
+                <img src="https://picsum.photos/id/4/200/300" alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="sl">
+                <div className="departamente">
+                  <h1>Departamente</h1>
+                  <div className="alld">
+                    <h2 onClick={() => goToSlide(0)}>Public relations (PR)</h2>
+                    <h2 onClick={() => goToSlide(1)}>human resources (HR)</h2>
+
+                    <h2 onClick={() => goToSlide(2)}>Vocational</h2>
+
+                    <h2 onClick={() => goToSlide(3)}>Logistic</h2>
+
+                    <h2 onClick={() => goToSlide(4)}>
+                      Financial Reporting (FR)
+                    </h2>
+                  </div>
+                </div>
+                <div className="texts">
+                  <h3>Departament 5</h3>
+                  <div className="tess">
+                    <p>
+                      555555555555 Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Obcaecati in provident reiciendis, ab
+                      pariatur libero hic praesentium quibusdam velit?
+                    </p>
+                    <div></div>
+                    <div></div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Obcaecati in provident reiciendis, ab pariatur libero hic
+                      praesentium quibusdam velit?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="imgs">
+                <img src="https://picsum.photos/id/5/200/300" alt="" />
+                <img src="https://picsum.photos/id/5/200/300" alt="" />
+                <img src="https://picsum.photos/id/5/200/300" alt="" />
+                <img src="https://picsum.photos/id/5/200/300" alt="" />
+                <img src="https://picsum.photos/id/5/200/300" alt="" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </section>
       <SimpleContact />
       <ScrollToTopButton />

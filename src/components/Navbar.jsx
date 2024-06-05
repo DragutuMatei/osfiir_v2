@@ -10,6 +10,7 @@ const fire = new Fire();
 function Navbar() {
   const { width, height } = useWindowSize();
   const [user, loading, error] = useAuthState(fire.getUser());
+
   const ref = useRef(null);
   const [top, setScrollTop] = useState(0);
   useEffect(() => {
@@ -34,11 +35,17 @@ function Navbar() {
     ref.current.className = clasa;
     console.log(ref.current.className);
   };
+
   const navigate = useNavigate();
+
   const logout = async () => {
     await fire.logout();
     navigate("/targ/admin");
   };
+
+  // const close = () => {
+
+  // }
 
   return (
     <nav style={{ background: top > 20 && "#2f2f2f" }}>
@@ -51,11 +58,21 @@ function Navbar() {
         </div>
       </div>
       <div className="links" ref={ref}>
-        <Link to={"/about"}>Despre noi</Link>
-        <Link to={"/about_faculate"}>Despre facultate</Link>
-        <Link to={"/blog"}>Blog</Link>
-        <Link to={"/faq"}>FAQ</Link>
-        <Link to={"/contact"}>Contact</Link>
+        <Link to={"/about"}>
+          Despre noi
+        </Link>
+        <Link to={"/about_faculate"}>
+          Despre facultate
+        </Link>
+        <Link to={"/blog"}>
+          Blog
+        </Link>
+        <Link to={"/faq"}>
+          FAQ
+        </Link>
+        <Link to={"/contact"}>
+          Contact
+        </Link>
         {/* <Link to={"/"}>About</Link>
         <Link to={"/"}>About</Link>
         {user && (

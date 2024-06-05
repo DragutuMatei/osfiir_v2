@@ -41,11 +41,8 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
-    // &:first-child {
-    //   justify-content: center;
-    // }
     padding: 10px 15px;
+
     .logo {
       width: 100%;
       display: flex;
@@ -75,10 +72,10 @@ nav {
       &.active {
         overflow: visible;
         height: auto;
-        left: -40px;
+        left: -15px;
         width: 100vw;
         padding: 10px 40px;
-        background: $black;
+        background: rgb(47, 47, 47);
       }
     }
   }

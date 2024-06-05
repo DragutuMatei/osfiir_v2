@@ -212,11 +212,15 @@
   .projects {
     flex-direction: column;
     height: auto;
-
+  
     .project {
       width: 100%;
-      height: auto;
-      margin-bottom: 20px;
+      height: 300px;
+      margin-bottom: 5px;
+      &:hover {
+        width: 100%;
+        transform: none;
+      }
     }
   }
 }

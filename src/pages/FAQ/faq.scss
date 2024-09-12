@@ -1,0 +1,43 @@
+@import "../../assets/scss/base";
+.faq {
+  background: url("https://dev.quantum-group.ro/ro/values_mask.d8246a11c7776373.png"),
+    #f3f4f6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.intrb {
+  width: 100%;
+  padding: 10px 2vw;
+  color: $black;
+  margin-bottom: 30px;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: $karla;
+  }
+  p {
+    font-weight: 500;
+    font-family: $karla;
+    font-size: 16px;
+  }
+}
+.aia {
+  margin-top: 30px;
+}
+.faq {
+  //neschimbat
+  @media only screen and (max-width: 768px) {
+    .intrb {
+      padding: 10px; 
+      margin-bottom: 20px; 
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .faq {
+      background-position: center; 
+    }
+  }
+}

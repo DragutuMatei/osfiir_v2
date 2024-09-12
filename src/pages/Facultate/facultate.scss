@@ -1,0 +1,271 @@
+@import "../../assets/scss/base";
+@import "../Home/aboutSection.scss";
+
+.desc {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px;
+
+  h1 {
+    font-size: 30px;
+    color: $black;
+    font-family: $karla;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $un_posibil_negru;
+    columns: 2;
+    font-family: $karla;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.anunturi {
+  width: 100vw;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  .img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 350px;
+    background: url(https://dev.quantum-group.ro/ro/3.665c482b7fcce899.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+    border-bottom: 1px solid $royal;
+  }
+
+  *:not(.img) {
+    z-index: 1;
+    position: relative;
+  }
+  > h2 {
+    font-weight: 700;
+    color: $white;
+    font-family: $montserat;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+  }
+  .al {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    .anunt {
+      width: 250px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      background: $white;
+      color: $un_posibil_negru;
+      padding: 20px;
+      border-bottom: 1px solid $royal;
+      box-shadow: 0 20px 20px 10px rgba($black, 0.2);
+      $height: 113.5px;
+
+      &::after {
+        content: "";
+        height: calc(100% - $height);
+        display: block;
+        border-left: 1px solid $royal;
+        position: absolute;
+        right: 0;
+        top: $height;
+      }
+
+      &::before {
+        content: "";
+        height: calc(100% - $height);
+        display: block;
+        border-left: 1px solid $royal;
+        position: absolute;
+        left: 0;
+        top: $height;
+      }
+
+      h2 {
+        font-size: 20px;
+        color: $un_posibil_negru;
+        margin-bottom: 20px;
+        font-family: $karla;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1rem;
+        font-family: $karla;
+        line-height: 1.4;
+      }
+
+      a {
+        color: $royal;
+        font-weight: 500;
+        font-family: $karla;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+.scc {
+  height: 600px;
+  * {
+    overflow-y: hidden !important;
+  }
+}
+.camine {
+  width: 100vw;
+  display: flex;
+  background-color: #f3f4f6;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  padding: 50px;
+  color: $white;
+
+  .bac {
+    width: 100%;
+    height: 300px;
+    background: rgba($royal, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  *:not(.bac) {
+    z-index: 1;
+  }
+  h1 {
+    font-size: 30px;
+    font-family: $karla;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: $karla;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .camins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+
+    .camin {
+      width: 400px;
+      height: 420px;
+      background: #2886ff;
+      margin-top: 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 30px;
+      position: relative;
+
+      h1 {
+        top: 10px;
+        left: 10px;
+        position: absolute;
+        font-size: 200px;
+        color: rgba($white, 0.2);
+        font-family: $montserat;
+      }
+      h2 {
+        margin-top: 20px;
+
+        &:first-of-type {
+          width: 100%;
+          text-align: start;
+          margin-bottom: 10px;
+        }
+      }
+      .con {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.about {
+  width: 100vw;
+  overflow: hidden;
+  .map {
+    width: 100vw; // Ensuring full viewport width
+    height: 470px;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .desc {
+    padding: 30px;
+  }
+
+  .anunturi .al {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+
+    .anunt {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .desc {
+    padding: 20px;
+    p {
+      columns: 1;
+      font-size: 15px;
+    }
+  }
+
+  .anunturi > h2 {
+    margin-top: 100px;
+  }
+
+  .camine {
+    padding: 20px;
+    h1 {
+      font-size: 20px;
+    }
+    .bac{
+      height: 30%;
+    }
+  }
+}

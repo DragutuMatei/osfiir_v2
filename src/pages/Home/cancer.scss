@@ -1,0 +1,263 @@
+.cancer {
+  background: url("https://dev.quantum-group.ro/ro/steel.6dcec7f8df2b7ce9.png");
+  background-size: cover;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba($oxford_blue1, 0.25);
+  }
+
+  & * {
+    z-index: 1;
+  }
+
+  h1 {
+    position: absolute;
+    top: 30px;
+    width: 1300px;
+    font-size: 120px;
+    font-family: $karla;
+    color: rgba($white, 0.2);
+    font-weight: 800;
+    right: -350px;
+  }
+
+  .drop {
+    margin: 10px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    color: $white;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 2px solid $white;
+    transition: 0.2s ease-in-out;
+
+    .down {
+      height: 0;
+      transition: 0.2s ease-in-out;
+      overflow: hidden;
+      &.see {
+        padding: 20px 0;
+        height: 130px !important;
+      }
+    }
+
+    .up {
+      display: flex;
+      position: relative;
+      width: 100%;
+      cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2 {
+          font-weight: 600;
+          font-size: 25px;
+          font-family: $karla;
+          margin-left: 20px;
+        }
+        .first {
+          margin-left: 30px;
+          font-size: 50px;
+        }
+      }
+      .second {
+        font-size: 30px;
+        display: flex;
+        position: relative;
+        justify-self: flex-end;
+      }
+    }
+  }
+
+  .dreapta {
+    color: $white;
+    width: calc(100vw - 840px);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    h2 {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1rem;
+      // width: 100vw;
+      max-width: 600px;
+      font-family: $karla;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
+  .stanga {
+    width: 800px;
+    height: 100%;
+    position: relative;
+    padding: 2lvw;
+    margin-left: 40px;
+
+    .click {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 2px solid $green;
+      color: $white;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.3s ease-in-out;
+
+      //   &:hover:not(.click::after, .click::before) {
+      &:hover {
+        scale: 1.2;
+        background-color: $green;
+        &::after,
+        &::before {
+          scale: 1;
+        }
+      }
+
+      svg {
+        margin-bottom: 20px;
+        font-size: 50px;
+      }
+
+      h2 {
+        font-weight: 300;
+        font-size: 20px;
+      }
+    }
+    #but1 {
+      top: 10%;
+      left: 10%;
+    }
+    #but2 {
+      top: 15%;
+      left: 40%;
+    }
+    #but3 {
+      top: 65%;
+      left: 25%;
+    }
+    #but4 {
+      top: 35%;
+      left: 70%;
+    }
+    .line {
+      height: 1px;
+      position: absolute;
+      background-color: $green;
+
+      &.line1 {
+        width: calc(30% - 158px);
+        top: calc(10% + 90px);
+        left: calc(10% + 160px);
+        transform: rotateZ(10deg);
+      }
+
+      &.line2 {
+        //     width: calc(50% - 232px);
+        //     top: calc(15% + 103px + (50% - 160px) * sin(110deg));
+        //     left: calc(40% + 30px + (40% - 160px) * cos(110deg));
+        //     transform: rotateZ(110deg);
+        width: 1px;
+        height: calc(15% + 75px);
+        top: calc(15% + 157px);
+        left: calc(40% + 60px);
+        // top: calc(15% + 160px + (15% + 160px) * sin(110deg));
+        // left: calc(40% + 80px + (15% + 160px) * cos(110deg));
+        transform: rotateZ(25deg);
+        transform-origin: top center;
+        // transform-style: preserve-3D;
+      }
+      &.line3 {
+        width: calc(30% - 130px);
+        top: calc(15% + 90px + (30% - 90px) * sin(25deg));
+        left: calc(40% + 150px);
+        transform: rotateZ(25deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .cancer {
+    padding: 10px;
+    justify-content: flex-start;
+    .dreapta {
+      width: calc(100vw - 600px);
+      padding: 0;
+    }
+
+    .stanga {
+      //   scale: 0.7;
+      width: 700px;
+      margin: 0;
+
+      .click {
+        width: 120px;
+        height: 120px;
+      }
+      .line {
+        &.line1 {
+          width: calc(30% - 120px);
+          top: calc(10% + 70px);
+          left: calc(10% + 120px);
+          transform: rotateZ(15deg);
+        }
+
+        &.line2 {
+          width: 1px;
+          height: calc(15% + 97px);
+          top: calc(15% + 120px);
+          left: calc(40% + 50px);
+          transform: rotateZ(20deg);
+          transform-origin: top center;
+        }
+        &.line3 {
+          width: calc(30% - 80px);
+          top: calc(15% + 80px);
+          left: calc(40% + 115px);
+          transform: rotateZ(35deg);
+          transform-origin: center left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .cancer {
+    height: auto;
+    padding: 50px 10px;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

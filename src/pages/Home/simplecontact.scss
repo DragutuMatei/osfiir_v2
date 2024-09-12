@@ -1,0 +1,76 @@
+.simplecontact {
+  width: 100vw;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    line-height: 1;
+    margin: 40px;
+
+    h1 {
+      font-weight: 900;
+    }
+
+    .op {
+      font-size: 60px;
+      color: rgba($green, 0.4);
+    }
+    .ful {
+      margin-top: -25px;
+      font-size: 60px;
+      margin-left: 25px;
+      color: $green;
+    }
+    .d {
+      margin-top: -25px;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    background: $royal;
+    color: $white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .simplecontact .text {
+    .ful {
+      margin-top: -11px;
+    }
+    .d {
+      margin-top: -14px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .simplecontact .text {
+    font-size: 90%; // Reduce font size by 10%
+    margin-right: 5px; // Adjust margin to move text more to the right
+
+    .op, .ful {
+      font-size: 44px; // Reduce font size by 10%
+    }
+
+    .d {
+      font-size: 44px; // Reduce font size by 10%
+      margin-top: -22.5px; // Adjust margin to maintain spacing
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.cifre {
+  width: 100vw;
+  min-height: 600px;
+  background: url("https://dev.quantum-group.ro/ro/assets/images/home/numbers.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 3lvw;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba($oxford_blue1, 0.25);
+  }
+
+  & * {
+    z-index: 1;
+  }
+
+  .side {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+    h2 {
+      color: $white;
+      font-size: 2.3rem;
+      font-weight: 700;
+      font-family: $karla;
+    }
+  }
+  .numbers {
+    width: calc(100vw - 600px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    .row {
+      width: 100%;
+      min-height: 300px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      &:last-of-type {
+        justify-content: flex-end;
+      }
+
+      .cifra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        flex-direction: column;
+
+        h3 {
+          font-size: 5rem;
+          color: $green;
+          font-weight: 300;
+          font-family: $montserat;
+        }
+
+        h4 {
+          text-align: center;
+          color: $white;
+          font-size: 25px;
+          font-weight: 500;
+          font-family: $montserat;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cifre {
+    flex-direction: column;
+    align-items: center;
+    .side {
+      width: 100%;
+      max-width: 1000px;
+      justify-content: flex-start;
+    }
+    .numbers {
+      .row {
+        justify-content: center !important;
+      }
+    }
+  }
+}

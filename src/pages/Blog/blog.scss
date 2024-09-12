@@ -1,0 +1,82 @@
+@import "../../assets/scss/base";
+
+.sections {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  height: 260px;
+
+  .sectiuni {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: center;
+
+    .sectiune {
+      padding: 10px 20px;
+      border: 2px solid $un_posibil_negru;
+      font-family: $karla;
+      font-size: 16px;
+      user-select: none;
+      cursor: pointer;
+      color: $un_posibil_negru;
+      font-weight: 600;
+
+      &:hover {
+        border: 2px solid $royal;
+        color: $royal;
+      }
+      &.active {
+        border: 2px solid $royal;
+        color: $royal;
+      }
+    }
+  }
+
+  // Add media query for smaller screens
+  @media (max-width: 768px) {
+    .sectiuni {
+      justify-content: flex-start; // Align items to the start
+    }
+  }
+}
+
+.blog {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #f3f4f6;
+
+  .post {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    font-family: $karla;
+
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: rgba($royal, 1);
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 20px;
+      color: $black;
+    }
+    img {
+      width: 100%;
+      position: relative;
+      margin-bottom: 10px;
+      display: flex;
+    }
+  }
+}

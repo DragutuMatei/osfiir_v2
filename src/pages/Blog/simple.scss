@@ -1,0 +1,142 @@
+@import "../../assets/scss/base";
+
+.texts {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 40px;
+  background: #f3f4f6;
+
+  h1 {
+    width: 45%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: $black;
+    font-family: $karla;
+    font-weight: 700;
+    text-align: center;
+  }
+  .ps {
+    width: 55%;
+    padding: 20px;
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+.img {
+  width: 100vw;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+.over {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .grid {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+    .cont {
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .limg,
+    .rimg {
+      width: 50%;
+      height: 700px;
+    }
+    .rimg {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: relative;
+      gap: 15px;
+      .timg,
+      .limg {
+        width: 100%;
+      }
+      .timg {
+        height: 493px;
+      }
+      .limg {
+        height: 203px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        .rlimg,
+        .rect {
+          width: 50%;
+          height: 100%;
+        }
+        .rect {
+          background: $royal;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          h1 {
+            font-weight: 800;
+            color: $white;
+            font-family: $montserat;
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+.show {
+  width: 100vw;
+  height: 100vh;
+  background: rgba($black, 0.6);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  user-select: none;
+  svg {
+    position: absolute;
+    color: red;
+    font-size: 50px;
+    top: 20px;
+    z-index: 999999;
+    cursor: pointer;
+    right: 20px;
+  }
+  .swiper-slide {
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 80vh;
+      width: auto;
+    }
+  }
+}

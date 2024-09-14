@@ -10,9 +10,18 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { AXIOS } from "../../utils/AxiosConfig";
 
 function SimplePostPage() {
   const { slug } = useParams();
+  const [post, setPost] = useState({});
+  const getBlogPost = async () => {
+    await AXIOS.get(`/getBlogPostById/${slug}`).then((res) => {
+      console.log(res.data.data);
+      if (res.data.ok) setPost(res.data.data);
+    });
+  };
+
   const [images, setImages] = useState([
     "https://dev-api.quantum-group.ro/storage/projects/165935193762e7b381a4bd1.JPG",
     "https://dev-api.quantum-group.ro/storage/projects/165935193762e7b381a4bd1.JPG",
@@ -45,7 +54,9 @@ function SimplePostPage() {
     },
     [hide]
   );
-
+  useEffect(() => {
+    getBlogPost();
+  }, []);
   useEffect(() => {
     Aos.init();
     document.addEventListener(KEY_EVENT_TYPE, handleEscKey, false);
@@ -56,10 +67,39 @@ function SimplePostPage() {
   }, [handleEscKey]);
   return (
     <>
-      <div className="banner">
-        <h1>Titlul postarii de blog</h1>
+      <div
+        className="banner"
+        style={{
+          backgroundImage: `url("${post.cover}")`,
+        }}
+      >
+        <h1>{post.title}</h1>
       </div>
-      <div className="texts">
+      {post.sections &&
+        post.sections.map((sectiune, index) => {
+          return (
+            <>
+              <div className="texts">
+                <h1>{sectiune.subtitle}</h1>
+                <div className="ps">
+                  {sectiune.texts &&
+                    sectiune.texts.map((txt) => {
+                      return <p>{txt}</p>;
+                    })}
+                </div>
+              </div>
+              {sectiune.img != -1 && (
+                <div
+                  className="img"
+                  style={{
+                    backgroundImage: `url(${post.imgs[sectiune.img]})`,
+                  }}
+                />
+              )}
+            </>
+          );
+        })}
+      {/* <div className="texts">
         <h1>
           Un titlu drept placeholder ca sa vad cum se incadreaza in pagina
         </h1>
@@ -118,26 +158,28 @@ function SimplePostPage() {
             soluta sunt molestiae!
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="over">
         <div className="grid">
           <div className="limg cont">
             <img
-              src="https://dev-api.quantum-group.ro/storage/projects/165935193762e7b381a4bd1.JPG"
+              src={post && post.galerie && post.galerie[0] && post.galerie[0]}
               alt=""
             />
           </div>
           <div className="rimg">
             <div className="timg cont">
               <img
-                src="https://dev-api.quantum-group.ro/storage/projects/165935193762e7b381a4bd1.JPG"
+                src={post && post.galerie && post.galerie[1] && post.galerie[1]}
                 alt=""
               />
             </div>
             <div className="limg">
               <div className="rlimg cont">
                 <img
-                  src="https://dev-api.quantum-group.ro/storage/projects/165935193762e7b381a4bd1.JPG"
+                  src={
+                    post && post.galerie && post.galerie[2] && post.galerie[2]
+                  }
                   alt=""
                 />
               </div>
@@ -148,7 +190,7 @@ function SimplePostPage() {
           </div>
         </div>
       </div>
-      <div className="texts">
+      {/* <div className="texts">
         <div className="ps">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
@@ -164,7 +206,7 @@ function SimplePostPage() {
           </p>
         </div>
         <h1>Subtitlul2</h1>
-      </div>
+      </div> */}
       <SimpleContact />
       <div className="show" style={{ display: display }}>
         <IoMdCloseCircle onClick={hide} />
@@ -174,8 +216,9 @@ function SimplePostPage() {
           navigation={true}
           className="mySwiper"
         >
-          {images &&
-            images.map((img) => {
+          {post &&
+            post.galerie &&
+            post.galerie.map((img) => {
               return (
                 <SwiperSlide>
                   <img src={img} alt="" />

@@ -6,7 +6,7 @@ const AXIOS = axios.create({
   baseURL: process.env.REACT_APP_BACKEND_LINK,
 
   headers: {
-    "content-type": "application/json",
+    "Content-Type": "application/json",
   },
   withCredentials: true,
 });

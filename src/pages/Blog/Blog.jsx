@@ -6,23 +6,30 @@ import ScrollToTopButton from "../../components/Scrolltotop";
 import { AXIOS } from "../../utils/AxiosConfig";
 function Blog() {
   const [data, setData] = useState([]);
+  const [afisData, setAfisData] = useState([]);
   const getBlogPosts = async () => {
     AXIOS.get("/getBlogPosts").then((res) => {
       console.log(res);
-      if (res.data.ok) setData(res.data.data);
+      if (res.data.ok) {
+        setAfisData(res.data.data);
+        setData(res.data.data);
+      }
     });
   };
   useEffect(() => {
     getBlogPosts();
   }, []);
 
-  const filter = (index) => {
+  const filter = (index, cat) => {
     const sectiuni = document.querySelectorAll(".sectiune");
     sectiuni.forEach((sec, i) => {
       if (sec.classList.contains("active")) {
         sec.classList.remove("active");
       }
       if (i == index) sec.classList.add("active");
+      if (cat != "all")
+        setAfisData((old) => [...data.filter((d) => d.category == cat)]);
+      else setAfisData((old) => [...data]);
     });
   };
 
@@ -34,19 +41,25 @@ function Blog() {
       <div className="sections">
         <h2>Discover our projects</h2>
         <div className="sectiuni">
-          <div className="sectiune active" onClick={() => filter(0)}>
+          <div className="sectiune active" onClick={() => filter(0, "all")}>
             ALL
           </div>
           {data &&
-            data.map((dat, index) => {
-              let i = index + 1;
-              // if (i >= data.length) i = index;
-              return (
-                <div className="sectiune " onClick={() => filter(i)}>
-                  {dat.category}
-                </div>
-              );
-            })}
+            [...new Set(data.map((item) => item.category))].map(
+              (dat, index) => {
+                console.log(dat)
+                let i = index + 1;
+                // if (i >= data.length) i = index;
+                return (
+                  <div
+                    className="sectiune "
+                    onClick={() => filter(i, dat)}
+                  >
+                    {dat}
+                  </div>
+                );
+              }
+            )}
           {/* <div className="sectiune active" onClick={() => filter(0)}>
             ALL
           </div>
@@ -68,8 +81,8 @@ function Blog() {
         </div>
       </div>
       <div className="blog">
-        {data &&
-          data.map((post) => {
+        {afisData &&
+          afisData.map((post) => {
             return (
               <BlogPost
                 src={post.cover}

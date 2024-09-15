@@ -159,37 +159,69 @@ function SimplePostPage() {
           </p>
         </div>
       </div> */}
-      <div className="over">
-        <div className="grid">
-          <div className="limg cont">
-            <img
-              src={post && post.galerie && post.galerie[0] && post.galerie[0]}
-              alt=""
-            />
-          </div>
-          <div className="rimg">
-            <div className="timg cont">
-              <img
-                src={post && post.galerie && post.galerie[1] && post.galerie[1]}
-                alt=""
-              />
-            </div>
-            <div className="limg">
-              <div className="rlimg cont">
+
+      {post && post.galerie && post && post.galerie.length > 0 && (
+        <>
+          <div className="over">
+            <div className="grid">
+              <div className="limg cont">
                 <img
                   src={
-                    post && post.galerie && post.galerie[2] && post.galerie[2]
+                    post && post.galerie && post.galerie[0] && post.galerie[0]
                   }
                   alt=""
                 />
               </div>
-              <div className="rect" onClick={show}>
-                <h1>+{images.length - 3}</h1>
+              <div className="rimg">
+                <div className="timg cont">
+                  <img
+                    src={
+                      post && post.galerie && post.galerie[1] && post.galerie[1]
+                    }
+                    alt=""
+                  />
+                </div>
+                <div className="limg">
+                  <div className="rlimg cont">
+                    <img
+                      src={
+                        post &&
+                        post.galerie &&
+                        post.galerie[2] &&
+                        post.galerie[2]
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div className="rect" onClick={show}>
+                    <h1>+{images.length - 3}</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          <div className="show" style={{ display: display }}>
+            <IoMdCloseCircle onClick={hide} />
+            <Swiper
+              slidesPerView={1}
+              modules={[Navigation]}
+              navigation={true}
+              className="mySwiper"
+            >
+              {post &&
+                post.galerie &&
+                post.galerie.map((img) => {
+                  return (
+                    <SwiperSlide>
+                      <img src={img} alt="" />
+                    </SwiperSlide>
+                  );
+                })}
+            </Swiper>
+          </div>
+        </>
+      )}
+
       {/* <div className="texts">
         <div className="ps">
           <p>
@@ -208,25 +240,6 @@ function SimplePostPage() {
         <h1>Subtitlul2</h1>
       </div> */}
       <SimpleContact />
-      <div className="show" style={{ display: display }}>
-        <IoMdCloseCircle onClick={hide} />
-        <Swiper
-          slidesPerView={1}
-          modules={[Navigation]}
-          navigation={true}
-          className="mySwiper"
-        >
-          {post &&
-            post.galerie &&
-            post.galerie.map((img) => {
-              return (
-                <SwiperSlide>
-                  <img src={img} alt="" />
-                </SwiperSlide>
-              );
-            })}
-        </Swiper>
-      </div>
     </>
   );
 }

@@ -1,5 +1,145 @@
 @import "../../assets/scss/base";
 
+// .texts {
+//   width: 100vw;
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: flex-start;
+//   padding: 40px;
+//   background: #f3f4f6;
+
+//   h1 {
+//     width: 45%;
+//     padding: 0 20px;
+//     margin-bottom: 20px;
+//     font-size: 25px;
+//     color: $black;
+//     font-family: $karla;
+//     font-weight: 700;
+//     text-align: center;
+//   }
+//   .ps {
+//     width: 55%;
+//     padding: 20px;
+//     p {
+//       font-size: 1rem;
+//       line-height: 1.5rem;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
+// .img {
+//   width: 100vw;
+//   height: 600px;
+//   background-size: cover;
+//   background-position: center;
+// }
+// .over {
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+//   .grid {
+//     width: 90%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: flex-start;
+//     gap: 15px;
+//     position: relative;
+//     overflow: hidden;
+//     .cont {
+//       overflow: hidden;
+//       position: relative;
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         transition: 0.3s ease-in-out;
+//         &:hover {
+//           transform: scale(1.2);
+//         }
+//       }
+//     }
+
+//     .limg,
+//     .rimg {
+//       width: 50%;
+//       height: 700px;
+//     }
+//     .rimg {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: flex-start;
+//       align-items: flex-start;
+//       position: relative;
+//       gap: 15px;
+//       .timg,
+//       .limg {
+//         width: 100%;
+//       }
+//       .timg {
+//         height: 493px;
+//       }
+//       .limg {
+//         height: 203px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         gap: 15px;
+//         position: relative;
+//         .rlimg,
+//         .rect {
+//           width: 50%;
+//           height: 100%;
+//         }
+//         .rect {
+//           background: $royal;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           cursor: pointer;
+//           h1 {
+//             font-weight: 800;
+//             color: $white;
+//             font-family: $montserat;
+//             font-size: 35px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// .show {
+//   width: 100vw;
+//   height: 100vh;
+//   background: rgba($black, 0.6);
+//   z-index: 9999;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   user-select: none;
+//   svg {
+//     position: absolute;
+//     color: red;
+//     font-size: 50px;
+//     top: 20px;
+//     z-index: 999999;
+//     cursor: pointer;
+//     right: 20px;
+//   }
+//   .swiper-slide {
+//     z-index: 9999;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     img {
+//       height: 80vh;
+//       width: auto;
+//     }
+//   }
+// }
 .texts {
   width: 100vw;
   display: flex;
@@ -18,28 +158,158 @@
     font-weight: 700;
     text-align: center;
   }
+
   .ps {
     width: 55%;
     padding: 20px;
+
     p {
       font-size: 1rem;
       line-height: 1.5rem;
       margin-bottom: 20px;
     }
   }
+
+  // Make text layout responsive
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    h1, .ps {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
+
 .img {
   width: 100vw;
   height: 600px;
   background-size: cover;
   background-position: center;
+
+  // Adjust image size for smaller screens
+  @media (max-width: 768px) {
+    height: 300px;
+  }
 }
+
+// .over {
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+
+//   .grid {
+//     width: 90%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: flex-start;
+//     gap: 15px;
+//     position: relative;
+//     overflow: hidden;
+
+//     .cont {
+//       overflow: hidden;
+//       position: relative;
+
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         transition: 0.3s ease-in-out;
+
+//         &:hover {
+//           transform: scale(1.2);
+//         }
+//       }
+//     }
+
+//     .limg,
+//     .rimg {
+//       width: 50%;
+//       height: 700px;
+
+//       // Adjust image sizes for smaller screens
+//       @media (max-width: 1024px) {
+//         width: 100%;
+//         height: auto;
+//       }
+//     }
+
+//     .rimg {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: flex-start;
+//       align-items: flex-start;
+//       position: relative;
+//       gap: 15px;
+
+//       .timg,
+//       .limg {
+//         width: 100%;
+//       }
+
+//       .timg {
+//         height: 493px;
+
+//         @media (max-width: 768px) {
+//           height: auto;
+//         }
+//       }
+
+//       .limg {
+//         height: 203px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         gap: 15px;
+//         position: relative;
+
+//         .rlimg,
+//         .rect {
+//           width: 50%;
+//           height: 100%;
+
+//           @media (max-width: 768px) {
+//             width: 100%;
+//           }
+//         }
+
+//         .rect {
+//           background: $royal;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           cursor: pointer;
+
+//           h1 {
+//             font-weight: 800;
+//             color: $white;
+//             font-family: $montserat;
+//             font-size: 35px;
+
+//             @media (max-width: 768px) {
+//               font-size: 20px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
 .over {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 20px;
+
   .grid {
     width: 90%;
     display: flex;
@@ -49,25 +319,35 @@
     gap: 15px;
     position: relative;
     overflow: hidden;
+
     .cont {
       overflow: hidden;
       position: relative;
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+
         &:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
       }
     }
 
+    // Left and right columns
     .limg,
     .rimg {
       width: 50%;
       height: 700px;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        height: auto;
+      }
     }
+
     .rimg {
       display: flex;
       flex-direction: column;
@@ -75,13 +355,20 @@
       align-items: flex-start;
       position: relative;
       gap: 15px;
+
       .timg,
       .limg {
         width: 100%;
       }
+
       .timg {
         height: 493px;
+
+        @media (max-width: 768px) {
+          height: auto;
+        }
       }
+
       .limg {
         height: 203px;
         display: flex;
@@ -89,37 +376,129 @@
         align-items: center;
         gap: 15px;
         position: relative;
+
         .rlimg,
         .rect {
           width: 50%;
           height: 100%;
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
         }
+
         .rect {
           background: $royal;
           display: flex;
           justify-content: center;
           align-items: center;
           cursor: pointer;
+
           h1 {
             font-weight: 800;
             color: $white;
             font-family: $montserat;
             font-size: 35px;
+
+            @media (max-width: 768px) {
+              font-size: 20px;
+            }
           }
         }
       }
     }
   }
+
+  // Mobile view: stack the grid vertically
+  @media (max-width: 768px) {
+    .grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .limg,
+      .rimg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .limg {
+      height: auto;
+    }
+
+    .rect h1 {
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      gap: 8px;
+    }
+
+    .rect h1 {
+      font-size: 18px;
+    }
+  }
 }
+
+
+// Make fullscreen modal responsive
+// .show {
+//   width: 100vw;
+//   height: 100vh;
+//   background: rgba($black, 0.6);
+//   z-index: 9999;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   user-select: none;
+
+//   svg {
+//     position: absolute;
+//     color: red;
+//     font-size: 50px;
+//     top: 20px;
+//     z-index: 999999;
+//     cursor: pointer;
+//     right: 20px;
+
+//     @media (max-width: 768px) {
+//       font-size: 30px;
+//     }
+//   }
+
+//   .swiper-slide {
+//     z-index: 9999;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img {
+//       height: 80vh;
+//       width: auto;
+
+//       @media (max-width: 768px) {
+//         height: 50vh;
+//       }
+//     }
+//   }
+// }
 .show {
   width: 100vw;
   height: 100vh;
-  background: rgba($black, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 9999;
   position: fixed;
   top: 0;
   left: 0;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  // Close button (IoMdCloseCircle) styling
   svg {
     position: absolute;
     color: red;
@@ -128,15 +507,42 @@
     z-index: 999999;
     cursor: pointer;
     right: 20px;
+
+    // Make the close button smaller on mobile devices
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 25px;
+    }
   }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
   .swiper-slide {
     z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+
     img {
-      height: 80vh;
+      max-height: 80vh;
       width: auto;
+      object-fit: cover;
+
+      // Ensure images scale down on smaller screens
+      @media (max-width: 768px) {
+        max-height: 60vh;
+      }
+
+      @media (max-width: 480px) {
+        max-height: 50vh;
+      }
     }
   }
 }

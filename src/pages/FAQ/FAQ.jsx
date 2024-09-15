@@ -5,9 +5,9 @@ import Aos from "aos";
 import Footerbug from "../../components/FooterBughy";
 import ScrollToTopButton from "../../components/Scrolltotop";
 function FAQ() {
-    useEffect(() => {
-        Aos.init()
-    },[])
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="faq">
       <div className="banner">
@@ -115,8 +115,9 @@ function FAQ() {
         </p>
       </div>
       <SimpleContact />
-      <Footerbug />
-      <ScrollToTopButton/>
+      {/* <Footerbug /> */}
+
+      <ScrollToTopButton />
     </div>
   );
 }

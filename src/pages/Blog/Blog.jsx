@@ -122,7 +122,8 @@ function Blog() {
           by={"FIIR"}
         /> */}
       </div>
-      <Footerbug />
+      {/* <Footerbug /> */}
+
       <ScrollToTopButton />
     </>
   );

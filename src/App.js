@@ -33,6 +33,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <ScrollToTop />
+      <Footer/>
     </Router>
   );
 }

@@ -26,6 +26,9 @@ function Navbar() {
   }, []);
 
   const toogle = () => {
+    if (top < 20) {
+      document.getElementById("navbar").style.background = "#2f2f2f";
+    }
     let clasa = ref.current.className;
     if (!clasa.includes("active")) {
       clasa += " active";
@@ -43,14 +46,17 @@ function Navbar() {
     navigate("/targ/admin");
   };
 
-  // const close = () => {
-
-  // }
+  const close = () => {
+    let clasa = ref.current.className;
+    clasa = clasa.replace(" active", "");
+    ref.current.className = clasa;
+    console.log(ref.current.className);
+  };
 
   return (
-    <nav style={{ background: top > 20 && "#2f2f2f" }}>
+    <nav id="navbar" style={{ background: top > 20 && "#2f2f2f" }}>
       <div className="logo">
-        <Link to={"/"}>
+        <Link to={"/"} onClick={close}>
           <h1>OSFIIR</h1>
         </Link>
         <div className="resize" onClick={toogle}>
@@ -58,28 +64,21 @@ function Navbar() {
         </div>
       </div>
       <div className="links" ref={ref}>
-        <Link to={"/about"}>
+        <Link to={"/about"} onClick={close}>
           Despre noi
         </Link>
-        <Link to={"/about_faculate"}>
+        <Link to={"/about_faculate"} onClick={close}>
           Despre facultate
         </Link>
-        <Link to={"/blog"}>
+        <Link to={"/blog"} onClick={close}>
           Blog
         </Link>
-        <Link to={"/faq"}>
+        <Link to={"/faq"} onClick={close}>
           FAQ
         </Link>
-        <Link to={"/contact"}>
+        <Link to={"/contact"} onClick={close}>
           Contact
         </Link>
-        {/* <Link to={"/"}>About</Link>
-        <Link to={"/"}>About</Link>
-        {user && (
-          <Link to={"#"} onClick={logout}>
-            Log out
-          </Link>
-        )} */}
       </div>
     </nav>
   );

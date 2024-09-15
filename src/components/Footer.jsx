@@ -1,113 +1,79 @@
 import React from "react";
 import "./footer.scss";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">
-              OSFIIR.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to
-              help the upcoming programmers with the code. OSFIIR focuses on
-              providing the most efficient code or snippets as the code wants to
-              be simple. We will help programmers build up concepts in different
-              programming languages that include C, C++, Java, HTML, CSS,
-              Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
-            </p>
-          </div>
+    <footer className="footer-distributed">
+      <link
+        rel="stylesheet"
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      />
+      <div className="footer-left">
+        <h3>
+          <span>OSFIIR</span>
+        </h3>
 
-          <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
-            <ul class="footer-links">
-              <li>
-                <a href="http://OSFIIR.com/category/c-language/">C</a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/category/front-end-development/">
-                  UI Design
-                </a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/category/back-end-development/">
-                  PHP
-                </a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/category/java-programming-language/">
-                  Java
-                </a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/category/android/">Android</a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/category/templates/">Templates</a>
-              </li>
-            </ul>
-          </div>
+        <p className="footer-links">
+          <Link to="/" className="link-1">
+            Home
+          </Link>
 
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li>
-                <a href="http://OSFIIR.com/about/">About Us</a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/contact/">Contact Us</a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/contribute-at-OSFIIR/">Contribute</a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/privacy-policy/">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="http://OSFIIR.com/sitemap/">Sitemap</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr />
+          <Link to="/blog">Blog</Link>
+          <Link to="/about">Despre noi</Link>
+          <Link to="/about_facultate">Despre Facultate</Link>
+          <Link to="/faq">FAQ</Link>
+          <Link to="/contact">Contact</Link>
+        </p>
+
+        <p className="footer-company-name">OSFIIR © 2024</p>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">
-              Copyright &copy; 2017 All Rights Reserved by
-              <a href="#">OSFIIR</a>.
-            </p>
-          </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li>
-                <a class="facebook" href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a class="twitter" href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a class="dribbble" href="#">
-                  <i class="fa fa-dribbble"></i>
-                </a>
-              </li>
-              <li>
-                <a class="linkedin" href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div className="footer-center">
+        <div>
+          <i className="fa fa-map-marker"></i>
+          <p>
+            <span>444 S. Cedros Ave</span> Solana Beach, California
+          </p>
+        </div>
+
+        <div>
+          <i className="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+        <div>
+          <i className="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@company.com">support@company.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div className="footer-right">
+        <p className="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div className="footer-icons">
+          <a href="#">
+            <i className="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-github"></i>
+          </a>
         </div>
       </div>
     </footer>
   );
 }
 
-// export default Footer;
+export default Footer;

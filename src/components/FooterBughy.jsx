@@ -44,9 +44,6 @@ function Footerbug() {
         <input type="text" placeholder="Leave us a message" />
         <button>Send</button>
       </div>
-      <div className="footer__brand">
-        <h1>OSFIIR</h1>
-      </div>
       <hr></hr>
       <div className="footer__legal">
         <p>@{new Date().getFullYear()} OSFIIR. All rights reserved.</p>

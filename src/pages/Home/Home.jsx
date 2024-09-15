@@ -173,8 +173,9 @@ function Home() {
       </div>
       <Cifre />
       <SimpleContact />
-      <Footerbug />
-      <ScrollToTopButton/>
+      {/* <Footerbug /> */}
+
+      <ScrollToTopButton />
     </>
   );
 }

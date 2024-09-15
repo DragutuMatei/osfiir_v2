@@ -51,6 +51,7 @@
 @media screen and (max-width: 700px) {
   .simplecontact .text {
     .ful {
+      margin-left: 5px;
       margin-top: -11px;
     }
     .d {
@@ -64,7 +65,8 @@
     font-size: 90%; // Reduce font size by 10%
     margin-right: 5px; // Adjust margin to move text more to the right
 
-    .op, .ful {
+    .op,
+    .ful {
       font-size: 44px; // Reduce font size by 10%
     }
 

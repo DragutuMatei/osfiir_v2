@@ -676,8 +676,6 @@ function About() {
                 <img src="https://picsum.photos/id/1/200/300" alt="" />
                 <img src="https://picsum.photos/id/1/200/300" alt="" />
                 <img src="https://picsum.photos/id/1/200/300" alt="" />
-                <img src="https://picsum.photos/id/1/200/300" alt="" />
-                <img src="https://picsum.photos/id/1/200/300" alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -716,8 +714,6 @@ function About() {
                 </div>
               </div>
               <div className="imgs">
-                <img src="https://picsum.photos/id/2/200/300" alt="" />
-                <img src="https://picsum.photos/id/2/200/300" alt="" />
                 <img src="https://picsum.photos/id/2/200/300" alt="" />
                 <img src="https://picsum.photos/id/2/200/300" alt="" />
                 <img src="https://picsum.photos/id/2/200/300" alt="" />
@@ -762,8 +758,6 @@ function About() {
                 <img src="https://picsum.photos/id/3/200/300" alt="" />
                 <img src="https://picsum.photos/id/3/200/300" alt="" />
                 <img src="https://picsum.photos/id/3/200/300" alt="" />
-                <img src="https://picsum.photos/id/3/200/300" alt="" />
-                <img src="https://picsum.photos/id/3/200/300" alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -802,8 +796,6 @@ function About() {
                 </div>
               </div>
               <div className="imgs">
-                <img src="https://picsum.photos/id/4/200/300" alt="" />
-                <img src="https://picsum.photos/id/4/200/300" alt="" />
                 <img src="https://picsum.photos/id/4/200/300" alt="" />
                 <img src="https://picsum.photos/id/4/200/300" alt="" />
                 <img src="https://picsum.photos/id/4/200/300" alt="" />
@@ -848,8 +840,6 @@ function About() {
                 <img src="https://picsum.photos/id/5/200/300" alt="" />
                 <img src="https://picsum.photos/id/5/200/300" alt="" />
                 <img src="https://picsum.photos/id/5/200/300" alt="" />
-                <img src="https://picsum.photos/id/5/200/300" alt="" />
-                <img src="https://picsum.photos/id/5/200/300" alt="" />
               </div>
             </SwiperSlide>
           </Swiper>
@@ -857,7 +847,7 @@ function About() {
       </section>
       <SimpleContact />
       <ScrollToTopButton />
-      <Footerbug />
+      {/* <Footerbug /> */}
     </>
   );
 }

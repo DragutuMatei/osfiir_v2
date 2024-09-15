@@ -80,7 +80,9 @@ function Faculate() {
   return (
     <>
       <div className="banner">
-        <h1>Despre Facultatea de Inginerie Industriala si Robotica</h1>
+        <h1 style={{ marginTop: 80 }}>
+          Despre Facultatea de Inginerie Industriala si Robotica
+        </h1>
       </div>
       <div className="desc">
         <h1>Facultatea de Inginerie Industriala si Robotica</h1>
@@ -213,7 +215,7 @@ function Faculate() {
       </div>
       <ScrollToTopButton />
       <SimpleContact />
-      <Footerbug />
+      {/* <Footerbug /> */}
     </>
   );
 }

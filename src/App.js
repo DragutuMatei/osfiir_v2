@@ -16,6 +16,8 @@ import SimplePostPage from "./pages/Blog/SimplePostPage";
 import Footerbug from "./components/FooterBughy"
 import Admin from "./pages/Admin";
 
+//  todo: culori, text + poze, securitate la admin, logo, 
+
 function App() {
   return (
     <Router>

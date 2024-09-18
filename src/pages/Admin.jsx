@@ -437,6 +437,7 @@
 
 import React, { useState } from "react";
 import { AXIOS } from "../utils/AxiosConfig";
+import "./admin.scss";
 
 const Admin = () => {
   const [title, setTitle] = useState("");
@@ -536,113 +537,253 @@ const Admin = () => {
   const [category, setCategory] = useState("");
 
   return (
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h2>Admin Panel</h2>
+    // <div>
+    //   <br />
+    //   <br />
+    //   <br />
+    //   <br />
+    //   <br />
+    //   <h2>Admin Panel</h2>
 
-      <div>
-        <label>Title: </label>
+    //   <div>
+    //     <label>Title: </label>
+    //     <input
+    //       type="text"
+    //       value={title}
+    //       onChange={(e) => setTitle(e.target.value)}
+    //     />
+    //   </div>
+    //   <div>
+    //     <label>Category: </label>
+    //     <select
+    //       onChange={(e) => {
+    //         setCategory(e.target.value);
+    //       }}
+    //     >
+    //       <option value="">Category</option>
+    //       <option value="FIIR">FIIR</option>
+    //       <option value="OSFIIR">OSFIIR</option>
+    //       <option value="PTC">PTC</option>
+    //     </select>
+    //   </div>
+
+    //   <div>
+    //     <label>Cover: </label>
+    //     <input type="file" onChange={handleCoverChange} />
+    //   </div>
+    //   <div>
+    //     <label>Galerie: </label>
+    //     <input
+    //       type="file"
+    //       multiple
+    //       onChange={(e) => {
+    //         const files = Array.from(e.target.files);
+    //         setGalerie((old) => [...files]);
+    //       }}
+    //     />
+    //   </div>
+    //   <hr />
+
+    //   {sections.map((section, index) => (
+    //     <div
+    //       key={index}
+    //       style={{
+    //         border: "1px solid #ccc",
+    //         padding: "10px",
+    //         marginBottom: "10px",
+    //       }}
+    //     >
+    //       <div>
+    //         <label>Subtitle: </label>
+    //         <input
+    //           type="text"
+    //           value={section.subtitle}
+    //           onChange={(e) => handleSubtitleChange(index, e.target.value)}
+    //         />
+    //       </div>{" "}
+    //       {section.texts.map((text, textIndex) => (
+    //         <div key={textIndex} style={{ marginBottom: "5px" }}>
+    //           <label>Textarea {textIndex + 1}: </label>
+    //           <textarea
+    //             value={text}
+    //             onChange={(e) =>
+    //               handleTextareaChange(index, textIndex, e.target.value)
+    //             }
+    //           />
+    //           <button
+    //             type="button"
+    //             onClick={() => handleDeleteTextarea(index, textIndex)}
+    //           >
+    //             Delete Textarea
+    //           </button>
+    //         </div>
+    //       ))}
+    //       <button type="button" onClick={() => handleAddTextarea(index)}>
+    //         Add Textarea
+    //       </button>
+    //       <div>
+    //         <label>Image: </label>
+    //         <input
+    //           type="file"
+    //           onChange={(e) => handleFileChange(index, e.target.files[0])}
+    //         />
+    //       </div>
+    //       <button type="button" onClick={() => handleDeleteSection(index)}>
+    //         Delete Section
+    //       </button>
+    //     </div>
+    //   ))}
+
+    //   <button type="button" onClick={handleAddSection}>
+    //     Add Section
+    //   </button>
+
+    //   <hr />
+
+    //   <button type="button" onClick={handleSubmit}>
+    //     Submit
+    //   </button>
+    // </div>
+
+
+    <div className="admin-panel-form">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h2>Admin Panel</h2>
+
+  <div className="form-group">
+    <label>Title: </label>
+    <input
+      className="form-input"
+      type="text"
+      value={title}
+      onChange={(e) => setTitle(e.target.value)}
+    />
+  </div>
+  
+  <div className="form-group">
+    <label>Category: </label>
+    <select
+      className="form-input"
+      onChange={(e) => {
+        setCategory(e.target.value);
+      }}
+    >
+      <option value="">Category</option>
+      <option value="FIIR">FIIR</option>
+      <option value="OSFIIR">OSFIIR</option>
+      <option value="PTC">PTC</option>
+    </select>
+  </div>
+
+  <div className="form-group">
+    <label>Cover: </label>
+    <input 
+      className="form-input" 
+      type="file" 
+      onChange={handleCoverChange} 
+    />
+  </div>
+  
+  <div className="form-group">
+    <label>Galerie: </label>
+    <input
+      className="form-input"
+      type="file"
+      multiple
+      onChange={(e) => {
+        const files = Array.from(e.target.files);
+        setGalerie((old) => [...files]);
+      }}
+    />
+  </div>
+
+  <hr />
+
+  {sections.map((section, index) => (
+    <div
+      key={index}
+      className="section-wrapper"
+    >
+      <div className="form-group">
+        <label>Subtitle: </label>
         <input
+          className="form-input"
           type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          value={section.subtitle}
+          onChange={(e) => handleSubtitleChange(index, e.target.value)}
         />
       </div>
-      <div>
-        <label>Category: </label>
-        <select
-          onChange={(e) => {
-            setCategory(e.target.value);
-          }}
-        >
-          <option value="">Category</option>
-          <option value="FIIR">FIIR</option>
-          <option value="OSFIIR">OSFIIR</option>
-          <option value="PTC">PTC</option>
-        </select>
-      </div>
-
-      <div>
-        <label>Cover: </label>
-        <input type="file" onChange={handleCoverChange} />
-      </div>
-      <div>
-        <label>Galerie: </label>
-        <input
-          type="file"
-          multiple
-          onChange={(e) => {
-            const files = Array.from(e.target.files);
-            setGalerie((old) => [...files]);
-          }}
-        />
-      </div>
-      <hr />
-
-      {sections.map((section, index) => (
-        <div
-          key={index}
-          style={{
-            border: "1px solid #ccc",
-            padding: "10px",
-            marginBottom: "10px",
-          }}
-        >
-          <div>
-            <label>Subtitle: </label>
-            <input
-              type="text"
-              value={section.subtitle}
-              onChange={(e) => handleSubtitleChange(index, e.target.value)}
-            />
-          </div>{" "}
-          {section.texts.map((text, textIndex) => (
-            <div key={textIndex} style={{ marginBottom: "5px" }}>
-              <label>Textarea {textIndex + 1}: </label>
-              <textarea
-                value={text}
-                onChange={(e) =>
-                  handleTextareaChange(index, textIndex, e.target.value)
-                }
-              />
-              <button
-                type="button"
-                onClick={() => handleDeleteTextarea(index, textIndex)}
-              >
-                Delete Textarea
-              </button>
-            </div>
-          ))}
-          <button type="button" onClick={() => handleAddTextarea(index)}>
-            Add Textarea
-          </button>
-          <div>
-            <label>Image: </label>
-            <input
-              type="file"
-              onChange={(e) => handleFileChange(index, e.target.files[0])}
-            />
-          </div>
-          <button type="button" onClick={() => handleDeleteSection(index)}>
-            Delete Section
+      
+      {section.texts.map((text, textIndex) => (
+        <div key={textIndex} className="form-group">
+          <label>Textarea {textIndex + 1}: </label>
+          <textarea
+            className="form-input"
+            value={text}
+            onChange={(e) =>
+              handleTextareaChange(index, textIndex, e.target.value)
+            }
+          />
+          <button
+            className="form-button delete"
+            type="button"
+            onClick={() => handleDeleteTextarea(index, textIndex)}
+          >
+            Delete Textarea
           </button>
         </div>
       ))}
-
-      <button type="button" onClick={handleAddSection}>
-        Add Section
+      
+      <button
+        className="form-button add-textarea"
+        type="button"
+        onClick={() => handleAddTextarea(index)}
+      >
+        Add Textarea
       </button>
-
-      <hr />
-
-      <button type="button" onClick={handleSubmit}>
-        Submit
+      
+      <div className="form-group">
+        <label>Image: </label>
+        <input
+          className="form-input"
+          type="file"
+          onChange={(e) => handleFileChange(index, e.target.files[0])}
+        />
+      </div>
+      
+      <button
+        className="form-button delete-section"
+        type="button"
+        onClick={() => handleDeleteSection(index)}
+      >
+        Delete Section
       </button>
     </div>
+  ))}
+
+  <button 
+    className="form-button add-section" 
+    type="button" 
+    onClick={handleAddSection}
+  >
+    Add Section
+  </button>
+
+  <hr />
+
+  <button 
+    className="form-button submit" 
+    type="button" 
+    onClick={handleSubmit}
+  >
+    Submit
+  </button>
+</div>
+
   );
 };
 

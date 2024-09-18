@@ -7,6 +7,7 @@ import ScrollToTopButton from "../../components/Scrolltotop";
 function FAQ() {
   useEffect(() => {
     Aos.init();
+    console.log(Math.floor(Math.random() * (500 - 1 + 1) + 1));
   }, []);
   return (
     <div className="faq">
@@ -14,12 +15,12 @@ function FAQ() {
         <h1>FAQ</h1>
       </div>
 
-      <div className="intrb aia">
+      <div id={"intrb_1"} className="intrb aia">
         <h1>Cate intrb au fost generate cu chatgbt?</h1>
         <p>toate</p>
       </div>
 
-      <div className="intrb">
+      <div id={"intrb_2"} className="intrb">
         <h1>
           Cum pot obține un loc la Facultatea de Inginerie Industrială și
           Robotică?
@@ -31,7 +32,7 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="intrb">
+      <div id={"intrb_3"} className="intrb">
         <h1>
           Cât de bine este echipată Facultatea de Inginerie Industrială și
           Robotică?
@@ -43,7 +44,7 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="intrb">
+      <div id={"intrb_4"} className="intrb">
         <h1>
           Care sunt perspectivele de carieră pentru absolvenții de la Facultatea
           de Inginerie Industrială și Robotică?
@@ -55,7 +56,7 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="intrb">
+      <div id={"intrb_5"} className="intrb">
         <h1>
           Care sunt principalele domenii de studiu acoperite în cadrul
           Facultății de Inginerie Industrială și Robotică?
@@ -67,7 +68,7 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="intrb">
+      <div id={"intrb_6"} className="intrb">
         <h1>
           Cum pot obține un loc la Facultatea de Inginerie Industrială și
           Robotică?
@@ -79,7 +80,7 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="intrb">
+      <div id={"intrb_7"} className="intrb">
         <h1>
           Cât de bine este echipată Facultatea de Inginerie Industrială și
           Robotică?
@@ -91,7 +92,7 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="intrb">
+      <div id={"intrb_8"} className="intrb">
         <h1>
           Care sunt perspectivele de carieră pentru absolvenții de la Facultatea
           de Inginerie Industrială și Robotică?
@@ -103,7 +104,7 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="intrb">
+      <div id={"intrb_9"} className="intrb">
         <h1>
           Există programe de schimb internațional pentru studenții de la
           Facultatea de Inginerie Industrială și Robotică?

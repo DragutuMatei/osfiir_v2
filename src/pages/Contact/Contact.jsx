@@ -22,7 +22,7 @@ function Contact() {
     formdata.append("tel", numar);
     formdata.append("mail", email);
     formdata.append("mesaj", mesaj);
-    
+
     emailjs
       .send(
         process.env.REACT_APP_MAILJS_SERVICE_ID,
@@ -31,10 +31,10 @@ function Contact() {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          alert("Mesaj trimis cu succes!");
         },
         (error) => {
-          console.log("FAILED...", error);
+          alert("Mesajul nu a fost trimis!");
         }
       );
   };

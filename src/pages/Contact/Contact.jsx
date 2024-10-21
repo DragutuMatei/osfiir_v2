@@ -1,16 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./contact.scss";
 import Button from "../../utils/Button";
-import Footerbug from "../../components/FooterBughy";
 import ScrollToTopButton from "../../components/Scrolltotop";
+import emailjs from "@emailjs/browser";
+
 function Contact() {
   const [name, setName] = useState("");
   const [numar, setNumar] = useState("");
   const [email, setEmail] = useState("");
   const [mesaj, setMesaj] = useState("");
 
+  useEffect(() => {
+    emailjs.init({
+      publicKey: process.env.REACT_APP_MAILJS_KEY,
+    });
+  }, []);
+
   const send = async () => {
-    console.log(name);
+    const formdata = new FormData();
+    formdata.append("nume", name);
+    formdata.append("tel", numar);
+    formdata.append("mail", email);
+    formdata.append("mesaj", mesaj);
+    
+    emailjs
+      .send(
+        process.env.REACT_APP_MAILJS_SERVICE_ID,
+        process.env.REACT_APP_MAILJS_TEMPLATE_ID,
+        { nume: name, tel: numar, mail: email, mesaj: mesaj }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
   };
 
   return (
@@ -64,7 +90,7 @@ function Contact() {
             <Button click={send} text={"Send"} />
           </div>
         </div>
-        <ScrollToTopButton/>
+        <ScrollToTopButton />
       </div>
     </>
   );

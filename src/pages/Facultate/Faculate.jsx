@@ -89,14 +89,20 @@ function Faculate() {
         <div className="ps">
           {" "}
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-            dolor delectus suscipit repellat natus! Magnam repellendus
-            accusamus, illum perferendis debitis dolorem, consequatur eos
-            molestias quisquam id illo sequi ab accusantium. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Similique perspiciatis iusto
-            aut maiores quisquam ducimus ab laboriosam doloribus illum odio,
-            beatae quae consequuntur libero tempore eaque corporis praesentium
-            neque ipsam?
+            Facultatea de Inginerie Industrială și Robotică se mândrește cu o
+            tradiție de peste 60 de ani în formarea inginerilor de top. De-a
+            lungul deceniilor, această facultate a pregătit specialiști capabili
+            să ocupe diverse funcții în industrie, fiind recunoscută pentru
+            excelența academică și pentru adaptabilitatea absolvenților săi la
+            cerințele pieței muncii. Facultatea este a treia ca mărime în cadrul
+            Universității POLITEHNICA din București, având un număr semnificativ
+            de studenți și o ofertă educațională vastă. Aceasta cuprinde 14
+            programe de studii de licență acreditate, împărțite în 5 domenii
+            științifice, precum și 28 de programe de masterat în 6 domenii
+            științifice. De asemenea, facultatea oferă studii de doctorat în 3
+            domenii științifice, oferind studenților și absolvenților
+            posibilitatea de a-și continua dezvoltarea academică la cele mai
+            înalte niveluri.
           </p>
         </div>
       </div>

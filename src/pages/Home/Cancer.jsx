@@ -17,6 +17,7 @@ function  Cancer({ top }) {
       aspernatur beatae nam necessitatibus!`,
       "3333333333333",
       "444444444444",
+      "aksjdaskdask jdkasndkns "
     ];
     const [txt, setTxt] = useState(txts[0]);
   
@@ -30,29 +31,34 @@ function  Cancer({ top }) {
   return (
       <>
        <div className="cancer">
-          <h1 style={{ right: top / 3 - width / 1.7 + "px" }}>CEVA BLANA</h1>
+          <h1 style={{ right: top / 3 - width / 1.7 + "px" }}>Departamente</h1>
           {width > 780 ? (
             <>
               <div className="stanga">
                 <div className="click" id="but1" onClick={() => choose(0)}>
                   <IoSchoolOutline />
-                  <h2>primul</h2>
+                  <h2>PR</h2>
                 </div>
                 <div className="click" id="but2" onClick={() => choose(1)}>
                   <IoSchoolOutline />
-                  <h2>doi</h2>
+                  <h2>FR</h2>
                 </div>
                 <div className="click" id="but3" onClick={() => choose(2)}>
                   <IoSchoolOutline />
-                  <h2>trei</h2>
+                  <h2>HR</h2>
                 </div>
                 <div className="click" id="but4" onClick={() => choose(3)}>
                   <IoSchoolOutline />
-                  <h2>patru</h2>
+                  <h2 style={{fontSize:"19px"}}>VOCAȚIONAL</h2>
+              </div>
+              <div className="click" id="but5" onClick={() => choose(4)}>
+                  <IoSchoolOutline />
+                  <h2>LOGISTICĂ</h2>
                 </div>
                 <div className="line line1"></div>
                 <div className="line line2"></div>
                 <div className="line line3"></div>
+                <div className="line line4"></div>
               </div>
               <div className="dreapta">
                 <h2>Ceva titlu blana</h2>
@@ -115,6 +121,25 @@ function  Cancer({ top }) {
                   </p>
                 </div>
               </div>
+              <div className="drop">
+                <div className="up" onClick={() => drop(3)}>
+                  <div>
+                    <IoSchoolOutline className="first" />
+                    <h2>Primul</h2>
+                  </div>
+                  <IoIosArrowDown className="second" />
+                </div>
+                <div className="down">
+                  <p>
+                    Lorem 333333333333333333333333 dolor, sit amet consectetur
+                    adipisicing elit. Eligendi rem provident repudiandae
+                    perspiciatis excepturi non laborum maiores minima
+                    consequuntur laboriosam? Impedit corporis laboriosam
+                    suscipit, alias modi itaque. Saepe, numquam fugiat?
+                  </p>
+                </div>
+              </div>
+              
               <div className="drop">
                 <div className="up" onClick={() => drop(3)}>
                   <div>

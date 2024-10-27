@@ -3,13 +3,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./navbar.scss";
 import useWindowSize from "../utils/useWindowSize";
-import Fire from "../utils/Fire";
-import { useAuthState } from "react-firebase-hooks/auth";
-const fire = new Fire();
 
 function Navbar() {
   const { width, height } = useWindowSize();
-  const [user, loading, error] = useAuthState(fire.getUser());
 
   const ref = useRef(null);
   const [top, setScrollTop] = useState(0);
@@ -40,11 +36,7 @@ function Navbar() {
   };
 
   const navigate = useNavigate();
-
-  const logout = async () => {
-    await fire.logout();
-    navigate("/targ/admin");
-  };
+ 
 
   const close = () => {
     let clasa = ref.current.className;
@@ -57,7 +49,8 @@ function Navbar() {
     <nav id="navbar" style={{ background: top > 20 && "#2f2f2f" }}>
       <div className="logo">
         <Link to={"/"} onClick={close}>
-          <h1>OSFIIR</h1>
+          {/* <h1>OSFIIR</h1> */}
+          <img src={require("../assets/img/logo.png")} alt="" />
         </Link>
         <div className="resize" onClick={toogle}>
           <RxHamburgerMenu className="notsvg" />

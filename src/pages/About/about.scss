@@ -966,7 +966,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("https://dev.quantum-group.ro/fi/hero_bg.fe21383122acaa0b.png");
+  // background: url("https://dev.quantum-group.ro/fi/hero_bg.fe21383122acaa0b.png");
+  background: $royal;
   background-size: cover;
 
   h1 {

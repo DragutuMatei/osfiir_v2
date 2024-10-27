@@ -8,7 +8,7 @@ function Button({ text, link, click }) {
     navigate(link);
   };
   return (
-    <button className="mainButton" onClick={link ? ()=>nav() : ()=>click()}>
+    <button className="mainButton" onClick={link ? ()=> nav() : ()=>click()}>
       {text}
     </button>
   );

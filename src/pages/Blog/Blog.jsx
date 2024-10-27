@@ -8,7 +8,7 @@ function Blog() {
   const [data, setData] = useState([]);
   const [afisData, setAfisData] = useState([]);
   const getBlogPosts = async () => {
-    AXIOS.get("/getBlogPosts").then((res) => {
+    AXIOS.get("/getBlogPosts/0").then((res) => {
       console.log(res);
       if (res.data.ok) {
         setAfisData(res.data.data);
@@ -47,14 +47,11 @@ function Blog() {
           {data &&
             [...new Set(data.map((item) => item.category))].map(
               (dat, index) => {
-                console.log(dat)
+                console.log(dat);
                 let i = index + 1;
                 // if (i >= data.length) i = index;
                 return (
-                  <div
-                    className="sectiune "
-                    onClick={() => filter(i, dat)}
-                  >
+                  <div className="sectiune " onClick={() => filter(i, dat)}>
                     {dat}
                   </div>
                 );

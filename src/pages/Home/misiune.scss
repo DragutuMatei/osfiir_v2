@@ -7,8 +7,9 @@
   align-items: center;
   text-align: center;
   position: relative;
-  background: url("https://dev.quantum-group.ro/ro/assets/images/home/warehouse.png");
+  background: url("../../assets/img/misiune.jpg" );
   background-size: cover;
+  background-position: center;
 
   &::after {
     content: "";
@@ -18,7 +19,7 @@
     top: 0;
     left: 0;
     z-index: 0;
-    background-color: rgba($oxford_blue1, 0.25);
+    background-color: rgba(#2f2f2f, 0.8);
   }
 
   h1 {

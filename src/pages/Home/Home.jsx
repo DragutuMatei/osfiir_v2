@@ -15,11 +15,14 @@ import Button from "../../utils/Button";
 import Footer from "../../components/Footer";
 import Footerbug from "../../components/FooterBughy";
 import ScrollToTopButton from "../../components/Scrolltotop";
+import { AXIOS } from "../../utils/AxiosConfig";
+
 function Home() {
   const [top, setScrollTop] = useState(0);
 
   useEffect(() => {
     AOS.init();
+    getData();
     const handleScroll = (event) => {
       setScrollTop(window.scrollY);
     };
@@ -82,67 +85,44 @@ function Home() {
     },
   ]);
 
+  const [data, setData] = useState([]);
+  const getData = async () => {
+    await AXIOS.get("/getBlogPosts/4").then((res) => {
+      console.log(res);
+      if (res.data.ok) {
+        setData(res.data.data);
+      }
+    });
+  };
+
   return (
     <>
       <Slider />
       <AboutSection top={top} />
       <div className="projects">
-        <div
+      
+        {
+          data && data.map(d => {
+            
+            return (
+              <div
           className="project"
           style={{
             backgroundImage:
-              "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_steel.jpg)",
+              `url( ${d.cover})`,
           }}
         >
-          <h2>Titlu de proiect</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos.
-          </p>
-          <Button text={"Proiect"} />
+                <h2>{d.title}</h2>
+                <p>
+            {d.sections[0].texts[0]}
+                </p>
+          <Button text={"Proiect"} link={`/blog/${d.uid}`} />
         </div>
-        <div
-          className="project"
-          style={{
-            backgroundImage:
-              "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_projects.jpg)",
-          }}
-        >
-          <h2>Titlu de proiect</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos.
-          </p>
-          <Button text={"Proiect"} />
-        </div>
-        <div
-          className="project"
-          style={{
-            backgroundImage:
-              "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_steel.jpg)",
-          }}
-        >
-          <h2>Titlu de proiect</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos.
-          </p>
-          <Button text={"Proiect"} />
-        </div>
-        <div
-          className="project"
-          style={{
-            backgroundImage:
-              "url(https://dev.quantum-group.ro/fi/assets/images/business-line/division_projects.jpg)",
-          }}
-        >
-          <h2>Titlu de proiect</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            enim ea in nulla aut nemo, saepe cupiditate sequi eos.
-          </p>
-          <Button text={"Proiect"} />
-        </div>
+            );
+          })
+        }
+        
+      
       </div>
       <Misiune top={top} />
       <Cards />
@@ -153,7 +133,6 @@ function Home() {
           <div className="coca"></div>
           <h2>Since 2017</h2>
         </div>
-
         <ScrollContainer className="scc">
           <div className="poate">
             {board &&

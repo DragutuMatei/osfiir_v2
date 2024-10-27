@@ -10,9 +10,8 @@ function Footer() {
         href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
       />
       <div className="footer-left">
-        <h3>
-          <span>OSFIIR</span>
-        </h3>
+      <img src={require("../assets/img/logo.png")} alt="" />
+
 
         <p className="footer-links">
           <Link to="/" className="link-1">

@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 @import "../assets/scss/base";
 
-
 .footer-distributed {
   background: $un_posibil_negru;
   width: 100%;
@@ -21,9 +20,12 @@
 
 .footer-distributed .footer-left {
   width: 40%;
-}
 
-/* The company logo */
+  img {
+    justify-self: center;
+    width: 200px;
+  }
+}
 
 .footer-distributed h3 {
   color: #ffffff;

@@ -163,11 +163,15 @@
     }
     #but3 {
       top: 65%;
-      left: 25%;
+      left: 5%;
     }
     #but4 {
       top: 35%;
       left: 70%;
+    }
+    #but5 {
+      top: 70%;
+      left: 50%;
     }
     .line {
       height: 1px;
@@ -187,20 +191,31 @@
         //     left: calc(40% + 30px + (40% - 160px) * cos(110deg));
         //     transform: rotateZ(110deg);
         width: 1px;
-        height: calc(15% + 75px);
+        height: calc(15% + 175px);
         top: calc(15% + 157px);
         left: calc(40% + 60px);
+        transform: rotateZ(50deg);
+        transform-origin: top center;
+
         // top: calc(15% + 160px + (15% + 160px) * sin(110deg));
         // left: calc(40% + 80px + (15% + 160px) * cos(110deg));
-        transform: rotateZ(25deg);
-        transform-origin: top center;
+
         // transform-style: preserve-3D;
       }
+
       &.line3 {
         width: calc(30% - 130px);
         top: calc(15% + 90px + (30% - 90px) * sin(25deg));
         left: calc(40% + 150px);
         transform: rotateZ(25deg);
+      }
+      &.line4 {
+        width: 1px;
+        height: calc(15% + 175px / 2 + 25px);
+        top: calc(70% + 60px);
+        left: calc(25%);
+        transform: rotateZ(-85deg);
+        transform-origin: top center;
       }
     }
   }
@@ -223,6 +238,13 @@
       .click {
         width: 120px;
         height: 120px;
+
+        &:nth-of-type(n+4) {
+          h2 {
+            font-weight: 700;
+            font-size: 10px !important;
+          }
+        }
       }
       .line {
         &.line1 {
@@ -234,10 +256,10 @@
 
         &.line2 {
           width: 1px;
-          height: calc(15% + 97px);
-          top: calc(15% + 120px);
-          left: calc(40% + 50px);
-          transform: rotateZ(20deg);
+          height: calc(15% + 159px);
+          top: calc(15% + 113px);
+          left: calc(40% + 32px);
+          transform: rotateZ(39deg);
           transform-origin: top center;
         }
         &.line3 {
@@ -246,6 +268,14 @@
           left: calc(40% + 115px);
           transform: rotateZ(35deg);
           transform-origin: center left;
+        }
+        &.line4 {
+          width: 1px;
+          height: calc(15% + 78px);
+          top: calc(70% + 42px);
+          left: 24%;
+          transform: rotateZ(-85deg);
+          transform-origin: top center;
         }
       }
     }

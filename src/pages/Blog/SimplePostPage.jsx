@@ -16,8 +16,8 @@ function SimplePostPage() {
   const { slug } = useParams();
   const [post, setPost] = useState({});
   const getBlogPost = async () => {
-    await AXIOS.get(`/getBlogPostById/${slug}`).then((res) => {
-      console.log(res.data.data);
+    await AXIOS.get(`/getById/${slug}`).then((res) => {
+      console.log(res.data);
       if (res.data.ok) setPost(res.data.data);
     });
   };

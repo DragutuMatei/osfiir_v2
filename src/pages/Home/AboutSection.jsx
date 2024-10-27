@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import all from "../../assets/img/Group 3.png";
 
 function AboutSection({ top }) {
   return (
     <div className="about">
       <img
-        src="https://dev.quantum-group.ro/ro/assets/images/business-line/division_hero_about.png"
+        src={all}
+        className="gradient"
         alt=""
       />
       <div className="cine">

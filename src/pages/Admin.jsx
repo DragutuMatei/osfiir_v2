@@ -38,7 +38,7 @@ const Admin = () => {
   };
 
   const getAnunturi = async () => {
-    await AXIOS.get("/getAnunturi").then((res) => {
+    await AXIOS.get("/getAnunturi/0").then((res) => {
       setAnunturi(res.data.data);
     });
   };

@@ -137,29 +137,29 @@ const Admin = () => {
   const [galerie, setGalerie] = useState([]);
   const [category, setCategory] = useState("");
 
-  // const [user, loading, error] = useAuthState(auth);
+  const [user, loading, error] = useAuthState(auth);
 
-  // const handleLogin = () => {
-  //   signInWithPopup(auth, provider)
-  //     .then((result) => {
-  //       const user = result.user;
+  const handleLogin = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
 
-  //       if (!user.email.includes("@osfiir.ro")) {
-  //         auth.signOut();
-  //         alert("DACA NU MERGE INSEAMNA CA NU AI CE FACE AICI:)")
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Login error: ", error);
-  //     });
-  // };
+        if (!user.email.includes("@osfiir.ro")) {
+          auth.signOut();
+          alert("DACA NU MERGE INSEAMNA CA NU AI CE FACE AICI:)")
+        }
+      })
+      .catch((error) => {
+        console.error("Login error: ", error);
+      });
+  };
 
-  // const logout = async () => {
-  //   auth.signOut();
-  // };
+  const logout = async () => {
+    auth.signOut();
+  };
   return (
     <>
-      {/* {!loading && user ? ( */}
+      {!loading && user ? (
         <>
           <div className="admin-panel-form">
             <br />
@@ -353,12 +353,12 @@ const Admin = () => {
             </div>
           </div>
         </>
-      {/* ) : (
+       ) : (
           <>
             <br /><br /><br /><br /><br /><br />
           <button onClick={handleLogin}>Log in with Google</button>
         </>
-      )} */}
+      )} 
     </>
   );
 };

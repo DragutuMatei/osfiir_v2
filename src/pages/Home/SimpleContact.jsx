@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SimpleContact() {
   return (
@@ -14,13 +15,13 @@ function SimpleContact() {
           for us?
         </h1>
       </div>
-      <a
-        href="mailto: mateidr7@gmail.com"
+      <Link
+        to="/contact"
         className="button"
         data-aos="zoom-in"
       >
         contact us
-      </a>
+      </Link>
     </div>
   );
 }

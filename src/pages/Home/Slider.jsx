@@ -603,8 +603,37 @@ function Slider() {
               r="2180"
             />{" "}
           </svg>
-          <div id="slide1" className="slide1 up1">
-            MOUNTAIN
+          <div
+            id="slide1"
+            className="slide1 up1"
+            style={{ fontFamily: "Cousine" }}
+          >
+            <img
+              src={require("../../assets/img/logo.png")}
+              style={{
+                maxWidth: "600px",
+                width: "100%",
+              }}
+              alt=""
+            />
+            {/* <span
+              style={{
+                fontFamily: "Cousine",
+                fontSize: "80px",
+              }}
+            >
+              ORGANIZAȚIA STUDENȚILOR
+            </span>
+            <br />
+            DIN
+            <br />
+            <span 
+              style={{
+                fontFamily: "Cousine",
+                fontSize: "38px",
+              }}>
+            FACULTATEA DE INGINERIE INDUSTRIALĂ ȘI ROBOTICĂ
+            </span> */}
           </div>
           <div id="slide2" className="slide2">
             BEACH

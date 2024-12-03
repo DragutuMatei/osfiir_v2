@@ -36,52 +36,55 @@ function Home() {
 
   const [board, setBoard] = useState([
     {
-      image:
-        "https://dev.quantum-group.ro/ro/assets/images/home/timeline/2011.png",
+      image: require("../../assets/img/diacon.png"),
+      nume: "Diaconu Andrei-Iulian",
+      departament: "Președinte",
+    },
+    {
+      image: require("../../assets/img/diacon.png"),
+      nume: "Diaconu Andrei-Iulian",
+      departament: "Președinte",
+    },
+    {
+      image: require("../../assets/img/hanga.png"),
+      nume: "Hanga Mihail",
+      departament: "Secretar General",
+    },
+    {
+      image: require("../../assets/img/gio.png"),
+
+      nume: "Tudose Georgiana-Maria",
+      departament: "Vicepreședinte de Externe",
+    },
+    {
+      image: require("../../assets/img/raducu.png"),
+      nume: "Aciobăniței Radu-Ioan",
+      departament: "Vicepreședinte de Interne",
+    },
+    {
+      image: require("../../assets/img/raul.png"),
+      nume: "Matei Raul-Ovidiu",
+      departament: "Fundraising",
+    },
+    {
+      image: require("../../assets/img/matei.png"),
       nume: "Dragutu Matei",
       departament: "Marketing & PR",
     },
     {
-      image:
-        "https://dev.quantum-group.ro/ro/assets/images/home/timeline/2011.png",
-      nume: "Dragutu Matei",
-      departament: "Marketing & PR",
+      image: require("../../assets/img/lexi.png"),
+      nume: "Ionescu Alexandra",
+      departament: "Human resources",
     },
     {
-      image:
-        "https://dev.quantum-group.ro/ro/assets/images/home/timeline/2011.png",
-      nume: "Dragutu Matei",
-      departament: "Marketing & PR",
+      image: require("../../assets/img/tudorica.png"),
+      nume: "Tudorică Alexandru",
+      departament: "Logistică",
     },
     {
-      image:
-        "https://dev.quantum-group.ro/ro/assets/images/home/timeline/2011.png",
-      nume: "Dragutu Matei",
-      departament: "Marketing & PR",
-    },
-    {
-      image:
-        "https://dev.quantum-group.ro/ro/assets/images/home/timeline/2011.png",
-      nume: "Dragutu Matei",
-      departament: "Marketing & PR",
-    },
-    {
-      image:
-        "https://dev.quantum-group.ro/ro/assets/images/home/timeline/2011.png",
-      nume: "Dragutu Matei",
-      departament: "Marketing & PR",
-    },
-    {
-      image:
-        "https://dev.quantum-group.ro/ro/assets/images/home/timeline/2011.png",
-      nume: "Dragutu Matei",
-      departament: "Marketing & PR",
-    },
-    {
-      image:
-        "https://dev.quantum-group.ro/ro/assets/images/home/timeline/2011.png",
-      nume: "Dragutu Matei",
-      departament: "Marketing & PR",
+      image: require("../../assets/img/ana.png"),
+      nume: "Burtoiu Ana-Maria",
+      departament: "Vocațional",
     },
   ]);
 
@@ -100,29 +103,51 @@ function Home() {
       <Slider />
       <AboutSection top={top} />
       <div className="projects">
-      
-        {
-          data && data.map(d => {
-            
+        {data &&
+          data.map((d) => {
             return (
               <div
+                className="project"
+                style={{
+                  backgroundImage: `url( ${d.cover})`,
+                }}
+              >
+                <h2>{d.title}</h2>
+                <p>{d.sections[0].texts[0]}</p>
+                <Button text={"Proiect"} link={`/blog/${d.uid}`} />
+              </div>
+            );
+          })}
+        <div
           className="project"
           style={{
-            backgroundImage:
-              `url( ${d.cover})`,
+            backgroundImage: `url( https://instagram.fsbz1-1.fna.fbcdn.net/v/t51.29350-15/464585912_3307879742676086_6136615481509660491_n.webp?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fsbz1-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Ygt6kp0yXTAQ7kNvgE5cswI&_nc_gid=eebde1c4cbcc46f981a76dc09a333e0d&edm=AONqaaQBAAAA&ccb=7-5&ig_cache_key=MzQ4ODI0Njk0NjYxMTg0MTkzOQ%3D%3D.3-ccb7-5&oh=00_AYDtWonbsJUGc2WfosklD8i6htGUN_Hodhsxuu4uV3geTA&oe=6724821D&_nc_sid=4e3341)`,
           }}
         >
-                <h2>{d.title}</h2>
-                <p>
-            {d.sections[0].texts[0]}
-                </p>
-          <Button text={"Proiect"} link={`/blog/${d.uid}`} />
+          <h2>asdas</h2>
+          <p>asdkln alsdjaslnd lasndasndlk</p>
+          <Button text={"Proiect"} link={`/blog/ajsdnasdnl`} />
+        </div>{" "}
+        <div
+          className="project"
+          style={{
+            backgroundImage: `url( https://instagram.fsbz1-1.fna.fbcdn.net/v/t51.29350-15/464585912_3307879742676086_6136615481509660491_n.webp?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fsbz1-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Ygt6kp0yXTAQ7kNvgE5cswI&_nc_gid=eebde1c4cbcc46f981a76dc09a333e0d&edm=AONqaaQBAAAA&ccb=7-5&ig_cache_key=MzQ4ODI0Njk0NjYxMTg0MTkzOQ%3D%3D.3-ccb7-5&oh=00_AYDtWonbsJUGc2WfosklD8i6htGUN_Hodhsxuu4uV3geTA&oe=6724821D&_nc_sid=4e3341)`,
+          }}
+        >
+          <h2>asdas</h2>
+          <p>asdkln alsdjaslnd lasndasndlk</p>
+          <Button text={"Proiect"} link={`/blog/ajsdnasdnl`} />
+        </div>{" "}
+        <div
+          className="project"
+          style={{
+            backgroundImage: `url( https://instagram.fsbz1-1.fna.fbcdn.net/v/t51.29350-15/464585912_3307879742676086_6136615481509660491_n.webp?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fsbz1-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Ygt6kp0yXTAQ7kNvgE5cswI&_nc_gid=eebde1c4cbcc46f981a76dc09a333e0d&edm=AONqaaQBAAAA&ccb=7-5&ig_cache_key=MzQ4ODI0Njk0NjYxMTg0MTkzOQ%3D%3D.3-ccb7-5&oh=00_AYDtWonbsJUGc2WfosklD8i6htGUN_Hodhsxuu4uV3geTA&oe=6724821D&_nc_sid=4e3341)`,
+          }}
+        >
+          <h2>asdas</h2>
+          <p>asdkln alsdjaslnd lasndasndlk</p>
+          <Button text={"Proiect"} link={`/blog/ajsdnasdnl`} />
         </div>
-            );
-          })
-        }
-        
-      
       </div>
       <Misiune top={top} />
       <Cards />
@@ -131,7 +156,9 @@ function Home() {
         <div className="loc_de_premii">
           <h1>Board</h1>
           <div className="coca"></div>
-          <h2>Since 2017</h2>
+          <h2>
+            {new Date().getFullYear()} - {new Date().getFullYear() + 1}
+          </h2>
         </div>
         <ScrollContainer className="scc">
           <div className="poate">
@@ -141,9 +168,9 @@ function Home() {
                   <div className="cardd" key={Math.random()}>
                     <img src={lider.image} alt="" />
                     <div className="linie">
-                      <h1 className="an">{lider.nume}</h1>
+                      <h1 className="an">{lider.departament}</h1>
                     </div>
-                    <p className="text">{lider.departament}</p>
+                    <p className="text">{lider.nume}</p>
                   </div>
                 );
               })}

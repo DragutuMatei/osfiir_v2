@@ -15,7 +15,7 @@ function AboutSection({ top }) {
         <h2>Cine suntem</h2>
         <p>
           Noi suntem Organizația Studenților din Facultatea de Inginerie
-          Industrială și Robotică (O.S.F.I.I.R.) și suntem o asociație
+          Industrială și Robotică (OSFIIR) și suntem o asociație
           apolitică, non-profit și non-guvernamentală, care reprezintă
           interesele studenților din cadrul facultății. Activitatea noastră are
           ca scop principal crearea unui mediu academic și social de susținere,

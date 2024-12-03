@@ -10,8 +10,7 @@ function Footer() {
         href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
       />
       <div className="footer-left">
-      <img src={require("../assets/img/logo.png")} alt="" />
-
+        <img src={require("../assets/img/logo.png")} alt="" />
 
         <p className="footer-links">
           <Link to="/" className="link-1">
@@ -32,42 +31,41 @@ function Footer() {
         <div>
           <i className="fa fa-map-marker"></i>
           <p>
-            <span>444 S. Cedros Ave</span> Solana Beach, California
+            <span>Politehnica Corp E, București</span>{" "}
           </p>
         </div>
 
         <div>
           <i className="fa fa-phone"></i>
-          <p>+1.555.555.5555</p>
+          <p>+40 732 078 129</p>
         </div>
 
         <div>
           <i className="fa fa-envelope"></i>
           <p>
-            <a href="mailto:support@company.com">support@company.com</a>
+            <a href="mailto:osfiir@gmail.com">osfiir@gmail.com</a>
           </p>
         </div>
       </div>
 
       <div className="footer-right">
         <p className="footer-company-about">
-          <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-          euismod convallis velit, eu auctor lacus vehicula sit amet.
+          <span>Despre OSFIIR</span>
+          Noi suntem Organizația Studenților din Facultatea de Inginerie
+          Industrială și Robotică (OSFIIR) și suntem o asociație apolitică,
+          non-profit și non-guvernamentală, care reprezintă interesele
+          studenților din cadrul facultății.
         </p>
 
         <div className="footer-icons">
-          <a href="#">
+          <a href="https://www.facebook.com/OSFIIR" target="_blank">
             <i className="fa fa-facebook"></i>
           </a>
-          <a href="#">
-            <i className="fa fa-twitter"></i>
+          <a href="https://www.instagram.com/osfiir/" target="_blank">
+            <i className="fa fa-instagram"></i>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/company/osfiir" target="_blank">
             <i className="fa fa-linkedin"></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-github"></i>
           </a>
         </div>
       </div>

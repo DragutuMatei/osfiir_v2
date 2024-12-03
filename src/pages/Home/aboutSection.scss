@@ -1,24 +1,24 @@
 .about {
   width: 100vw;
-  height: auto;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: flex-start;
+  height: auto; 
   position: relative;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   display: grid;
+
   img,
   iframe {
     width: 65lvw;
-    // height: 470px;
     object-fit: contain;
     grid-column: span 2 / span 2 !important;
     z-index: 2;
     position: relative;
+    z-index: 0;
+
   }
+  
   .cine {
     width: 100%;
-    max-width: 355px;
+    max-width: 844px;
     height: 100%;
     display: flex;
     margin: auto;
@@ -26,6 +26,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
 
     h2 {
       margin-top: 30px;
@@ -35,14 +38,16 @@
     }
 
     p {
-      text-indent: 20px;
-      font-size: 1rem;
+      text-indent: 0px !important;
+      font-size: 1.3rem;
       font-weight: 300;
+      text-align: justify;
     }
 
     a {
       margin: 20px 0;
       color: $green;
+      font-size: 25px;
     }
 
     h1 {

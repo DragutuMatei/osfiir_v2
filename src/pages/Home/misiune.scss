@@ -7,7 +7,7 @@
   align-items: center;
   text-align: center;
   position: relative;
-  background: url("../../assets/img/misiune.jpg" );
+  background: url("../../assets/img/misiune.jpg");
   background-size: cover;
   background-position: center;
 
@@ -19,7 +19,7 @@
     top: 0;
     left: 0;
     z-index: 0;
-    background-color: rgba(#2f2f2f, 0.8);
+    background-color: rgba($royal, 0.6);
   }
 
   h1 {
@@ -36,18 +36,20 @@
   .text {
     z-index: 1;
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
+
     h2 {
       color: $white;
-      font-size: 30px;
-      font-weight: 600;
+      font-size: 40px;
+      font-weight: 800;
       margin-bottom: 20px;
     }
     p {
       color: $white;
       padding: 0 15px;
       font-size: 1.2rem;
-      font-weight: 400;
+      font-weight: 500;
+      text-shadow: 0 1px 10px #000000;
     }
   }
 }

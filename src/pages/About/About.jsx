@@ -161,7 +161,6 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>PR</h3>
                   <div className="tess">
                     <p>
                       Supranumit și „imaginea asociației”, departamentul PR are
@@ -206,7 +205,6 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>HR</h3>
                   <div className="tess">
                     <p>
                       Ceea ce face posibilă existența asociației este resursa
@@ -254,7 +252,6 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>Vocațional</h3>
                   <div className="tess">
                     <p>
                       {" "}
@@ -301,7 +298,6 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>Logistică</h3>
                   <div className="tess">
                     <p>
                       Logistica este cea mai funcțională parte a OSFIIR. Acest
@@ -348,7 +344,6 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>FR</h3>
                   <div className="tess">
                     <p>
                       Se poate vorbi în continuu despre evenimentele OSFIIR și

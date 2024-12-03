@@ -97,17 +97,22 @@ Situații neprevăzute? Echipament lipsă? Lacune organizatorice? Aceste problem
               <div className="up" onClick={() => drop(0)}>
                 <div>
                   <IoSchoolOutline className="first" />
-                  <h2>Primul</h2>
+                  <h2>PR</h2>
                 </div>
                 <IoIosArrowDown className="second" />
               </div>
               <div className="down">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eligendi rem provident repudiandae perspiciatis excepturi non
-                  laborum maiores minima consequuntur laboriosam? Impedit
-                  corporis laboriosam suscipit, alias modi itaque. Saepe,
-                  numquam fugiat?
+                  Supranumit și „imaginea asociației”, departamentul PR are în
+                  principal rolul de a asigura vizibilitate de calitate în
+                  mediul online, dar și fizic, fiind responsabil cu afișe,
+                  postări și tot ceea ce conține elemente grafice și are ca scop
+                  promovarea OSFIIR și a inițiativelor sale. Studenții afiliați
+                  acestui departament beneficiază de o dezvoltare
+                  extracurriculară în ceea ce privește designul grafic și
+                  utilizarea resurselor online pentru realizarea de imagini cu
+                  scop prestabilit, oferind o direcție clară și nemărginită
+                  creativității.
                 </p>
               </div>
             </div>{" "}
@@ -115,17 +120,23 @@ Situații neprevăzute? Echipament lipsă? Lacune organizatorice? Aceste problem
               <div className="up" onClick={() => drop(1)}>
                 <div>
                   <IoSchoolOutline className="first" />
-                  <h2>Primul</h2>
+                  <h2>FR</h2>
                 </div>
                 <IoIosArrowDown className="second" />
               </div>
               <div className="down">
                 <p>
-                  Lorem 22222222222222222222222222222222222ipsum dolor, sit amet
-                  consectetur adipisicing elit. Eligendi rem provident
-                  repudiandae perspiciatis excepturi non laborum maiores minima
-                  consequuntur laboriosam? Impedit corporis laboriosam suscipit,
-                  alias modi itaque. Saepe, numquam fugiat?
+                  Se poate vorbi în continuu despre evenimentele OSFIIR și cum
+                  sunt acestea puse cap la cap, dar fără resurse, cum poate
+                  trece o idee la stadiul de realitate? Răspunsul se află în
+                  cadrul departamentului FR, care are ca scop principal
+                  atragerea fondurilor, partenerilor și colaboratorilor, pentru
+                  ca asociația să își poată extinde orizonturile ce țin de
+                  posibilitățile realizării unui eveniment. Studenții care
+                  alcătuiesc acest departament au ocazia să își dezvolte
+                  abilități de comunicare formală, negociere și planificare,
+                  întrucât partea financiară este strict orientată către
+                  evenimente, căci OSFIIR este o organizație non-profit.{" "}
                 </p>
               </div>
             </div>
@@ -133,17 +144,24 @@ Situații neprevăzute? Echipament lipsă? Lacune organizatorice? Aceste problem
               <div className="up" onClick={() => drop(2)}>
                 <div>
                   <IoSchoolOutline className="first" />
-                  <h2>Primul</h2>
+                  <h2>HR</h2>
                 </div>
                 <IoIosArrowDown className="second" />
               </div>
               <div className="down">
                 <p>
-                  Lorem 33333333333333333333333 dolor, sit amet consectetur
-                  adipisicing elit. Eligendi rem provident repudiandae
-                  perspiciatis excepturi non laborum maiores minima consequuntur
-                  laboriosam? Impedit corporis laboriosam suscipit, alias modi
-                  itaque. Saepe, numquam fugiat?
+                  Ceea ce face posibilă existența asociației este resursa umană.
+                  Departamentul de HR asigură necesarul de oameni pentru fiecare
+                  sarcină în parte, fiind prezent în cadrul fiecărui
+                  departament, și are ca scop mobilizarea, monitorizarea și
+                  îndrumarea persoanelor din OSFIIR, pentru ca acestea să poată
+                  duce la bun sfârșit sarcinile date. Distribuind în mod
+                  echitabil volumul de muncă, departamentul face astfel ca
+                  drumul activităților să fie la fel de lung pentru toți
+                  participanții. Printre altele, HR-ul are ca scop și
+                  monitorizarea sănătății relațiilor interumane din organizație,
+                  iar prin diverse workshopuri și alte activități reușește să
+                  mențină OSFIIR ca un mediu de lucru prielnic și prietenos.
                 </p>
               </div>
             </div>
@@ -151,17 +169,22 @@ Situații neprevăzute? Echipament lipsă? Lacune organizatorice? Aceste problem
               <div className="up" onClick={() => drop(3)}>
                 <div>
                   <IoSchoolOutline className="first" />
-                  <h2>Primul</h2>
+                  <h2>VOCAȚIONAL</h2>
                 </div>
                 <IoIosArrowDown className="second" />
               </div>
               <div className="down">
                 <p>
-                  Lorem 333333333333333333333333 dolor, sit amet consectetur
-                  adipisicing elit. Eligendi rem provident repudiandae
-                  perspiciatis excepturi non laborum maiores minima consequuntur
-                  laboriosam? Impedit corporis laboriosam suscipit, alias modi
-                  itaque. Saepe, numquam fugiat?
+                  Considerat sufletul și imaginația asociației, acest
+                  departament provine din unificarea a două departamente,
+                  „Sportiv” și „Cultural”, creând astfel un departament care
+                  rupe OSFIIR de mediul academic și pune în prim-plan inovarea
+                  și dezvoltarea unor evenimente cu adevărat extracurriculare.
+                  Scopul acestui departament este de a plasa o serie de
+                  evenimente la polul opus domeniilor studiate de către
+                  studenții din asociație, pentru a oferi participanților un
+                  suflu relaxant, educativ și, cel mai important, o adevărată
+                  reîmprospătare.
                 </p>
               </div>
             </div>
@@ -169,17 +192,23 @@ Situații neprevăzute? Echipament lipsă? Lacune organizatorice? Aceste problem
               <div className="up" onClick={() => drop(3)}>
                 <div>
                   <IoSchoolOutline className="first" />
-                  <h2>Primul</h2>
+                  <h2>LOGISTICĂ</h2>
                 </div>
                 <IoIosArrowDown className="second" />
               </div>
               <div className="down">
                 <p>
-                  Lorem 333333333333333333333333 dolor, sit amet consectetur
-                  adipisicing elit. Eligendi rem provident repudiandae
-                  perspiciatis excepturi non laborum maiores minima consequuntur
-                  laboriosam? Impedit corporis laboriosam suscipit, alias modi
-                  itaque. Saepe, numquam fugiat?
+                  Logistica este cea mai funcțională parte a OSFIIR. Acest
+                  departament asigură necesarul fizic la evenimente, având în
+                  prim-plan pregătirea acestora până la cel mai mic detaliu, cu
+                  respect față de resursele existente, și reprezintă tranziția
+                  de la idee la realitate. Acest departament nu se rezumă doar
+                  la muncă fizică, ci le arată celor implicați cum o sarcină
+                  corect planificată și distribuită între persoane devine
+                  exponențial mai ușoară prin organizarea între mai mulți
+                  oameni. Situații neprevăzute? Echipament lipsă? Lacune
+                  organizatorice? Aceste probleme nu apar atunci când
+                  departamentul Logistică este implicat.
                 </p>
               </div>
             </div>

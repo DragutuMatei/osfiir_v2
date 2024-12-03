@@ -77,10 +77,7 @@ function About() {
                 return (
                   <div className="anunt">
                     <h2>{d.title}</h2>
-                    <p>
-            {d.sections[0].texts[0]}
-
-                    </p>
+                    <p>{d.sections[0].texts[0]}</p>
                     <Link to={`blog/${d.uid}`}>Afla mai multe</Link>
                   </div>
                 );
@@ -164,19 +161,23 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>Departament 1</h3>
+                  <h3>PR</h3>
                   <div className="tess">
                     <p>
-                      111111111111 Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Obcaecati in provident reiciendis, ab
-                      pariatur libero hic praesentium quibusdam velit?
+                      Supranumit și „imaginea asociației”, departamentul PR are
+                      în principal rolul de a asigura vizibilitate de calitate
+                      în mediul online, dar și fizic, fiind responsabil cu
+                      afișe, postări și tot ceea ce conține elemente grafice și
+                      are ca scop promovarea OSFIIR și a inițiativelor sale.
                     </p>
                     <div></div>
                     <div></div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Obcaecati in provident reiciendis, ab pariatur libero hic
-                      praesentium quibusdam velit?
+                      Studenții afiliați acestui departament beneficiază de o
+                      dezvoltare extracurriculară în ceea ce privește designul
+                      grafic și utilizarea resurselor online pentru realizarea
+                      de imagini cu scop prestabilit, oferind o direcție clară
+                      și nemărginită creativității.
                     </p>
                   </div>
                 </div>
@@ -205,19 +206,26 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>Departament 2</h3>
+                  <h3>HR</h3>
                   <div className="tess">
                     <p>
-                      222222222222 Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Obcaecati in provident reiciendis, ab
-                      pariatur libero hic praesentium quibusdam velit?
+                      Ceea ce face posibilă existența asociației este resursa
+                      umană. Departamentul de HR asigură necesarul de oameni
+                      pentru fiecare sarcină în parte, fiind prezent în cadrul
+                      fiecărui departament, și are ca scop mobilizarea,
+                      monitorizarea și îndrumarea persoanelor din OSFIIR, pentru
+                      ca acestea să poată duce la bun sfârșit sarcinile date.
                     </p>
                     <div></div>
                     <div></div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Obcaecati in provident reiciendis, ab pariatur libero hic
-                      praesentium quibusdam velit?
+                      Distribuind în mod echitabil volumul de muncă,
+                      departamentul face astfel ca drumul activităților să fie
+                      la fel de lung pentru toți participanții. Printre altele,
+                      HR-ul are ca scop și monitorizarea sănătății relațiilor
+                      interumane din organizație, iar prin diverse workshopuri
+                      și alte activități reușește să mențină OSFIIR ca un mediu
+                      de lucru prielnic și prietenos
                     </p>
                   </div>
                 </div>
@@ -246,19 +254,25 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>Departament 3</h3>
+                  <h3>Vocațional</h3>
                   <div className="tess">
                     <p>
-                      333333333333 Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Obcaecati in provident reiciendis, ab
-                      pariatur libero hic praesentium quibusdam velit?
+                      {" "}
+                      Considerat sufletul și imaginația asociației, acest
+                      departament provine din unificarea a două departamente,
+                      „Sportiv” și „Cultural”, creând astfel un departament care
+                      rupe OSFIIR de mediul academic și pune în prim-plan
+                      inovarea și dezvoltarea unor evenimente cu adevărat
+                      extracurriculare.
                     </p>
                     <div></div>
                     <div></div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Obcaecati in provident reiciendis, ab pariatur libero hic
-                      praesentium quibusdam velit?
+                      Scopul acestui departament este de a plasa o serie de
+                      evenimente la polul opus domeniilor studiate de către
+                      studenții din asociație, pentru a oferi participanților un
+                      suflu relaxant, educativ și, cel mai important, o
+                      adevărată reîmprospătare.
                     </p>
                   </div>
                 </div>
@@ -287,19 +301,25 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>Departament 4</h3>
+                  <h3>Logistică</h3>
                   <div className="tess">
                     <p>
-                      444444444444 Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Obcaecati in provident reiciendis, ab
-                      pariatur libero hic praesentium quibusdam velit?
+                      Logistica este cea mai funcțională parte a OSFIIR. Acest
+                      departament asigură necesarul fizic la evenimente, având
+                      în prim-plan pregătirea acestora până la cel mai mic
+                      detaliu, cu respect față de resursele existente, și
+                      reprezintă tranziția de la idee la realitate. Acest
+                      departament nu se rezumă doar la muncă fizică, ci le arată
+                      celor implicați cum o sarcină corect planificată și
+                      distribuită între persoane devine exponențial mai ușoară
+                      prin organizarea între mai mulți oameni.
                     </p>
                     <div></div>
                     <div></div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Obcaecati in provident reiciendis, ab pariatur libero hic
-                      praesentium quibusdam velit?
+                      Situații neprevăzute? Echipament lipsă? Lacune
+                      organizatorice? Aceste probleme nu apar atunci când
+                      departamentul Logistică este implicat.
                     </p>
                   </div>
                 </div>
@@ -328,19 +348,26 @@ function About() {
                   </div>
                 </div>
                 <div className="texts">
-                  <h3>Departament 5</h3>
+                  <h3>FR</h3>
                   <div className="tess">
                     <p>
-                      555555555555 Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Obcaecati in provident reiciendis, ab
-                      pariatur libero hic praesentium quibusdam velit?
+                      Se poate vorbi în continuu despre evenimentele OSFIIR și
+                      cum sunt acestea puse cap la cap, dar fără resurse, cum
+                      poate trece o idee la stadiul de realitate? Răspunsul se
+                      află în cadrul departamentului FR, care are ca scop
+                      principal atragerea fondurilor, partenerilor și
+                      colaboratorilor, pentru ca asociația să își poată extinde
+                      orizonturile ce țin de posibilitățile realizării unui
+                      eveniment.
                     </p>
                     <div></div>
                     <div></div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Obcaecati in provident reiciendis, ab pariatur libero hic
-                      praesentium quibusdam velit?
+                      Studenții care alcătuiesc acest departament au ocazia să
+                      își dezvolte abilități de comunicare formală, negociere și
+                      planificare, întrucât partea financiară este strict
+                      orientată către evenimente, căci OSFIIR este o organizație
+                      non-profit.
                     </p>
                   </div>
                 </div>

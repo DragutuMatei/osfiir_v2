@@ -11,6 +11,8 @@ import FAQ from "./pages/FAQ/FAQ";
 import Contact from "./pages/Contact/Contact";
 import SimplePostPage from "./pages/Blog/SimplePostPage";
 import Admin from "./pages/Admin";
+import Voluntariat from "./pages/Voluntariat/Voluntariat";
+
  
 //  todo: culori, text + poze, securitate la admin, logo, 
  
@@ -27,7 +29,9 @@ function App() {
         <Route path="/blog/:slug" element={<SimplePostPage />} />
         <Route path="/about_faculate" element={<Faculate />} />
         <Route path="/faq" element={<FAQ />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} /> 
+        <Route path="/voluntariat" element={<Voluntariat />} />  
+            
       </Routes>
       <ScrollToTop />
       <Footer/>

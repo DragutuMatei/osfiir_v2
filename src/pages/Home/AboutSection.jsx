@@ -12,7 +12,7 @@ function AboutSection({ top }) {
       />
       <div className="cine">
         <h1 style={{ right: top / 3 - 50 + "px" }}>DESPRE</h1>
-        <h2>Cine suntem</h2>
+        <h2>Cine suntem ?</h2>
         <p>
           Noi suntem Organizația Studenților din Facultatea de Inginerie
           Industrială și Robotică (OSFIIR) și suntem o asociație
@@ -26,7 +26,7 @@ function AboutSection({ top }) {
           cum de la bun început suntem, un sprijin în parcursul educațional și
           profesional al celor care vizează un viitor prin facultatea aceasta.
         </p>
-        <Link to="/about">Afla mai multe</Link>
+        <Link to="/about">Află mai multe</Link>
       </div>
     </div>
   );

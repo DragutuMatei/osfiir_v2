@@ -608,14 +608,19 @@ function Slider() {
             className="slide1 up1"
             style={{ fontFamily: "Cousine" }}
           >
-            <img
-              src={require("../../assets/img/logo.png")}
-              style={{
-                maxWidth: "600px",
-                width: "100%",
-              }}
-              alt=""
-            />
+            <div className="content">
+                <h1>Bine ați venit pe OSFIIR!</h1>
+    
+                <p>
+                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici <br/>
+                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici <br/>
+                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici<br/>
+                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici<br/>
+                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici
+                </p>
+            </div>
+
+            
             {/* <span
               style={{
                 fontFamily: "Cousine",
@@ -636,7 +641,7 @@ function Slider() {
             </span> */}
           </div>
           <div id="slide2" className="slide2">
-            BEACH
+            VOLUNTARIAT
           </div>
           <div id="slide3" className="slide3">
             FOREST

@@ -14,6 +14,26 @@ import { Link } from "react-router-dom";
 import Footerbug from "../../components/FooterBughy";
 import ScrollToTopButton from "../../components/Scrolltotop";
 import { AXIOS } from "../../utils/AxiosConfig";
+import aboutBanner from '../../assets/img/about_banner.png';
+import fr1 from "../../assets/img/fr1.jpg";
+import fr2 from "../../assets/img/fr2.jpg";
+import fr3 from "../../assets/img/fr3.jpg";
+import hr1 from "../../assets/img/hr1.jpg";
+import hr2 from "../../assets/img/hr2.jpg";
+import hr3 from "../../assets/img/hr3.jpg";
+import pr1 from "../../assets/img/pr1.jpg";
+import pr2 from "../../assets/img/pr2.jpg";
+import pr3 from "../../assets/img/pr3.jpg";
+import log1 from "../../assets/img/log1.jpg";
+import log2 from "../../assets/img/log2.jpg";
+import log3 from "../../assets/img/log3.jpg";
+import voc1 from "../../assets/img/voc1.jpg";
+import voc2 from "../../assets/img/voc2.jpg";
+import voc3 from "../../assets/img/voc3.jpg";
+
+
+
+
 
 function About() {
   const [index, setIndex] = useState(0);
@@ -70,7 +90,7 @@ function About() {
         <AboutSection top={top} />
         <div className="anunturi">
           <div className="img"></div>
-          <h2>anunturi</h2>
+          <h2>anunțuri</h2>
           <div className="al">
             {data &&
               data.map((d) => {
@@ -182,9 +202,9 @@ function About() {
                 </div>
               </div>
               <div className="imgs">
-                <img src="https://picsum.photos/id/1/200/300" alt="" />
-                <img src="https://picsum.photos/id/1/200/300" alt="" />
-                <img src="https://picsum.photos/id/1/200/300" alt="" />
+                <img src={pr1} alt="" />
+                <img src={pr2} alt="" />
+                <img src={pr3} alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -229,9 +249,9 @@ function About() {
                 </div>
               </div>
               <div className="imgs">
-                <img src="https://picsum.photos/id/2/200/300" alt="" />
-                <img src="https://picsum.photos/id/2/200/300" alt="" />
-                <img src="https://picsum.photos/id/2/200/300" alt="" />
+                <img src={hr1} alt="" />
+                <img src={hr2} alt="" />
+                <img src={hr3} alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -275,9 +295,9 @@ function About() {
                 </div>
               </div>
               <div className="imgs">
-                <img src="https://picsum.photos/id/3/200/300" alt="" />
-                <img src="https://picsum.photos/id/3/200/300" alt="" />
-                <img src="https://picsum.photos/id/3/200/300" alt="" />
+                <img src={voc1} alt="" />
+                <img src={voc2} alt="" />
+                <img src={voc3} alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -321,9 +341,9 @@ function About() {
                 </div>
               </div>
               <div className="imgs">
-                <img src="https://picsum.photos/id/4/200/300" alt="" />
-                <img src="https://picsum.photos/id/4/200/300" alt="" />
-                <img src="https://picsum.photos/id/4/200/300" alt="" />
+                <img src={log1}alt="" />
+                <img src={log2}alt="" />
+                <img src={log3} alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -368,9 +388,9 @@ function About() {
                 </div>
               </div>
               <div className="imgs">
-                <img src="https://picsum.photos/id/5/200/300" alt="" />
-                <img src="https://picsum.photos/id/5/200/300" alt="" />
-                <img src="https://picsum.photos/id/5/200/300" alt="" />
+                <img src={fr1} alt="" />
+                <img src={fr2} alt="" />
+                <img src={fr3} alt="" />
               </div>
             </SwiperSlide>
           </Swiper>

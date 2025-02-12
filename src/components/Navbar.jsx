@@ -69,9 +69,14 @@ function Navbar() {
         <Link to={"/faq"} onClick={close}>
           FAQ
         </Link>
+        <Link to={"/voluntariat"} onClick={{close}}>
+          Voluntariat
+        </Link>
         <Link to={"/contact"} onClick={close}>
           Contact
         </Link>
+        
+        
       </div>
     </nav>
   );

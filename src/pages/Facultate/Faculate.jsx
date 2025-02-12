@@ -80,12 +80,12 @@ function Faculate() {
   return (
     <>
       <div className="banner">
-        <h1 style={{ marginTop: 80 }}>
-          Despre Facultatea de Inginerie Industriala si Robotica
+        <h1 style={{ marginTop: 0 }}>
+          Despre Facultatea de Inginerie Industrială și Robotică
         </h1>
       </div>
       <div className="desc">
-        <h1>Facultatea de Inginerie Industriala si Robotica</h1>
+        <h1>Facultatea de Inginerie Industrială și Robotică</h1>
         <div className="ps">
           {" "}
           <p>
@@ -108,7 +108,7 @@ function Faculate() {
       </div>
       <div className="anunturi">
         <div className="img"></div>
-        <h2>anunturi</h2>
+        <h2>anunțuri</h2>
         <div className="al">
           <div className="anunt">
             <h2>Titlu de anunt</h2>
@@ -135,7 +135,7 @@ function Faculate() {
               Explicabo repellat nesciunt quia laboriosam enim eaque inventore
               sed, eveniet totam ratione!
             </p>{" "}
-            <Link to="/">Afla mai multe</Link>
+            <Link to="/">Află mai multe</Link>
           </div>
           <div className="anunt">
             <h2>Titlu de anunt</h2>
@@ -144,13 +144,13 @@ function Faculate() {
               Explicabo repellat nesciunt quia laboriosam enim eaque inventore
               sed, eveniet totam ratione!
             </p>{" "}
-            <Link to="/">Afla mai multe</Link>
+            <Link to="/">Află mai multe</Link>
           </div>
         </div>
       </div>
       <div className="camine">
         <div className="bac"></div>
-        <h1>Caminele Facultatii de Inginerie Industriala si Robotica</h1>
+        <h1>Căminele Facultății de Inginerie Industrială și Robotică</h1>
         <p>
           Alături de compania noastră veți intra într-o echipă dinamică și
           puternică, cu o gândire modernă și folosind cele mai actuale
@@ -161,7 +161,7 @@ function Faculate() {
         <div className="camins">
           <div className="camin">
             <h1>P4</h1>
-            <h2>Caminul P4 </h2>
+            <h2>Căminul P4 </h2>
             <p>
               Ofera plosnite si gandaci in prostie. Mucegaiul nu este uitat si
               primesti o admina cu retard mental sever.
@@ -189,7 +189,7 @@ function Faculate() {
       </div>
       <div className="scrollcnt">
         <div className="loc_de_premii">
-          <h1>Studenti Consilieri si Senatori</h1>
+          <h1>Studenți Consilieri și Senatori</h1>
         </div>
 
         <ScrollContainer className="scc">

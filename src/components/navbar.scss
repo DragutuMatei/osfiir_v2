@@ -7,7 +7,7 @@ nav {
   height: 80px;
   background: transparent;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   position: fixed;
@@ -16,7 +16,8 @@ nav {
   .logo {
     h1 {
       color: $royal;
-      font-size: 25px;
+      font-size: 20px;
+      display: none;
     }
     a {
       width: 100px;
@@ -37,12 +38,21 @@ nav {
     justify-content: space-around;
     align-items: center;
     a {
-      font-size: 17px;
+      font-weight: 550;
+      font-size: 14px;
       color: $white;
-      margin: 0 15px;
+      margin: 0 25px;
+      margin-right: 1px;
     }
   }
+
+  .links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: #2f2f2f;
+  }
 }
+
 
 @media screen and (max-width: 935px) {
   nav {

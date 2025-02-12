@@ -5,7 +5,7 @@ function Cifre() {
   return (
     <div className="cifre">
       <div className="side">
-        <h2>OSFIIR in cifre :</h2>
+        <h2>OSFIIR în cifre :</h2>
       </div>
       <div className="numbers">
         <div className="row">

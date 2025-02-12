@@ -2,7 +2,7 @@
 @import "../assets/scss/base";
 
 .footer-distributed {
-  background: $un_posibil_negru;
+  background-color: $un_posibil_negru;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
@@ -67,7 +67,7 @@
 }
 
 .footer-distributed .footer-center i {
-  background-color: #33383b;
+  background-color: #232629;
   color: #ffffff;
   font-size: 25px;
   width: 38px;
@@ -149,7 +149,9 @@
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #444b4f;
+  background-color: #232629;
+  ;
+  ;
   border-radius: 2px;
 
   font-size: 20px;

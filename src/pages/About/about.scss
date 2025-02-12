@@ -486,7 +486,7 @@
     }
     .swiper-slide {
       background: url("https://dev.quantum-group.ro/fi/assets/images/business-line/full_hall.png"),
-        $white;
+      $white;
       background-size: auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -955,7 +955,7 @@ img {
   img {
     height: 100%;
     width: calc(100% / 3);
-    object-fit: cover;
+    //object-fit: cover;
   }
 }
 
@@ -965,8 +965,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: url("https://dev.quantum-group.ro/fi/hero_bg.fe21383122acaa0b.png");
-  background: $royal;
+  background: url('../../assets/img/about_banner.png');
   background-size: cover;
 
   h1 {
@@ -974,6 +973,8 @@ img {
     font-family: $karla;
     font-size: 30px;
     text-align: center;
+    z-index: 1;
+    margin-bottom: 10px;
   }
 }
 

@@ -3,9 +3,9 @@ import React from "react";
 function Misiune({ top }) {
   return (
     <div className="misiune">
-      <h1 style={{ left: top / 3 - 50 + "px" }}>MISIUNEA NOASTRA</h1>
+      <h1 style={{ left: top / 3 - 50 + "px" }}>MISIUNEA NOASTRĂ</h1>
       <div className="text">
-        <h2>Misiunea noastra</h2>
+        <h2>Misiunea noastră</h2>
         <p>
           Misiunea noastră principală este sprijinirea studenților în parcursul
           lor academic, asigurându-le totodată un mediu prielnic pentru

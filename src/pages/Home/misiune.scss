@@ -53,20 +53,24 @@
     }
   }
 }
-// @media (max-width: 768px) {
-//   .misiune h1 {
-//     left: -20px; /* Adjust this value for smaller screens */
-//   }
-// }
+ @media (max-width: 768px) {
+   .misiune h1 {
+     left: -20px; /* Adjust this value for smaller screens */
+     font-size: 2vw;
+     margin-top: 20px;
+   }
+ }
 
-// @media (max-width: 1024px) {
-//   .misiune h1 {
-//     left: -30px; /* Adjust this value for medium-sized screens */
-//   }
-// }
+ @media (max-width: 1024px) {
+   .misiune h1 {
+     left: -30px; /* Adjust this value for medium-sized screens */
+   }
+ }
 
-// @media (max-width: 1440px) {
-//   .misiune h1 {
-//     left: -50px; /* Adjust this value for larger screens */
-//   }
-// }
+ @media (max-width: 1440px) {
+   .misiune h1 {
+    left: -50px; /* Adjust this value for larger screens */
+   }
+ }
+
+ 

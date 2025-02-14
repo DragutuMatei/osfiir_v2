@@ -1,6 +1,11 @@
 import React from "react";
 import useWindowSize from "../../utils/useWindowSize";
 import "./slider.scss";
+import Button from "../../utils/Button";
+import { Link } from 'react-router-dom';
+import { RiImportLine } from "react-icons/ri";
+import "./Home.jsx";
+
 
 function Slider() {
   var curpage = 1;
@@ -618,6 +623,10 @@ function Slider() {
                     Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici<br/>
                     Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici
                 </p>
+
+                <Button text={"Afla departamentul tau"} link={'/departamentul_tau'}>
+                </Button>
+
             </div>
 
             

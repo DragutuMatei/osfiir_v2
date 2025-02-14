@@ -36,11 +36,12 @@ function Voluntariat() {
             {/*DOCUMENTE DACA AM FCT LA OSFIIR*/}
 
             <Card>
-              <a href="/docs/document1.docx" download>Document 1</a>
-              <a href="/docs/document2.docx" download>Document 2</a>
-              <a href="/docs/document3.docx" download>Document 3</a>
-              <a href="/docs/document4.docx" download>Document 4</a>
-              <a href="/docs/document5.docx" download>Document 5</a>
+            <a href="/docs/document1.docx" download>Contract de voluntariat</a>
+            <a href="/docs/document2.docx" download>Fisa de voluntariat</a>
+            <a href="/docs/document3.docx" download>Apreciere</a>
+            <a href="/docs/document4.docx" download>Raport de activitate</a>
+            <a href="/docs/document5.docx" download>Fisa de protectie a voluntarului</a>
+
             </Card>
 
             {/*DOCUMENTE DACA NUAM FCT LA OSFIIR*/}

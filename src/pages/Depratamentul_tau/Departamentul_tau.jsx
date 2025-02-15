@@ -20,7 +20,7 @@ const questions = [
     "Îți place să te ocupi de logistica unui eveniment cum ar fi săli, echipamente și materiale?",
     "Îți place să planifici activități culturale, sportive sau de divertisment?",
     "Te simți în largul tău când trebuie să intervievezi oameni pentru a-i selecta într-o echipă?",
-    "Îți place să lucrezi la promovarea evenimentelor și să crești vizibilitatea organizației",
+    "Îți place să lucrezi la promovarea evenimentelor și să crești vizibilitatea organizației?",
     "Îți place să gândești strategii și soluții creative pentru a atrage sprijin financiar sau material?",
     "Te pasionează partea logistică și tehnică a organizării unui eveniment?",
     "Îți place să creezi experiențe memorabile pentru participanții la evenimente?",

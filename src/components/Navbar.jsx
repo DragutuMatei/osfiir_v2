@@ -36,7 +36,6 @@ function Navbar() {
   };
 
   const navigate = useNavigate();
- 
 
   const close = () => {
     let clasa = ref.current.className;
@@ -44,9 +43,10 @@ function Navbar() {
     ref.current.className = clasa;
     console.log(ref.current.className);
   };
-
+  // top > 20 &&
   return (
-    <nav id="navbar" style={{ background: top > 20 && "#2f2f2f" }}>
+    
+    <nav id="navbar" style={{ background:  "#2f2f2f" }}>
       <div className="logo">
         <Link to={"/"} onClick={close}>
           {/* <h1>OSFIIR</h1> */}
@@ -60,7 +60,7 @@ function Navbar() {
         <Link to={"/about"} onClick={close}>
           Despre noi
         </Link>
-        <Link to={"/about_faculate"} onClick={close}>
+        <Link to={"/about_facultate"} onClick={close}>
           Despre facultate
         </Link>
         <Link to={"/blog"} onClick={close}>
@@ -69,14 +69,12 @@ function Navbar() {
         <Link to={"/faq"} onClick={close}>
           FAQ
         </Link>
-        <Link to={"/voluntariat"} onClick={{close}}>
+        <Link to={"/voluntariat"} onClick={{ close }}>
           Voluntariat
         </Link>
         <Link to={"/contact"} onClick={close}>
           Contact
         </Link>
-        
-        
       </div>
     </nav>
   );

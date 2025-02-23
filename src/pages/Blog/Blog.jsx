@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+{/* import React, { useEffect, useState } from "react";
 import "./blog.scss";
 import BlogPost from "./BlogPost";
 import Footerbug from "../../components/FooterBughy";
@@ -75,7 +75,7 @@ function Blog() {
           <div className="sectiune" onClick={() => filter(5)}>
             MAICA SFANTA
           </div> */}
-        </div>
+       {/*} </div>
       </div>
       <div className="blog">
         {afisData &&
@@ -131,12 +131,15 @@ function Blog() {
           title={"Nu trece nimeni facultatea"}
           by={"FIIR"}
         /> */}
-      </div>
-      {/* <Footerbug /> */}
+
+    {/*
+     </div>
+       <Footerbug /> 
 
       <ScrollToTopButton />
     </>
   );
-}
+} 
+*/} 
 
-export default Blog;
+{/*export default Blog;*/}

@@ -63,9 +63,10 @@ function Navbar() {
         <Link to={"/about_faculate"} onClick={close}>
           Despre facultate
         </Link>
-        <Link to={"/blog"} onClick={close}>
+        {/*<Link to={"/blog"} onClick={close}>
           Blog
         </Link>
+        */}
         <Link to={"/faq"} onClick={close}>
           FAQ
         </Link>

@@ -102,6 +102,7 @@ function Home() {
     <>
       <Slider />
       <AboutSection top={top} />
+      {/*
       <div className="projects">
         {data &&
           data.map((d) => {
@@ -118,6 +119,8 @@ function Home() {
               </div>
             );
           })}
+
+        
         <div
           className="project"
           style={{
@@ -149,6 +152,7 @@ function Home() {
           <Button text={"Proiect"} link={`/blog/ajsdnasdnl`} />
         </div>
       </div>
+      */}
       <Misiune top={top} />
       <Cards />
       <Cancer top={top} />
@@ -179,11 +183,11 @@ function Home() {
       </div>
       <Cifre />
       <SimpleContact />
-      {/* <Footerbug /> */}
+      <Footerbug /> 
 
       <ScrollToTopButton />
     </>
   );
 }
 
-export default Home;
+export default Home; 

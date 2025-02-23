@@ -195,31 +195,79 @@ circle {
   stroke-width: 8vw;
 }
 
+@media (max-width: 1024px) {
+  .right, .left {
+    width: 35px;
+    height: 35px;
+  }
+  .slide1 h1 {
+    font-size: 8vw;
+    margin-left: 6vw;
+  }
+  .slide1 p {
+    font-size: 2vw;
+    margin-left: 6vw;
+  }
+}
+
 @media (max-width: 768px) {
   .right, .left {
     width: 30px;
     height: 30px;
   }
-
   .slide1 h1 {
     font-size: 10vw;
-    margin-left: 8vw;
-    margin-top: 20%;
-    left: 50%;
+    margin-left: 5vw;
   }
-
   .slide1 p {
-    font-size: 1.8vw;
-    margin-left: 8vw;
-  }
-
-  .content button {
     font-size: 2.5vw;
-    padding: 1.5vw 2.5vw;
-    margin-left: 27%;
-    margin-top: 90%;
+    margin-left: 5vw;
+  }
+  .content button {
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    margin-left: 20%;
   }
 }
+
+@media (max-width: 480px) {
+  .right, .left {
+    width: 25px;
+    height: 25px;
+  }
+  .slide1 h1 {
+    font-size: 12vw;
+    margin-left: 4vw;
+  }
+  .slide1 p {
+    font-size: 3vw;
+    margin-left: 4vw;
+  }
+  .content button {
+    font-size: 4vw;
+    padding: 2.5vw 4vw;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 375px) {
+  .right, .left {
+    width: 20px;
+    height: 20px;
+  }
+  .slide1 h1 {
+    font-size: 14vw;
+  }
+  .slide1 p {
+    font-size: 4vw;
+  }
+  .content button {
+    font-size: 5vw;
+    padding: 3vw 5vw;
+    margin-left: 10%;
+  }
+}
+
 
 .misiunea-noastra {
   display: flex;

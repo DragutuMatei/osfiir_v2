@@ -88,6 +88,7 @@ function About() {
           <h1>Despre noi</h1>
         </div>
         <AboutSection top={top} />
+        {/*
         <div className="anunturi">
           <div className="img"></div>
           <h2>anunțuri</h2>
@@ -131,6 +132,8 @@ function About() {
             </div>
           </div>
         </div>
+
+        */}
         <div className="altcancer">
           <Swiper
             ref={swiperRef}

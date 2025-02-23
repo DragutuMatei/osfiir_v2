@@ -3,11 +3,11 @@ import "./Card.scss";
 
 function Card() {
   const documents = [
-    { name: "Document 1", filePath: "/docs/document1.docx" },
-    { name: "Document 2", filePath: "/docs/document2.docx" },
-    { name: "Document 3", filePath: "/docs/document3.docx" },
-    { name: "Document 4", filePath: "/docs/document4.docx" },
-    { name: "Document 5", filePath: "/docs/document5.docx" },
+    { name: "Contract de voluntariat", filePath: "/docs/Contract de voluntariat.docx" },
+    { name: "Fisa de voluntariat", filePath: "/docs/Fisa de voluntariat.docx" },
+    { name: "Apreciere", filePath: "/docs/Apreciere.docx" },
+    { name: "Raport de activitate", filePath: "/docs/Raport de activitate.docx" },
+    { name: "Fisa de protectie a voluntarului", filePath: "/docs/Fisa de protectie a voluntarului.docx" },
   ];
 
   return (

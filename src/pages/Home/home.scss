@@ -1,3 +1,5 @@
+
+
 @import "../../assets/scss/base";
 @import "./misiune.scss";
 @import "./cards.scss";
@@ -163,13 +165,16 @@
   }
 }
 
+
 /* Disable hover effect on tablet and phone screens */
+
+
 @media screen and (max-width: 768px) {
   .projects {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 0; /* No gap between the projects */
+    gap: 0;/* No gap between the projects */
     height: auto;
 
     .project {
@@ -221,6 +226,7 @@
     }
   }
 }
+
 
 @media screen and (max-width: 425px) {
   .projects {
@@ -365,3 +371,5 @@
     }
   }
 }
+
+

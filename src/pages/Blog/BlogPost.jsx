@@ -1,3 +1,5 @@
+{/*
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -16,3 +18,4 @@ function BlogPost({ to, src, by, title, delete_prop }) {
 }
 
 export default BlogPost;
+*/}

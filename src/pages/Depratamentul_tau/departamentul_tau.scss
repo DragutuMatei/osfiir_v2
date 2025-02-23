@@ -6,14 +6,14 @@ h1 {
     color: white;
 }
 
-
 .department-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     background: linear-gradient(135deg, $royal, #dfdfff);
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
 
 .question {

@@ -1,3 +1,5 @@
+{/*
+
 import { IoMdCloseCircle } from "react-icons/io";
 import React, { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -158,7 +160,7 @@ function SimplePostPage() {
             soluta sunt molestiae!
           </p>
         </div>
-      </div> */}
+      </div> 
 
       {post && post.galerie && post && post.galerie.length > 0 && (
         <>
@@ -238,10 +240,10 @@ function SimplePostPage() {
           </p>
         </div>
         <h1>Subtitlul2</h1>
-      </div> */}
+      </div> 
       <SimpleContact />
     </>
   );
 }
 
-export default SimplePostPage;
+export default SimplePostPage; */}

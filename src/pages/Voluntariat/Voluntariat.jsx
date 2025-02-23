@@ -8,6 +8,8 @@ import Cardulet from "./Cardulet";
 import nr2 from "../../assets/img/nr2.png";
 import nr1 from "../../assets/img/nr1.png";
 import nr3 from "../../assets/img/nr3.png";
+import ScrollToTopButton from "../../components/Scrolltotop";
+
 
 function Voluntariat() {
   const handleSearch = (query) => {
@@ -116,11 +118,53 @@ function Voluntariat() {
             <td>5 ore</td>
             <td>2 ore</td>
           </tr>
+          <tr>
+            <td>5 ore</td>
+            <td>5 ore</td>
+            <td>2 ore</td>
+            <td>2 ore</td>
+            <td>140 ore</td>
+            <td>5 ore</td>
+            <td>5 ore</td>
+            <td>2 ore</td>
+          </tr>
+          <tr>
+            <td>5 ore</td>
+            <td>5 ore</td>
+            <td>2 ore</td>
+            <td>2 ore</td>
+            <td>140 ore</td>
+            <td>5 ore</td>
+            <td>5 ore</td>
+            <td>2 ore</td>
+          </tr>
+          <tr>
+            <td>5 ore</td>
+            <td>5 ore</td>
+            <td>2 ore</td>
+            <td>2 ore</td>
+            <td>140 ore</td>
+            <td>5 ore</td>
+            <td>5 ore</td>
+            <td>2 ore</td>
+          </tr>
+          <tr>
+            <td>5 ore</td>
+            <td>5 ore</td>
+            <td>2 ore</td>
+            <td>2 ore</td>
+            <td>140 ore</td>
+            <td>5 ore</td>
+            <td>5 ore</td>
+            <td>2 ore</td>
+          </tr>
         </tbody>
       </table>
     </div>
   </div>
 </div>
+
+<ScrollToTopButton />
     </>
   );
 }

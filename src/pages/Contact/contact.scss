@@ -20,7 +20,13 @@
     display: flex;
     padding: 30px;
     gap: 20px;
+
+    h1{
+      color: black;
+    }
   }
+
+  
 
   .left_contact {
     justify-content: flex-start;

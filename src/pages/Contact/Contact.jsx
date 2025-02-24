@@ -46,10 +46,12 @@ function Contact() {
       </div>
       <div className="contact_page">
         <div className="left_contact">
-          <h1>Do you want to enter your team?</h1>
+          <h1>Vrei să ne transmiți un mesaj?
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing eli ras velit
-            justo, malesuada eget massa.
+            Dacă ai întrebări sau vrei să iei legătura cu noi, 
+            completează formularul pentru a ne transmite un mesaj, iar noi vom reveni la tine în cel mai scurt timp!
+           
           </p>
         </div>
         <div className="right_contact">

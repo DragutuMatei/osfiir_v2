@@ -106,6 +106,12 @@ function Faculate() {
           </p>
         </div>
       </div>
+
+
+
+      {/* parte legata de blog */}
+
+      {/*
       <div className="anunturi">
         <div className="img"></div>
         <h2>anunțuri</h2>
@@ -148,6 +154,11 @@ function Faculate() {
           </div>
         </div>
       </div>
+
+      */}
+      
+
+
       <div className="camine">
         <div className="bac"></div>
         <h1>Căminele Facultății de Inginerie Industrială și Robotică</h1>
@@ -163,8 +174,8 @@ function Faculate() {
             <h1>P4</h1>
             <h2>Căminul P4 </h2>
             <p>
-              Ofera plosnite si gandaci in prostie. Mucegaiul nu este uitat si
-              primesti o admina cu retard mental sever.
+            Viu și confortabil, P4 se află lângă inima Regiei, oferă camere de 4 locuri cu baie proprie, săli de lectură, 
+            mașini de spălat gratuite și se află la 15 minute de F.I.I.R. aproape fiind de colegii din căminul P25.
             </p>
             <h2>Contact: </h2>
             <div className="con">
@@ -174,10 +185,11 @@ function Faculate() {
           </div>
           <div className="camin">
             <h1>P25</h1>
-            <h2>Caminul P25 </h2>
+            <h2>Căminul P25 </h2>
             <p>
-              Ofera plosnite si gandaci in prostie. Mucegaiul nu este uitat si
-              primesti o admina cu retard mental sever.
+              Primitor și liniștit, P25 se află la periferia Regiei și oferă camere pentru 2 studenți, 
+              chiuvetă în cameră, grup sanitar comun, mașini de spălat gratuite și este situat la doar 
+              5 minute de Centrul Comercial Orhideea.
             </p>
             <h2>Contact: </h2>
             <div className="con">

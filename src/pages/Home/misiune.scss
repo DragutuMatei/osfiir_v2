@@ -10,67 +10,101 @@
   background: url("../../assets/img/misiune.jpg");
   background-size: cover;
   background-position: center;
+}
 
-  &::after {
-    content: "";
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    background-color: rgba($royal, 0.6);
+.misiune::after {
+  content: "";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba($royal, 0.6);
+}
+
+.misiune h1 {
+  z-index: 1;
+  width: 100%;
+  max-width: 1203px;
+  position: absolute;
+  top: 30px;
+  font-size: 8vw;
+  font-family: $karla;
+  color: rgba($white, 0.1);
+  font-weight: 800;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Ensures the text stays on a single row */
+}
+
+.misiune .text {
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.misiune .text h2 {
+  color: $white;
+  font-size: 6vw;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.misiune .text p {
+  color: $white;
+  padding: 0 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 0 1px 10px #000000;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .misiune h1 {
+    font-size: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
   }
-
-  h1 {
-    z-index: 1;
-    width: 1203px;
-    position: absolute;
-    top: 30px;
-    font-size: 120px;
-    font-family: $karla;
-    color: rgba($white, 0.2);
-    font-weight: 800;
-    left: -10px;
+  
+  .misiune .text h2 {
+    font-size: 8vw;
   }
-  .text {
-    z-index: 1;
-    width: 100%;
-    max-width: 1200px;
-
-    h2 {
-      color: $white;
-      font-size: 40px;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-    p {
-      color: $white;
-      padding: 0 15px;
-      font-size: 1.2rem;
-      font-weight: 500;
-      text-shadow: 0 1px 10px #000000;
-    }
+  
+  .misiune .text p {
+    font-size: 1rem;
   }
 }
- @media (max-width: 768px) {
-   .misiune h1 {
-     left: -20px; /* Adjust this value for smaller screens */
-     font-size: 2vw;
-     margin-top: 20px;
-   }
- }
 
- @media (max-width: 1024px) {
-   .misiune h1 {
-     left: -30px; /* Adjust this value for medium-sized screens */
-   }
- }
+@media (max-width: 480px) {
+  .misiune h1 {
+    font-size: 12vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .misiune .text h2 {
+    font-size: 10vw;
+  }
+  
+  .misiune .text p {
+    font-size: 0.9rem;
+  }
+}
 
- @media (max-width: 1440px) {
-   .misiune h1 {
-    left: -50px; /* Adjust this value for larger screens */
-   }
- }
-
- 
+@media (max-width: 375px) {
+  .misiune h1 {
+    font-size: 14vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .misiune .text h2 {
+    font-size: 12vw;
+  }
+  
+  .misiune .text p {
+    font-size: 0.8rem;
+  }
+}

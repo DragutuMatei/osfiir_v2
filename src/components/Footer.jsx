@@ -17,7 +17,7 @@ function Footer() {
             Home
           </Link>
 
-          <Link to="/blog">Blog</Link>
+          {/*<Link to="/blog">Blog</Link>*/}
           <Link to="/about">Despre noi</Link>
           <Link to="/about_facultate">Despre Facultate</Link>
           <Link to="/faq">FAQ</Link>

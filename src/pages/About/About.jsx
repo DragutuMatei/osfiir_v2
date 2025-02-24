@@ -32,9 +32,6 @@ import voc2 from "../../assets/img/voc2.jpg";
 import voc3 from "../../assets/img/voc3.jpg";
 
 
-
-
-
 function About() {
   const [index, setIndex] = useState(0);
   const swiperRef = useRef(null);

@@ -4,7 +4,7 @@ import "./slider.scss";
 import Button from "../../utils/Button";
 import { Link } from 'react-router-dom';
 import { RiImportLine } from "react-icons/ri";
-import "./Home.jsx";
+import "./Home.jsx";  
 
 
 function Slider() {
@@ -136,6 +136,7 @@ function Slider() {
       rightSlide();
     }
   };
+
 
   return (
     <>
@@ -617,16 +618,18 @@ function Slider() {
                 <h1>Bine ați venit pe OSFIIR!</h1>
     
                 <p>
-                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici <br/>
-                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici <br/>
-                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici<br/>
-                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici<br/>
-                    Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici Textul tau aici
+                La O.S.F.I.I.R. suntem toți pentru unul și unul pentru toți. Ne identificăm drept o familie, 
+                nu o simplă organizație studențească, iar orice demers în parcursul academic este mai mult decât
+                 susținut de noi. Creștem împreună, ne simțim bine împreună, croim drumuri împreună și la finalul zilei, 
+                 împărtășim victoriile și înfrângerile împreună. Prin micile și marile noastre evenimente avem ca scop legarea unor 
+                 noi relații între studenți, dezvoltarea abilităților individuale ce nu sunt creionate prin curricula neapărat și 
+                 garanția unor ani de studenție frumoși, fără regrete, trăiți la potențial maxim. Alătură-te echipei O.S.F.I.I.R. 
+                pentru a petrece cei minim 4 
+                ani de studenție prin dezvoltare continuă, oportunități greu de ignorat și cei mai de calitate oameni din universitate. Te așteptăm
                 </p>
 
-                <Button text={"Afla departamentul tau"} link={'/departamentul_tau'}>
-                </Button>
-
+                <Button text="Afla departamentul tau" link="/departamentul_tau" />
+                 
             </div>
 
             

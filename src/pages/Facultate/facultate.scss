@@ -192,13 +192,41 @@
       position: relative;
 
       h1 {
-        top: 10px;
-        left: 10px;
         position: absolute;
+        top: -20px;
+        left: 10px;
         font-size: 200px;
         color: rgba($white, 0.2);
         font-family: $montserat;
+        white-space: nowrap; // Evită ca textul să se împartă pe mai multe linii
+      
+        @media (max-width: 1200px) {
+          font-size: 200px;
+          top: -15px;
+          left: 5px;
+        }
+      
+        @media (max-width: 992px) {
+          font-size: 200px;
+          top: -10px;
+          left: 5px;
+        }
+      
+        @media (max-width: 768px) {
+          font-size: 200px;
+          top: -5px;
+          left: 3px;
+        }
+      
+        @media (max-width: 480px) {
+          font-size: 150px;
+          top: -40;
+          left: 16px;
+          
+        }
       }
+      
+      
       h2 {
         margin-top: 20px;
 

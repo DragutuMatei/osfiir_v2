@@ -1,45 +1,63 @@
 @import "../../assets/scss/base";
-.faq {
-  background: url("https://dev.quantum-group.ro/ro/values_mask.d8246a11c7776373.png"),
-    #f3f4f6;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  scroll-padding-top: 100px;
-}
+
 
 .intrb {
   width: 100%;
-  padding: 10px 2vw;
+  padding: 15px 2vw;
   color: $black;
   margin-bottom: 30px;
+  align-items: flex-start; // Aliniere la stg
 
   h1 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
     font-family: $karla;
     color: black;
+    text-align: left; // Text aliniat la stânga
+    margin-bottom: 10px;
   }
+
   p {
     font-weight: 500;
     font-family: $karla;
     font-size: 16px;
+    text-align: left; // Text aliniat la stânga
+    margin-top: 5px;
   }
 }
+
 .aia {
   margin-top: 30px;
 }
-.faq {
-  //neschimbat
-  @media only screen and (max-width: 768px) {
-    .intrb {
-      padding: 10px; 
-      margin-bottom: 20px; 
+
+@media only screen and (max-width: 768px) {
+  
+  .intrb {
+    padding: 10px;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
     }
   }
-  @media only screen and (max-width: 480px) {
-    .faq {
-      background-position: center; 
+}
+
+@media only screen and (max-width: 480px) {
+  .faq {
+    //padding: px 3vw;
+  }
+
+  .intrb {
+    h1 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 13px;
     }
   }
 }

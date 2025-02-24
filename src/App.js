@@ -19,9 +19,22 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} /> 
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/a" element={<Test />} />
+        <Route path="/about" element={<About />} />
+        {/*<Route path="/blog" element={<Blog />} />*/}
+        <Route path="/blog/:slug" element={<SimplePostPage />} />
+        <Route path="/about_faculate" element={<Faculate />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/voluntariat" element={<Voluntariat />} />
+        <Route path="/departamentul_tau" element={<Departamentul_tau />} />
+        
+      </Routes>
       <ScrollToTop />
-     <Departamentul_tau />;
-     <Footer />
+      <Footer />
     </Router>
   );
 }

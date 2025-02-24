@@ -2,6 +2,7 @@ import React from 'react';
 import Pagination from './Pagination'; 
 import './departamentul_tau.scss';
 import { Link } from "react-router-dom";
+import ScrollToTopButton from "../../components/Scrolltotop";
 
 const questions = [
     "Îți place să interacționezi cu oamenii și să le oferi suport?",
@@ -44,6 +45,7 @@ function Departamentul_tau() {
     </div>
     <div className="department-container">
         <Pagination questions={questions} questionsPerPage={5} />
+        <ScrollToTopButton />
     </div>
 </div>
 );

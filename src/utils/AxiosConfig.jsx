@@ -13,3 +13,4 @@ const AXIOS = axios.create({
 const FILE_TYPE = ["JPG", "PNG", "GIF"];
 
 export { FILE_TYPE, AXIOS };
+

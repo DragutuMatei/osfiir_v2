@@ -14,7 +14,6 @@ import Admin from "./pages/Admin";
 import Voluntariat from "./pages/Voluntariat/Voluntariat";
 import Departamentul_tau from "./pages/Depratamentul_tau/Departamentul_tau";
 
-
 function App() {
   return (
     <Router>
@@ -26,12 +25,11 @@ function App() {
         <Route path="/about" element={<About />} />
         {/*<Route path="/blog" element={<Blog />} />*/}
         <Route path="/blog/:slug" element={<SimplePostPage />} />
-        <Route path="/about_faculate" element={<Faculate />} />
+        <Route path="/about_facultate" element={<Faculate />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/voluntariat" element={<Voluntariat />} />
         <Route path="/departamentul_tau" element={<Departamentul_tau />} />
-        
       </Routes>
       <ScrollToTop />
       <Footer />

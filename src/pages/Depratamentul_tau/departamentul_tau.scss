@@ -16,9 +16,29 @@ h1 {
     width: 100%;
     min-height: 100vh;
     margin-bottom: -20px;
+    font-weight: 600;
+    color: white;
 }
 
-.question {
+.department-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, $royal, #dfdfff);
+}
+
+.questions {
+  width: 100lvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+
+  .question {
     background-color: white;
     color: #000000;
     padding: 25px; 
@@ -29,10 +49,16 @@ h1 {
     max-width: 90%;
     width: 600px;
     min-height: 180px; 
+
+    // margin: 20px 0;
+    text-align: center;
+    width: 600px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-weight: 500;
+
     margin-left: 13px;
    // align-items: center;
 }
@@ -87,15 +113,40 @@ h1 {
     cursor: pointer;
     margin: 5px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #f78f1e;
+  color: white;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+  &.active {
+    background-color: $royal;
+  }
+
 }
 
 .btn:hover {
-    background-color: $royal;
-    color: white;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: $royal;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .pagination {
     display: flex;
@@ -115,15 +166,42 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+.page-btn {
+  background-color: #f78f1e;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .page-btn.active {
-    background-color: $royal;
-    color: white;
+  background-color: $royal;
+  color: white;
 }
 
 .page-btn:hover {
-    background-color: #a96215;
-    color: white;
+  background-color: #a96215;
+  color: white;
+}
+
+.rasp {
+  width: 100lvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  .btn {
+    width: auto;
+  }
 }
 

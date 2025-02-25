@@ -41,7 +41,7 @@ $height: 90lvh;
 .left,
 .right {
   position: absolute;
-  z-index: 50;
+  z-index: 9999999;
   width: 40px;
   overflow: hidden;
   height: 40px;
@@ -50,7 +50,9 @@ $height: 90lvh;
   background: #fff;
   cursor: pointer;
   box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-
+svg{
+  scale: 0.6;
+}
   &:focus {
     outline-width: 0;
   }
@@ -184,11 +186,11 @@ circle {
 }
 
 .up1 {
-  z-index: 20;
+  z-index: 999999;
 }
 
 .up2 {
-  z-index: 40;
+  z-index: 99999;
 }
 
 .steap {
@@ -216,7 +218,7 @@ circle {
     max-width: 500px;
     margin: 2% auto;
   }
-  .content button {
+  .content button:not(.mainButton)  {
     font-size: 4vw;
     padding: 1vw 2vw;
     position: absolute;
@@ -247,7 +249,7 @@ circle {
     max-width: 400px;
     margin: 2% auto;
   }
-  .content button {
+  .content button:not(.mainButton)  {
     font-size: 4vw;
     padding: 1vw 2vw;
     position: absolute;
@@ -279,7 +281,7 @@ circle {
     margin: 2% auto;
     margin-top: 20px;
   }
-  .content button {
+  .content button:not(.mainButton)  {
     font-size: 4vw;
     padding: 1.5vw 3vw;
     position: absolute;
@@ -310,7 +312,7 @@ circle {
     max-width: 300px;
     margin: 2% auto;
   }
-  .content button {
+  .content button:not(.mainButton) {
     font-size: 4vw;
     padding: 2vw 4vw;
     position: absolute;

@@ -189,7 +189,7 @@ Situații neprevăzute? Echipament lipsă? Lacune organizatorice? Aceste problem
               </div>
             </div>
             <div className="drop">
-              <div className="up" onClick={() => drop(3)}>
+              <div className="up" onClick={() => drop(4)}>
                 <div>
                   <IoSchoolOutline className="first" />
                   <h2>LOGISTICĂ</h2>

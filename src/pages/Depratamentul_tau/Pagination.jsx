@@ -227,9 +227,9 @@ const Pagination = ({ questions, questionsPerPage }) => {
       departmentCount[department] = (departmentCount[department] || 0) + 1;
     });
 
-    // Sort departments alphabetically
-    const sortedDepartments = Object.keys(departmentCount).sort((a, b) =>
-      a.localeCompare(b)
+    // Sort departments by the number of occurrences
+    const sortedDepartments = Object.keys(departmentCount).sort(
+      (a, b) => departmentCount[b] - departmentCount[a]
     );
 
     setDep(sortedDepartments);
@@ -297,20 +297,21 @@ const Pagination = ({ questions, questionsPerPage }) => {
                
                <div className="miau">
                 <h1>
-                  Main: <b> {dep[dep.length - 1]}</b>
+                  Main: <b> {dep[0]}</b>
                 </h1>
                 <h1>
-                  Second: <b> {dep[dep.length - 2]}</b>
+                  Second: <b> {dep[1]}</b>
                 </h1>
                </div>
              
 
               <br />
               <h4>Dar tu poți să te alături oricărui vrei! </h4>
-              <h4>
-                Distribuie rezultatul tău pe insta cu tagul @osfiir și
+             
+              <h5>
+                         Distribuie rezultatul tău pe insta cu tagul @osfiir și
                 #hai_la_osfiir{" "}
-              </h4>
+              </h5>
             </>
           )}
         </div>

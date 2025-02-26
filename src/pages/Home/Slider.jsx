@@ -628,7 +628,7 @@ function Slider() {
                 ani de studenție prin dezvoltare continuă, oportunități greu de ignorat și cei mai de calitate oameni din universitate. Te așteptăm
                 </p>
 
-                <Button text="Afla departamentul tau" link="/departamentul_tau" />
+                <Button text="Află departamentul tau" link="/departamentul_tau" />
                  
             </div>
 

@@ -56,7 +56,7 @@ Situații neprevăzute? Echipament lipsă? Lacune organizatorice? Aceste problem
     <>
       <div className="cancer" onClick={() => out()}>
         <h1 style={{ right: top / 3 - width / 1.7 + "px" }}>Departamente</h1>
-        {width > 780 ? (
+        {width > 1020 ? (
           <>
             <div className="stanga">
               <div className="click" id="but1" onClick={() => choose(1)}>

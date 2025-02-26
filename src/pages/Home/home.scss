@@ -7,6 +7,142 @@
 @import "./cifre.scss";
 @import "./simplecontact.scss";
 
+
+
+.landingpage {
+  background-image: url('../../assets/img/slider1.png'); // Adaugă calea către imaginea ta
+  background-size: cover;
+  width: auto;
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  
+  h1 {
+    color: white;
+    font-size: 50px;
+    margin-left: 30px;
+  }
+
+  p {
+    color: white;
+    max-width: 700px;
+    margin-left: 35px;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+
+
+  Button { 
+    background-color: $portocaliu;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 35px;
+    //position: absolute;
+  }
+
+  @media (max-width: 768px) { // Pe dispozitive cu ecran mic (telefoane)
+    justify-content: flex-start; // Textul să fie la începutul paginii
+    padding: 20px; // Adaugă spațiu pentru text
+    align-items: center;
+
+    h1 {
+      font-size: 50px;
+      margin-top: 100px;
+      margin-left: -5px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      margin-left: -5px;
+      padding: 15px 30px;
+    }
+
+    button {
+      //bottom: 20px; // Plasează butonul jos
+      align-items: center;
+      margin-left: -5px;
+      margin-top: 60px;
+      z-index: 0;
+      max-height: auto;
+      //position: absolute; /* Butonul va fi poziționat absolut în interiorul div-ului */
+      bottom: 20px; /* Plasează butonul jos */
+      align-items: center;
+      margin-left: -5px;
+      margin-top: 60px;
+      z-index: 1; /* Asigură-te că are un z-index mai mare decât cel al navbar-ului */
+      
+    }
+  }
+
+  .landingpage {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .landingpage h1 {
+    font-size: 120px;
+    margin-top: 100px;
+    margin-left: -5px;
+    text-align: center;
+  }
+  
+  .landingpage p {
+    text-align: center;
+    margin-left: -5px;
+    padding: 15px 30px;
+  }
+  
+  .landingpage button {
+    align-items: center;
+    margin-left: -5px;
+    margin-top: 60px;
+    z-index: 1;
+    max-height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .landingpage {
+      justify-content: flex-start; /* Textul să fie la începutul paginii */
+      padding: 20px; /* Adaugă spațiu pentru text */
+      align-items: center;
+    }
+  
+    .landingpage h1 {
+      font-size: 50px;
+      margin-top: 100px;
+      margin-left: -5px;
+      text-align: center;
+    }
+  
+    .landingpage p {
+      text-align: center;
+      margin-left: -5px;
+      padding: 15px 30px;
+    }
+  
+    .landingpage button {
+      align-items: center;
+      margin-left: -5px;
+      margin-top: 60px;
+      z-index: 1;
+      max-height: auto;
+      position: absolute; /* Butonul va fi poziționat absolut în interiorul div-ului */
+      bottom: 20px; /* Plasează butonul jos */
+      align-items: center;
+    }
+  }
+  
+  
+
+}
+
 .about {
   width: 100vw;
   height: auto;

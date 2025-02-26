@@ -3,7 +3,6 @@ import "./contact.scss";
 import Button from "../../utils/Button";
 import ScrollToTopButton from "../../components/Scrolltotop";
 import emailjs from "@emailjs/browser";
-
 function Contact() {
   const [name, setName] = useState("");
   const [numar, setNumar] = useState("");
@@ -17,6 +16,11 @@ function Contact() {
   }, []);
 
   const send = async () => {
+    if (name === "" || numar === "" || email === "" || mesaj === "") {
+      alert("Completează toate câmpurile!");
+      return;
+    }
+
     const formdata = new FormData();
     formdata.append("nume", name);
     formdata.append("tel", numar);
@@ -36,8 +40,9 @@ function Contact() {
         (error) => {
           alert("Mesajul nu a fost trimis!");
         }
-      );
-  };
+      )
+    }
+  
 
   return (
     <>

@@ -80,7 +80,7 @@ function Faculate() {
   return (
     <>
       <div className="banner">
-        <h1 style={{ marginTop: 0 }}>
+        <h1 style={{ marginTop: 80}}>
           Despre Facultatea de Inginerie Industrială și Robotică
         </h1>
       </div>
@@ -156,7 +156,6 @@ function Faculate() {
       </div>
 
       */}
-      
 
 
       <div className="camine">
@@ -179,13 +178,13 @@ function Faculate() {
             </p>
             <h2>Contact: </h2>
             <div className="con">
-              <a href="mailto: mateidr7@gmail.com">email</a>
-              <a href="tel: 0786782763">0786782763</a>
+              <a href="mailto: Office@osfiir.ro">email</a>
+              <a href="tel: 0732078129">0732078129</a>
             </div>
           </div>
           <div className="camin">
             <h1>P25</h1>
-            <h2>Căminul P25 </h2>
+            <h2>Căminul P25</h2>
             <p>
               Primitor și liniștit, P25 se află la periferia Regiei și oferă camere pentru 2 studenți, 
               chiuvetă în cameră, grup sanitar comun, mașini de spălat gratuite și este situat la doar 
@@ -193,13 +192,13 @@ function Faculate() {
             </p>
             <h2>Contact: </h2>
             <div className="con">
-              <a href="mailto: mateidr7@gmail.com">email</a>
+              <a href="mailto: Office@osfiir.ro">email</a>
               <a href="tel: 0786782763">0786782763</a>
             </div>
           </div>
         </div>
       </div>
-      <div className="scrollcnt">
+      {/*<div className="scrollcnt">
         <div className="loc_de_premii">
           <h1>Studenți Consilieri și Senatori</h1>
         </div>
@@ -220,7 +219,7 @@ function Faculate() {
               })}
           </div>
         </ScrollContainer>
-      </div>
+      </div> */}
       <div className="about">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.6227426840974!2d26.046770775937777!3d44.4409002710756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201c047f8d021%3A0x41c874ce747cee15!2sFaculty%20of%20Industrial%20Engineering%20and%20Robotics!5e0!3m2!1sen!2sro!4v1714445192641!5m2!1sen!2sro"

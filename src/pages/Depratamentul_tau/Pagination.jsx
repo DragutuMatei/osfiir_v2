@@ -294,12 +294,16 @@ const Pagination = ({ questions, questionsPerPage }) => {
               <h4>Noi iți recomandăm departamentele: </h4>
 
               <br />
-              <h1>
-                Main: <b> {dep[dep.length - 1]}</b>
-              </h1>
-              <h1>
-                Second: <b> {dep[dep.length - 2]}</b>
-              </h1>
+               
+               <div className="miau">
+                <h1>
+                  Main: <b> {dep[dep.length - 1]}</b>
+                </h1>
+                <h1>
+                  Second: <b> {dep[dep.length - 2]}</b>
+                </h1>
+               </div>
+             
 
               <br />
               <h4>Dar tu poți să te alături oricărui vrei! </h4>

@@ -429,6 +429,21 @@
 
 @import "../../assets/scss/base";
 
+.banner 
+{
+  @media (max-width: 768px) {
+    .banner {
+      background-color: blue;
+      color: white; /* Adaugă culoare albă pentru text pentru a fi vizibil pe fundalul albastru */
+    }
+  }
+}
+
+
+h1 { 
+  margin-top: 80px;
+}
+
 .imgs {
   width: 100vw;
   display: flex;

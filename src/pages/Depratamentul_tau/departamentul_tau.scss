@@ -4,6 +4,7 @@ h1 {
     font-weight: 600;
     color: white;
     text-align: center;
+   // margin-top: 80px;
 }
 
 .department-container {
@@ -53,7 +54,7 @@ h1 {
     // margin: 20px 0;
     text-align: center;
     width: 600px;
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,6 +69,7 @@ h1 {
         width: 90%;
         font-size: 14px;
         min-height: 160px; 
+        margin-left: -4px;
     }
 
     .btn {
@@ -81,6 +83,7 @@ h1 {
         width: 95%;
         padding: 20px;
         min-height: 150px;
+        margin-left: -4px;
     }
 
     .buttons {
@@ -200,8 +203,18 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+ // background-color: $royal;
+
   .btn {
     width: auto;
+  }
+
+  .miau {
+    width: 80%;
+    background-color: $royal;
+    border-radius: 25px;
   }
 }
 

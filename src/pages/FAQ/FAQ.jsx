@@ -16,105 +16,77 @@ function FAQ() {
       </div>
 
       <div id={"intrb_1"} className="intrb aia">
-        <h1>Cate intrb au fost generate cu chatgbt?</h1>
-        <p>toate</p>
+        <h1>Când se afișează orarul?</h1>
+        <p>De obicei, cu 2-3 zile înainte de a începe anul/semestrul.</p>
       </div>
 
       <div id={"intrb_2"} className="intrb">
         <h1>
-          Cum pot obține un loc la Facultatea de Inginerie Industrială și
-          Robotică?
+        Când se pun căminele?
         </h1>
         <p>
-          Pentru a obține un loc la această facultate, trebuie să parcurgi
-          procesul de admitere, care poate include examene de admitere și
-          evaluarea dosarului de candidatură.
+        Repartizarea o primiți cu 2-3 zile înainte să vă cazați, bobocii sunt prioritari, așa că nu vă faceți griji că prindeți loc toți.
         </p>
       </div>
 
       <div id={"intrb_3"} className="intrb">
         <h1>
-          Cât de bine este echipată Facultatea de Inginerie Industrială și
-          Robotică?
+        Cum citim orarul?
         </h1>
         <p>
-          Facultatea dispune de laboratoare moderne, echipamente de ultimă
-          generație și infrastructură adecvată pentru studiul și cercetarea în
-          domeniul ingineriei industriale și robotice.
+        Există o poză cum se citește orarul într-un mod explicativ.
         </p>
       </div>
 
       <div id={"intrb_4"} className="intrb">
         <h1>
-          Care sunt perspectivele de carieră pentru absolvenții de la Facultatea
-          de Inginerie Industrială și Robotică?
+        Cum îmi dau seama unde am laborator/seminar/curs?
         </h1>
         <p>
-          Absolvenții acestei facultăți pot urma diverse căi profesionale în
-          domenii precum inginerie robotică, management industrial,
-          automatizări, consultanță în afaceri sau cercetare științifică.
+        Locația fiecărui laborator, seminar sau curs este specificată pe orar, folosind coduri sau denumiri pentru săli și clădiri.
+         Cu ajutorul hărții campusului, poți identifica rapid și ușor locația exactă a fiecărei activități.
         </p>
       </div>
 
       <div id={"intrb_5"} className="intrb">
         <h1>
-          Care sunt principalele domenii de studiu acoperite în cadrul
-          Facultății de Inginerie Industrială și Robotică?
+        Care sunt procentele pe materii?
         </h1>
         <p>
-          Facultatea de Inginerie Industrială și Robotică acoperă domenii precum
-          inginerie mecanică, electronică, automatizări, control și management
-          industrial.
+        60-40 pentru materii cu examene și 80-20 pentru materii cu colocviu. În cazul în care un 
+        profesor dorește să modifice aceste procente, 
+        este necesar să ne anunțe, deoarece astfel de schimbări nu respectă regulamentul intern.
         </p>
       </div>
 
       <div id={"intrb_6"} className="intrb">
         <h1>
-          Cum pot obține un loc la Facultatea de Inginerie Industrială și
-          Robotică?
+        Când primim legitimațiile?
         </h1>
         <p>
-          Pentru a obține un loc la această facultate, trebuie să parcurgi
-          procesul de admitere, care poate include examene de admitere și
-          evaluarea dosarului de candidatură.
+        Între 2 săptămâni și o lună de când începeți, deoarece ele se scriu manual și durează.
         </p>
       </div>
 
       <div id={"intrb_7"} className="intrb">
         <h1>
-          Cât de bine este echipată Facultatea de Inginerie Industrială și
-          Robotică?
+        Care e faza cu transportul în comun?
         </h1>
         <p>
-          Facultatea dispune de laboratoare moderne, echipamente de ultimă
-          generație și infrastructură adecvată pentru studiul și cercetarea în
-          domeniul ingineriei industriale și robotice.
+        Aveți 90% reducere la metrou, iar la STB e mai complicat.
         </p>
       </div>
 
       <div id={"intrb_8"} className="intrb">
         <h1>
-          Care sunt perspectivele de carieră pentru absolvenții de la Facultatea
-          de Inginerie Industrială și Robotică?
+        La ce avem prezențe obligatorii?
         </h1>
         <p>
-          Absolvenții acestei facultăți pot urma diverse căi profesionale în
-          domenii precum inginerie robotică, management industrial,
-          automatizări, consultanță în afaceri sau cercetare științifică.
+        La laboratoare prezența este obligatorie, cu 2 absențe recuperabile; la seminare depinde de profesor, la curs nu este obligatoriu.
         </p>
       </div>
 
-      <div id={"intrb_9"} className="intrb">
-        <h1>
-          Există programe de schimb internațional pentru studenții de la
-          Facultatea de Inginerie Industrială și Robotică?
-        </h1>
-        <p>
-          Da, facultatea oferă programe de schimb internațional care le permit
-          studenților să studieze în străinătate și să experimenteze alte
-          culturi și sisteme de învățământ.
-        </p>
-      </div>
+    
       <SimpleContact />
       {/* <Footerbug /> */}
 

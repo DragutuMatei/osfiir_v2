@@ -2,7 +2,7 @@ import React from "react";
 
 function Misiune({ top }) {
   return (
-    <div className="misiune">
+    <div className="misiune lazy">
       <h1 style={{ left: top / 3 - 50 + "px" }}>MISIUNEA NOASTRĂ</h1>
       <div className="text">
         <h2>Misiunea noastră</h2>

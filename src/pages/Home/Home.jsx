@@ -16,10 +16,11 @@ import Footer from "../../components/Footer";
 import Footerbug from "../../components/FooterBughy";
 import ScrollToTopButton from "../../components/Scrolltotop";
 import { AXIOS } from "../../utils/AxiosConfig";
+import useLazyLoad from "../../utils/useLazyLoad";
 
 function Home() {
   const [top, setScrollTop] = useState(0);
-
+  useLazyLoad();
   useEffect(() => {
     AOS.init();
     getData();
@@ -101,7 +102,7 @@ function Home() {
   return (
     <>
 
-      <div className="landingpage">
+      <div className="landingpage lazy">
         <h1>Bine ați venit la OSFIIR !</h1>
         <p>La O.S.F.I.I.R. suntem toți pentru unul și unul pentru toți. Ne identificăm drept o familie,
            nu o simplă organizație studențească, iar orice demers în parcursul academic este mai mult decât susținut de noi. 

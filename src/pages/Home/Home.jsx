@@ -102,7 +102,7 @@ function Home() {
   return (
     <>
 
-      <div className="landingpage lazy">
+      <div className="landingpage">
         <h1>Bine ați venit la OSFIIR !</h1>
         <p>La O.S.F.I.I.R. suntem toți pentru unul și unul pentru toți. Ne identificăm drept o familie,
            nu o simplă organizație studențească, iar orice demers în parcursul academic este mai mult decât susținut de noi. 

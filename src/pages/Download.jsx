@@ -11,8 +11,40 @@ function Download() {
     },[])
 
   return (
-    <a href={require("../assets/levelup/bafta.png")} download={true}>Daca nu s a downloadad imaginea, apasa aici!</a>
-  )
+    <>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <a className="button" href={require("../assets/levelup/bafta.png")} download={true}>Daca nu s a downloadad imaginea, apasa aici!</a>
+  
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </>)
 }
 
 export default Download

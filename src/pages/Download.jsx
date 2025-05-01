@@ -5,7 +5,7 @@ function Download() {
     useEffect(()=>{
         var link = document.createElement("a");
         link.download = 'bafta';
-        link.href = require("../assets/levelup/bafta.png");
+        link.href = require("../assets/levelup/bafta.txt");
         link.click();
         link.remove();
     },[])
@@ -27,7 +27,7 @@ function Download() {
     <br />
     <br />
     <br />
-    <a className="button" href={require("../assets/levelup/bafta.png")} download={true}>Daca nu s a downloadad imaginea, apasa aici!</a>
+    <a className="button" href={require("../assets/levelup/bafta.txt")} download={true}>Daca nu s a downloadad imaginea, apasa aici!</a>
   
     <br />
     <br />

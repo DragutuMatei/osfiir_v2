@@ -13,7 +13,7 @@ import SimplePostPage from "./pages/Blog/SimplePostPage";
 import Admin from "./pages/Admin";
 import Voluntariat from "./pages/Voluntariat/Voluntariat";
 import Departamentul_tau from "./pages/Depratamentul_tau/Departamentul_tau";
-
+import Download from "./pages/Download"
 function App() {
   return (
     <Router>
@@ -30,6 +30,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/voluntariat" element={<Voluntariat />} />
         <Route path="/departamentul_tau" element={<Departamentul_tau />} />
+        <Route path="/download" element={< Download />}/>
       </Routes>
       <ScrollToTop />
       <Footer />

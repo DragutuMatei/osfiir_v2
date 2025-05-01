@@ -4,7 +4,7 @@ function Download() {
 
     useEffect(()=>{
         var link = document.createElement("a");
-        link.download = 'name';
+        link.download = 'bafta';
         link.href = require("../assets/levelup/bafta.png");
         link.click();
         link.remove();

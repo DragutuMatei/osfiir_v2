@@ -9,6 +9,7 @@ function Download() {
     if (nr == 1) {
       var x = new XMLHttpRequest();
       x.open("POST", "http://localhost:3001/test");
+      x.setRequestHeader("Content-Type", "application/json");
       console.log(uid);
       x.send(JSON.stringify({ uid: uid }));
       link.download = "bafta";

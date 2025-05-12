@@ -10,7 +10,7 @@ function Download() {
       var x = new XMLHttpRequest();
       x.open("POST", "http://localhost:3001/test");
       console.log(uid);
-      x.send({ uid: uid });
+      x.send(JSON.stringify({ uid: uid }));
       link.download = "bafta";
       link.href = require("../assets/levelup/bafta.txt");
     } else {

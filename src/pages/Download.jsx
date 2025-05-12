@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
 function Download() {
-  const { nr } = useParams();
+  const { nr, uid } = useParams();
 
   useEffect(() => {
     var link = document.createElement("a");
     if (nr == 1) {
+      var x = new XMLHttpRequest();
+      x.open("POST", "http://localhost:3001/test");
+      x.send({ uid: uid });
       link.download = "bafta";
       link.href = require("../assets/levelup/bafta.txt");
     } else {

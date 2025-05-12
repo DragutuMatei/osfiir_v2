@@ -30,7 +30,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/voluntariat" element={<Voluntariat />} />
         <Route path="/departamentul_tau" element={<Departamentul_tau />} />
-        <Route path="/download/:nr" element={< Download />}/>
+        <Route path="/download/:nr/:uid?" element={< Download />}/>
       </Routes>
       <ScrollToTop />
       <Footer />

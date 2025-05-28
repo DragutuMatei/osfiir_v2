@@ -8,11 +8,11 @@ function Download() {
     var link = document.createElement("a");
     if (nr == 1) {
      await fetch("https://server-levelup.vercel.app/test", {
-        method: "POST", // Specify the HTTP method as POST
+        method: "POST",  
         headers: {
-          "Content-Type": "application/json", // Set the Content-Type header
+          "Content-Type": "application/json",  
         },
-        body: JSON.stringify({ uid: uid }), // Convert the JavaScript object to a JSON string for the request body
+        body: JSON.stringify({ uid: uid }),  
       });
 
       // var x = new XMLHttpRequest();
@@ -58,7 +58,7 @@ function Download() {
         }`)}
         download={true}
       >
-        Daca nu s a downloadad imaginea, apasa aici!
+        Daca nu s a downloadad documentul, apasa aici!
       </a>
 
       <br />

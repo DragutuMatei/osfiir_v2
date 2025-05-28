@@ -7,7 +7,7 @@ function Download() {
   const fct = async () => {
     var link = document.createElement("a");
     if (nr == 1) {
-      fetch("server-levelup.vercel.app/test", {
+      fetch("https://server-levelup.vercel.app/test", {
         method: "POST", // Specify the HTTP method as POST
         headers: {
           "Content-Type": "application/json", // Set the Content-Type header

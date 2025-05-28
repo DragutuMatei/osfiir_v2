@@ -4,14 +4,22 @@ import { useParams } from "react-router-dom";
 function Download() {
   const { nr, uid } = useParams();
 
-  useEffect(() => {
+  const fct = async () => {
     var link = document.createElement("a");
     if (nr == 1) {
-      var x = new XMLHttpRequest();
-      x.open("POST", "http://localhost:3001/test");
-      x.setRequestHeader("Content-Type", "application/json");
-      console.log(uid);
-      x.send(JSON.stringify({ uid: uid }));
+      fetch("http://localhost:3001/test", {
+        method: "POST", // Specify the HTTP method as POST
+        headers: {
+          "Content-Type": "application/json", // Set the Content-Type header
+        },
+        body: JSON.stringify({ uid: uid }), // Convert the JavaScript object to a JSON string for the request body
+      });
+
+      // var x = new XMLHttpRequest();
+      // x.open("POST", "http://localhost:3001/test");
+      // x.setRequestHeader("Content-Type", "application/json");
+      // console.log(uid);
+      // x.send(JSON.stringify({ uid: uid }));
       link.download = "bafta";
       link.href = require("../assets/levelup/bafta.txt");
     } else {
@@ -20,6 +28,10 @@ function Download() {
     }
     link.click();
     link.remove();
+  };
+
+  useEffect(() => {
+    fct();
   }, []);
 
   return (

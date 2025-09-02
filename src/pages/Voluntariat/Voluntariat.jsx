@@ -9,8 +9,6 @@ import nr2 from "../../assets/img/nr2.png";
 import nr1 from "../../assets/img/nr1.png";
 import nr3 from "../../assets/img/nr3.png";
 import ScrollToTopButton from "../../components/Scrolltotop";
-import contract from "./Documente_necesare/OSFIIR/Contract de voluntariat.d0d9476c9cceade447fa (1).docx";
-import fisa from "./Documente_necesare/OSFIIR/Fişa de protecţie a voluntarului.eaf6b2c38ba415ce6e6a.docx";
 
 function Voluntariat() {
   const handleSearch = (query) => {

@@ -15,6 +15,7 @@ function Voluntariat() {
   const [voluntar, setVoluntar] = useState("");
   const handleSearch =async (query) => {
     console.log(query);
+    query = query.replace("/", "-");
     // Aici poți adăuga logica de căutare
     const rasp = await AXIOS.get(`/voluntari/${query}`);
     console.log(rasp);

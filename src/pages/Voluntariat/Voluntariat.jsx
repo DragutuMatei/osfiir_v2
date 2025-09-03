@@ -97,6 +97,7 @@ function Voluntariat() {
             {
               voluntar.activitati.map(
                 act=>{
+                  
                   return(
             <td>{act.ore}</td>
                   );

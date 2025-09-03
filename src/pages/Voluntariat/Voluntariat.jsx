@@ -27,7 +27,7 @@ function Voluntariat() {
     const rasp = await AXIOS.get(`/voluntari/${query}`);
     console.log(rasp);
     if(rasp.status == 200){
-      const data = {...resp.data};
+      const data = {...rasp.data};
       setVoluntar({...data})
       console.log({...data})
       setSearch(true);

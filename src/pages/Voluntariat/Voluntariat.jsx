@@ -27,9 +27,10 @@ function Voluntariat() {
     const rasp = await AXIOS.get(`/voluntari/${query}`);
     console.log(rasp);
     if(rasp.status == 200){
-      setVoluntar(...rasp.data)
+      const data = ...resp.data;
+      setVoluntar({...data})
+      console.log({...data})
       setSearch(true);
-      console.log(...rasp.data)
       scrollToElement("table");
     }else{
       alert("Ai introdus date gresite!")

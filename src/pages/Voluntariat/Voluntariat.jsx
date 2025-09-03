@@ -86,8 +86,8 @@ function Voluntariat() {
       </div>
 
 
-{search &&
     <div className="tabel" id="table">
+{search &&<>
   <p4>Rezumatul activităților tale, {voluntar.nume}</p4>
   <div className="table-container">
     <div className="table-scroll">
@@ -101,8 +101,9 @@ function Voluntariat() {
             <th>{act.name}</th>
                   );
                 }
-              )  }
-            }
+              )  
+              }
+            
           </tr>
         </thead>
         <tbody>
@@ -124,8 +125,9 @@ function Voluntariat() {
       </table>
     </div>
   </div>
-  </div>
+  </>
 }
+  </div>
 
 <ScrollToTopButton />
     </>

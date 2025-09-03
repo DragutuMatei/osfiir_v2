@@ -18,7 +18,7 @@ function SearchBar({ onSearch, loading }) {
         type="text"
         value={query}
         onChange={handleInputChange}
-        placeholder="Nr. matricol/Vol. Matricol/an  ex:243/11C/2025"
+        placeholder="Nr. matricol/Vol. Matricol/an  ex:243/11C/2023"
         className="search-input"
       />
       <button onClick={handleSearch} className="search-button" disabled={loading}>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SearchBar.scss";
 
-function SearchBar({ onSearch }) {
+function SearchBar({ onSearch, loading }) {
   const [query, setQuery] = useState("");
 
   const handleInputChange = (e) => {
@@ -21,8 +21,8 @@ function SearchBar({ onSearch }) {
         placeholder="Nr. matricol/Vol. Matricol/an  ex:243/11C/2025"
         className="search-input"
       />
-      <button onClick={handleSearch} className="search-button">
-        Caută
+      <button onClick={handleSearch} className="search-button" disabled={loading}>
+        {loading? "Loading..." :"Caută"}
       </button>
     </div>
   );

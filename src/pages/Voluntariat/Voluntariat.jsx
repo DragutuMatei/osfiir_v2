@@ -14,6 +14,7 @@ import { AXIOS } from "../../utils/AxiosConfig";
 function Voluntariat() {
   const [voluntar, setVoluntar] = useState({});
   const[search, setSearch] = useState(false);
+  const[loading, setLoading] = useState(false);
   const scrollToElement = (id) => {
   const element = document.getElementById(id);
   if (element) {
@@ -22,6 +23,7 @@ function Voluntariat() {
 };
   const handleSearch =async (query) => {
     console.log(query);
+    setLoading(true);
     query = query.replaceAll("/", "-");
     // Aici poți adăuga logica de căutare
     const rasp = await AXIOS.get(`/voluntari/${query}`);
@@ -35,6 +37,7 @@ function Voluntariat() {
     }else{
       alert("Ai introdus date gresite!")
     }
+    setLoading(false);
   };
 
   return (
@@ -44,7 +47,7 @@ function Voluntariat() {
       </div>
       
       <h5>Caută-ți numărul matricol și vezi rezumatul activităților tale</h5>
-      <SearchBar onSearch={handleSearch} /> {/* Integrează SearchBar */}
+      <SearchBar onSearch={handleSearch} loading={loading} /> {/* Integrează SearchBar */}
 
       <div className="acte">
         <div className="title">

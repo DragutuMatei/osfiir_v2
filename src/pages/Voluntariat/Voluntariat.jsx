@@ -14,15 +14,22 @@ import { AXIOS } from "../../utils/AxiosConfig";
 function Voluntariat() {
   const [voluntar, setVoluntar] = useState({});
   const[search, setSearch] = useState(false);
+  const scrollToElement = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
   const handleSearch =async (query) => {
     console.log(query);
     query = query.replaceAll("/", "-");
     // Aici poți adăuga logica de căutare
     const rasp = await AXIOS.get(`/voluntari/${query}`);
     console.log(rasp);
-    if(rasp.status!=200){
+    if(rasp.status == 200){
       setSearch(true);
       setVoluntar({...rasp.data})
+       scrollToElement("table");
     }else{
       alert("Ai introdus date gresite!")
     }
@@ -78,7 +85,7 @@ function Voluntariat() {
 
 
 {search &&
-    <div className="tabel">
+    <div className="tabel" id="table">
   <p4>Rezumatul activităților tale, {voluntar.nume}</p4>
   <div className="table-container">
     <div className="table-scroll">

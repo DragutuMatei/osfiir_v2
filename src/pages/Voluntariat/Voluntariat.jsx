@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./voluntariat.scss";
 import { Link } from "react-router-dom";
 import all from "../../assets/img/Group 3.png";
@@ -17,8 +17,7 @@ function Voluntariat() {
     console.log(query);
     // Aici poți adăuga logica de căutare
     const rasp = await AXIOS.get(`/voluntari/${query}`);
-console.log(rasp);
-
+    console.log(rasp);
   };
 
   return (

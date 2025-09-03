@@ -18,6 +18,12 @@ function Card({not}) {
   ];
   return (
     <div className="card">
+{not ? 
+            <h4>Dacă nu ai făcut voluntariat la OSFIIR</h4>
+
+:<h3>Dacă ai făcut voluntariat la OSFIIR</h3>}       
+           
+           
       {
       not ?
       documents1.map((doc, index) => (

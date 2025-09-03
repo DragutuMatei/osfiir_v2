@@ -29,6 +29,7 @@ function Voluntariat() {
     if(rasp.status == 200){
       setSearch(true);
       setVoluntar({...rasp.data})
+      console.log({...rasp.data})
        scrollToElement("table");
     }else{
       alert("Ai introdus date gresite!")
@@ -92,14 +93,14 @@ function Voluntariat() {
       <table>
         <thead>
           <tr>
-            {
+            {/* {
               voluntar.activitati.map(
                 act=>{
                   return(
             <th>{act.name}</th>
                   );
                 }
-              )
+              ) */}
             }
           </tr>
         </thead>
@@ -108,14 +109,14 @@ function Voluntariat() {
           <tr>
           
             {
-              voluntar.activitati.map(
-                act=>{
+            //   voluntar.activitati.map(
+            //     act=>{
 
-                  return(
-            <td>{act.ore}</td>
-                  );
-                }
-              )
+            //       return(
+            // <td>{act.ore}</td>
+            //       );
+            //     }
+            //   )
             }
             </tr>
         </tbody>

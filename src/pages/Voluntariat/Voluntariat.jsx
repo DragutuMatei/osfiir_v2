@@ -30,6 +30,8 @@ function Voluntariat() {
           <h1>ACTE NECESARE</h1>
           <h2>Acte necesare:</h2>
           <div className="Documente">
+            <h3>Dacă ai făcut voluntariat la OSFIIR</h3>
+            <h4>Dacă nu ai făcut voluntariat la OSFIIR</h4>
             <div className="Card">
 
             {/*DOCUMENTE DACA AM FCT LA OSFIIR*/}

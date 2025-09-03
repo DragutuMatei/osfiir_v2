@@ -28,8 +28,8 @@ function Voluntariat() {
     console.log(rasp);
     if(rasp.status == 200){
       const data = {...rasp.data};
-      setVoluntar({...data})
-      console.log({...data})
+      setVoluntar(Object.values({...data})[0])
+      console.log(Object.values({...data})[0])
       setSearch(true);
       scrollToElement("table");
     }else{
@@ -94,14 +94,14 @@ function Voluntariat() {
       <table>
         <thead>
           <tr>
-            {/* {
+              {
               voluntar.activitati.map(
                 act=>{
                   return(
             <th>{act.name}</th>
                   );
                 }
-              ) */}
+              )  }
             }
           </tr>
         </thead>
@@ -110,14 +110,14 @@ function Voluntariat() {
           <tr>
           
             {
-            //   voluntar.activitati.map(
-            //     act=>{
+              voluntar.activitati.map(
+                act=>{
 
-            //       return(
-            // <td>{act.ore}</td>
-            //       );
-            //     }
-            //   )
+                  return(
+            <td>{act.ore}</td>
+                  );
+                }
+              )
             }
             </tr>
         </tbody>

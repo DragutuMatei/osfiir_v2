@@ -9,11 +9,16 @@ import nr2 from "../../assets/img/nr2.png";
 import nr1 from "../../assets/img/nr1.png";
 import nr3 from "../../assets/img/nr3.png";
 import ScrollToTopButton from "../../components/Scrolltotop";
+import { AXIOS } from "../../utils/AxiosConfig";
 
 function Voluntariat() {
-  const handleSearch = (query) => {
-    console.log("Căutare:", query);
+  const [voluntar, setVoluntar] = useState("");
+  const handleSearch =async (query) => {
+    console.log(query);
     // Aici poți adăuga logica de căutare
+    const rasp = await AXIOS.get(`/voluntari/${query}`);
+console.log(rasp);
+
   };
 
   return (

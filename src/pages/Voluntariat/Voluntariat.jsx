@@ -12,13 +12,14 @@ import ScrollToTopButton from "../../components/Scrolltotop";
 import { AXIOS } from "../../utils/AxiosConfig";
 
 function Voluntariat() {
-  const [voluntar, setVoluntar] = useState("");
+  const [voluntar, setVoluntar] = useState({});
   const handleSearch =async (query) => {
     console.log(query);
     query = query.replaceAll("/", "-");
     // Aici poți adăuga logica de căutare
     const rasp = await AXIOS.get(`/voluntari/${query}`);
     console.log(rasp);
+    setVoluntar({...rasp})
   };
 
   return (
@@ -70,89 +71,44 @@ function Voluntariat() {
       </div>
 
 
-      <div className="tabel">
-  <p4>Rezumatul activităților tale, name</p4>
+{voluntar && voluntar.toString()!=""&&
+    <div className="tabel">
+  <p4>Rezumatul activităților tale, {voluntar.nume}</p4>
   <div className="table-container">
     <div className="table-scroll">
       <table>
         <thead>
           <tr>
-            <th>Alte activități din cadrul departamentului de PR</th>
-            <th>Alte activități din cadrul departamentului de FR</th>
-            <th>Ședință Generală (24.10.2024)</th>
-            <th>Ședință Generală AG#2 (14.01.2025)</th>
-            <th>Alte activități privind coordonarea asociației</th>
-            <th>Ședință Generală (24.10.2024)</th>
-            <th>Ședință Generală AG#2 (14.01.2025)</th>
-            <th>Alte activități privind coordonarea asociației</th>
+            {
+              voluntar.activitati.map(
+                act=>{
+                  return(
+            <th>{act.name}</th>
+                  );
+                }
+              )
+            }
           </tr>
         </thead>
         <tbody>
+          
           <tr>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-            <td>2 ore</td>
-            <td>140 ore</td>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-          </tr>
-          <tr>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-            <td>2 ore</td>
-            <td>140 ore</td>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-          </tr>
-          <tr>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-            <td>2 ore</td>
-            <td>140 ore</td>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-          </tr>
-          <tr>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-            <td>2 ore</td>
-            <td>140 ore</td>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-          </tr>
-          <tr>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-            <td>2 ore</td>
-            <td>140 ore</td>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-          </tr>
-          <tr>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-            <td>2 ore</td>
-            <td>140 ore</td>
-            <td>5 ore</td>
-            <td>5 ore</td>
-            <td>2 ore</td>
-          </tr>
+          
+            {
+              voluntar.activitati.map(
+                act=>{
+                  return(
+            <td>{act.ore}</th>
+                  );
+                }
+              )
+            }</tr>
         </tbody>
       </table>
     </div>
   </div>
-</div>
+  </div>
+}
 
 <ScrollToTopButton />
     </>

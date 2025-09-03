@@ -98,11 +98,12 @@ function Voluntariat() {
               voluntar.activitati.map(
                 act=>{
                   return(
-            <td>{act.ore}</th>
+            <td>{act.ore}</td>
                   );
                 }
               )
-            }</tr>
+            }
+            </tr>
         </tbody>
       </table>
     </div>

@@ -39,7 +39,7 @@ function Voluntariat() {
     }
     setLoading(false);
   };
-
+  
   return (
     <>
       <div className="banner">

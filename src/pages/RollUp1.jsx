@@ -8,7 +8,31 @@ function RollUp1() {
     }, [])
 
     return (
-    <div>Se incarca redirectul....</div>
+    <div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>Se incarca redirectul....</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
+    </div>
   )
 }
 

@@ -1,0 +1,29 @@
+@import "../assets/scss/base";
+
+.sponsors {
+  background: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  h1 {
+    width: 100%;
+    text-align: left;
+    font-size: 40px;
+    font-family: $karla;
+    span{
+        color: $royal;
+    }
+  }
+  .link_sp {
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .sponsori {
+      width: 250px;
+      height: auto;
+    }
+  }
+}

@@ -17,6 +17,7 @@ import Footerbug from "../../components/FooterBughy";
 import ScrollToTopButton from "../../components/Scrolltotop";
 import { AXIOS } from "../../utils/AxiosConfig";
 import useLazyLoad from "../../utils/useLazyLoad";
+import Sponsori from "../../components/Sponsori";
 
 function Home() {
   const [top, setScrollTop] = useState(0);
@@ -195,6 +196,7 @@ function Home() {
           </div>
         </ScrollContainer>
       </div>
+      <Sponsori/>
       <Cifre />
       <SimpleContact />
 

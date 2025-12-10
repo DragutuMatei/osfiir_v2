@@ -44,7 +44,7 @@ const Sponsori = () => {
 
             
             <Slider.Slide>
-                <a href="" target="_blank"className="link_sp">
+                <a href="https://frisco.ro/" target="_blank"className="link_sp">
                 <img src={require("../assets/img/logos/fav-icon-frisco-shop.png.webp")} alt="any" className='sponsori' />
                 </a>
             </Slider.Slide>

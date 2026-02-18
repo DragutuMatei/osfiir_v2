@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./home.scss";
 import Slider from "./Slider";
 import AboutSection from "./AboutSection";
+import Cadathon from "./Cadathon";
 import Misiune from "./Misiune";
 import Cards from "./Cards";
 import AOS from "aos";
@@ -106,17 +107,18 @@ function Home() {
       <div className="landingpage">
         <h1>Bine ați venit la OSFIIR !</h1>
         <p>La O.S.F.I.I.R. suntem toți pentru unul și unul pentru toți. Ne identificăm drept o familie,
-           nu o simplă organizație studențească, iar orice demers în parcursul academic este mai mult decât susținut de noi. 
-           Creștem împreună, ne simțim bine împreună, croim drumuri împreună și la finalul zilei, împărtășim victoriile și înfrângerile 
-           împreună. Prin micile și marile noastre evenimente avem ca scop legarea unor noi relații între studenți, dezvoltarea abilităților 
-           individuale ce nu sunt creionate prin curricula neapărat și garanția unor ani de studenție frumoși, fără regrete, trăiți la potențial
-            maxim. Alătură-te echipei O.S.F.I.I.R. pentru a petrece cei minim 4 ani de studenție 
+          nu o simplă organizație studențească, iar orice demers în parcursul academic este mai mult decât susținut de noi.
+          Creștem împreună, ne simțim bine împreună, croim drumuri împreună și la finalul zilei, împărtășim victoriile și înfrângerile
+          împreună. Prin micile și marile noastre evenimente avem ca scop legarea unor noi relații între studenți, dezvoltarea abilităților
+          individuale ce nu sunt creionate prin curricula neapărat și garanția unor ani de studenție frumoși, fără regrete, trăiți la potențial
+          maxim. Alătură-te echipei O.S.F.I.I.R. pentru a petrece cei minim 4 ani de studenție
           prin dezvoltare continuă, oportunități greu de ignorat și cei mai de calitate oameni din universitate. Te așteptăm!
         </p>
         <Button text="Află departamentul tău" link="/departamentul_tau" />
       </div>
-     {/* <Slider /> */}
+      {/* <Slider /> */}
       <AboutSection top={top} />
+      <Cadathon top={top} />
       {/*
       <div className="projects">
         {data &&
@@ -196,7 +198,7 @@ function Home() {
           </div>
         </ScrollContainer>
       </div>
-      <Sponsori/>
+      <Sponsori />
       <Cifre />
       <SimpleContact />
 

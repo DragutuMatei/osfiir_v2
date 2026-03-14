@@ -118,7 +118,7 @@ function Home() {
       </div>
       {/* <Slider /> */}
       <AboutSection top={top} />
-      <Cadathon top={top} />
+      {/* <Cadathon top={top} /> */}
       {/*
       <div className="projects">
         {data &&

@@ -16,6 +16,7 @@ import Departamentul_tau from "./pages/Depratamentul_tau/Departamentul_tau";
 import Download from "./pages/Download";
 import RollUp1 from "./pages/RollUp1";
 import RollUp2 from "./pages/RollUp2";
+import LevelUpRedirect from "./pages/LevelUpRedirect";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/redirect-1" element={<RollUp1 />} />
         <Route path="/redirect-2" element={<RollUp2 />} />
-        
+        <Route path="/levelup/:material" element={<LevelUpRedirect />} />
         <Route path="/departamentul_tau" element={<Departamentul_tau />} />
         <Route path="/download/:nr/:uid?" element={< Download />}/>
       </Routes>

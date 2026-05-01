@@ -17,6 +17,7 @@ import Download from "./pages/Download";
 import RollUp1 from "./pages/RollUp1";
 import RollUp2 from "./pages/RollUp2";
 import LevelUpRedirect from "./pages/LevelUpRedirect";
+import VerifyPersons from "./pages/Levelup2026/VerifyPersonCard";
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
         <Route path="/redirect-2" element={<RollUp2 />} />
         <Route path="/levelup/:material" element={<LevelUpRedirect />} />
         <Route path="/departamentul_tau" element={<Departamentul_tau />} />
+        <Route path="/levelup2026/verifyPersons" element={<VerifyPersons />} />
         <Route path="/download/:nr/:uid?" element={< Download />}/>
+
       </Routes>
       <ScrollToTop />
       <Footer />

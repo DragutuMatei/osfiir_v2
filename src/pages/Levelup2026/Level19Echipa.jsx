@@ -133,9 +133,7 @@ export default function Level19Echipa() {
             </p>
             {downloaded ? (
                 <div style={{ padding: '20px', border: '1px solid #00ffff', background: 'rgba(0, 255, 255, 0.1)' }}>
-                    ✅ Jurnalul de trafic brut (<b>interception.har</b>) a fost descărcat. <br/><br/>
-                    Analizează acest fișier în modulul de Network (DevTools) pentru a descoperi cheia.
-                </div>
+                      Poate ca e corect ... sau nu .... </div>
             ) : (
                 <div style={{ padding: '20px', color: '#ffaa00' }}>
                     ⏳ Se interceptează traficul... (descărcare automată în curs)

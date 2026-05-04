@@ -23,6 +23,10 @@ export default function VerifyPersons() {
   const avatarUrl = `https://api.dicebear.com/9.x/big-ears-neutral/png?seed=${encodeURIComponent(nume || 'UNKNOWN')}`;
 
   return (
+    <>
+    <br/>
+    <br/>
+    <br/>
     <div className="vp">
       <div className="vp__scanlines" />
       <div className="vp__vignette" />
@@ -62,14 +66,10 @@ export default function VerifyPersons() {
           </div>
         </section>
 
-        <section className="vp__note">
-          <div className="vp__noteTitle">NOTE</div>
-          <div className="vp__noteText">
-            This page is not synchronized with the game. It displays query parameters exactly as received.
-          </div>
-        </section>
+       
       </main>
     </div>
+    </>
   );
 }
 

@@ -3,7 +3,38 @@ import React, { useEffect, useState } from 'react';
 export default function Level19Echipa() {
     const [downloaded, setDownloaded] = useState(false);
 
+    // Detectare dispozitiv
+    const isMobileDevice = () => {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isMobileUserAgent = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(userAgent);
+        return isMobileUserAgent ;
+    };
+
     useEffect(() => {
+        const isMobile = isMobileDevice();
+
+        if (isMobile) {
+            // Descarcă fișier .txt pentru mobile
+            const textContent = "schimba dispozitivul si reacceseaza linkul";
+            const blob = new Blob([textContent], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'mesaj.txt';
+            document.body.appendChild(a);
+            
+            const timer = setTimeout(() => {
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                setDownloaded(true);
+            }, 1000);
+
+            return () => clearTimeout(timer);
+        }
+
+        // Comportamentul original pentru desktop - descarcă HAR
         // Cele 50 de API-uri/Resurse extra pentru diversitate
         const extraEndpoints = [
             "/api/v1/metrics", "/api/v1/users/profile", "/cdn/assets/logo.png", "/api/v2/socket/init",

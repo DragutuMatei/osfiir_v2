@@ -58,12 +58,6 @@ export default function VerifyPersons() {
               <div><span>TIMESTAMP</span><b>{timestamp || '—'}</b></div>
             </div>
           </div>
-
-          <div className={`vp__msg ${suspicious ? 'vp__msg--bad' : 'vp__msg--ok'}`}>
-            {suspicious
-              ? `Timestamp month is suspicious (${month}). Event month should be OCT.`
-              : `Record matches event month (OCT).`}
-          </div>
         </section>
 
        

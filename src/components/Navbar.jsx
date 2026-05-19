@@ -70,9 +70,9 @@ function Navbar() {
         <Link to={"/faq"} onClick={close}>
           FAQ
         </Link>
-        <Link to={"/voluntariat"} onClick={{ close }}>
+        <a href={"https://voluntariat.osfiir.ro/"} target="_blank" onClick={{ close }}>
           Voluntariat
-        </Link>
+        </a>
         <Link to={"/contact"} onClick={close}>
           Contact
         </Link>

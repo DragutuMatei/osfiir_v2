@@ -37,13 +37,13 @@ function Footer() {
 
         <div>
           <i className="fa fa-phone"></i>
-          <p>+40 732 078 129</p>
+          <p>+40 731 080 207</p>
         </div>
 
         <div>
           <i className="fa fa-envelope"></i>
           <p>
-            <a href="mailto:osfiir@gmail.com">osfiir@gmail.com</a>
+            <a href="mailto:office@osfiir.ro">office@osfiir.ro</a>
           </p>
         </div>
       </div>

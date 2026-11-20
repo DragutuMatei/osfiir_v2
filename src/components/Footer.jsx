@@ -22,6 +22,7 @@ function Footer() {
           <Link to="/about_facultate">Despre Facultate</Link>
           <Link to="/faq">FAQ</Link>
           <Link to="/contact">Contact</Link>
+          <Link to="/confidentialitate">Confidențialitate</Link>
         </p>
 
         <p className="footer-company-name">OSFIIR © 2024</p>

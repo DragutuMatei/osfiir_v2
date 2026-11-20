@@ -22,6 +22,7 @@ import Level19Echipa from "./pages/Levelup2026/Level19Echipa";
 import Level19Decoy from "./pages/Levelup2026/Level19Decoy";
 import SpectacolRedirect from "./pages/Spectacol2026/SpectacolRedirect";
 import SpectacolStats from "./pages/Spectacol2026/SpectacolStats";
+import Confidentialitate from "./pages/Confidentialitate/Confidentialitate";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/about_facultate" element={<Faculate />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/confidentialitate" element={<Confidentialitate />} />
         <Route path="/redirect-1" element={<RollUp1 />} />
         <Route path="/redirect-2" element={<RollUp2 />} />
         <Route path="/levelup/:material" element={<LevelUpRedirect />} />

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../../utils/firebase";
+import "./spectacolRedirect.scss";
 
 export const SPECTACOL_COLLECTION = "spectacol2026_scans";
 const TARGET_URL = "https://spectacol2026.osfiir.ro";
@@ -217,8 +218,30 @@ function SpectacolRedirect() {
   }, []);
 
   return (
-    <div style={{ minHeight: "70vh", display: "grid", placeItems: "center" }}>
-      <h1>Se încarcă...</h1>
+    <div className="sr" role="status" aria-live="polite">
+      <div className="sr__spinner" aria-hidden="true" />
+      <h1 className="sr__title">
+        Spectacol Caritabil 2026
+      </h1>
+      <p className="sr__sub">
+        Te redirecționăm
+        <span className="sr__dots">
+          <span>.</span>
+          <span>.</span>
+          <span>.</span>
+        </span>
+      </p>
+      <p className="sr__sub">
+        Nu se deschide?{" "}
+        <a className="sr__link" href={TARGET_URL}>
+          Apasă aici
+        </a>
+      </p>
+      <p className="sr__privacy">
+        Pentru statisticile campaniei înregistrăm vizita (IP, oraș aproximativ,
+        tipul dispozitivului).{" "}
+        <a href="/confidentialitate">Detalii</a>
+      </p>
     </div>
   );
 }

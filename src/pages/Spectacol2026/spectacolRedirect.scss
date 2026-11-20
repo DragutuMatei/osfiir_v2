@@ -1,0 +1,66 @@
+.sr {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 120px 16px 60px;
+  background: #2e4a3d;
+  color: #f5ede3;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+
+  &__spinner {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 6px solid rgba(223, 203, 179, 0.25);
+    border-top-color: #dfcbb3;
+    animation: sr-spin 0.9s linear infinite;
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  &__sub {
+    margin: 0;
+    opacity: 0.8;
+  }
+
+  &__dots span {
+    animation: sr-blink 1.4s infinite both;
+    &:nth-child(2) { animation-delay: 0.2s; }
+    &:nth-child(3) { animation-delay: 0.4s; }
+  }
+
+  &__link {
+    color: #dfcbb3;
+    font-weight: 700;
+  }
+
+  &__privacy {
+    max-width: 420px;
+    margin: 24px 0 0;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    a { color: inherit; }
+  }
+}
+
+@keyframes sr-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes sr-blink {
+  0%, 80%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sr__spinner { animation-duration: 3s; }
+  .sr__dots span { animation: none; opacity: 1; }
+}

@@ -20,6 +20,8 @@ import LevelUpRedirect from "./pages/LevelUpRedirect";
 import VerifyPersons from "./pages/Levelup2026/VerifyPersonCard";
 import Level19Echipa from "./pages/Levelup2026/Level19Echipa";
 import Level19Decoy from "./pages/Levelup2026/Level19Decoy";
+import SpectacolRedirect from "./pages/Spectacol2026/SpectacolRedirect";
+import SpectacolStats from "./pages/Spectacol2026/SpectacolStats";
 
 function App() {
   return (
@@ -44,6 +46,9 @@ function App() {
         <Route path="/levelup2026/verifyPersons" element={<VerifyPersons />} />
         <Route path="/levelup2026/lvl19/echipa" element={<Level19Echipa />} />
         <Route path="/levelup2026/lvl19/decoy" element={<Level19Decoy />} />
+
+        <Route path="/spectacol-caritabil-2026" element={<SpectacolRedirect />} />
+        <Route path="/admin/spectacol-2026" element={<SpectacolStats />} />
 
       </Routes>
       <ScrollToTop />

@@ -1,0 +1,75 @@
+$ss-green: #2e4a3d;
+$ss-beige: #dfcbb3;
+$ss-cream: #f5ede3;
+
+.ss {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 16px 60px;
+  font-family: "Karla", sans-serif;
+  color: #1f2a24;
+
+  h1, h2, h3 { font-family: "Montserrat", sans-serif; margin: 0 0 8px; }
+  h1 { font-size: 1.6rem; }
+  h3 { font-size: 1rem; color: $ss-green; }
+}
+
+.ss-center { min-height: 70vh; display: grid; place-items: center; }
+.ss-login { text-align: center; max-width: 420px; }
+.ss-muted { color: #6b7570; margin: 0 0 12px; font-size: 0.9rem; }
+.ss-error { color: #b3261e; margin-top: 12px; }
+
+.ss-header {
+  display: flex; flex-wrap: wrap; gap: 16px;
+  justify-content: space-between; align-items: flex-end;
+  margin-bottom: 24px;
+}
+.ss-actions {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  select { padding: 8px 10px; border-radius: 8px; border: 1px solid #c9bba8; background: #fff; }
+}
+
+.ss-btn {
+  background: $ss-green; color: #fff; border: 0; border-radius: 8px;
+  padding: 9px 16px; cursor: pointer; font-weight: 600;
+  &:disabled { opacity: 0.6; cursor: default; }
+  &--ghost { background: transparent; color: $ss-green; border: 1px solid $ss-green; }
+}
+
+.ss-kpis {
+  display: grid; gap: 12px; margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+.ss-kpi {
+  background: $ss-green; color: $ss-cream; border-radius: 14px; padding: 18px;
+  display: flex; flex-direction: column;
+  b { font-size: 2rem; font-family: "Montserrat", sans-serif; }
+  span { font-size: 0.85rem; opacity: 0.85; }
+}
+
+.ss-grid {
+  display: grid; gap: 16px; margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.ss-card {
+  background: $ss-cream; border: 1px solid $ss-beige; border-radius: 14px; padding: 18px;
+}
+
+.ss-bar {
+  display: grid; grid-template-columns: 120px 1fr auto; gap: 10px;
+  align-items: center; margin: 6px 0; font-size: 0.85rem;
+  &__label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  &__track { background: $ss-beige; border-radius: 6px; height: 10px; overflow: hidden; }
+  &__fill { background: $ss-green; height: 100%; border-radius: 6px; }
+  &__val { font-variant-numeric: tabular-nums; font-weight: 700;
+    span { font-weight: 400; color: #6b7570; } }
+}
+
+.ss-table-wrap { overflow-x: auto; }
+.ss-table {
+  width: 100%; border-collapse: collapse; font-size: 0.85rem;
+  th, td { text-align: left; padding: 8px; border-bottom: 1px solid $ss-beige; white-space: nowrap; }
+  th { color: $ss-green; }
+  a { color: $ss-green; }
+}
